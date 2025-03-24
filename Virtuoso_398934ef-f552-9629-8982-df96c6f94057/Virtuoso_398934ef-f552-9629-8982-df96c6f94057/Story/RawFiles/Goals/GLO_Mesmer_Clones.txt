@@ -1,0 +1,318 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+DB_GLO_MESMER_CLONES((CHARACTER)00000000-0000-0000-0000-000000000000, (CHARACTER)00000000-0000-0000-0000-000000000000);
+NOT DB_GLO_MESMER_CLONES((CHARACTER)00000000-0000-0000-0000-000000000000, (CHARACTER)00000000-0000-0000-0000-000000000000);
+
+KBSECTION
+//REGION Mesmer Clone Equipment Duplication
+IF
+StatusApplied(_Clone, "MESMER_CLONE_ALIVE", _Player, _)
+THEN
+CopyCharacterEquipment((CHARACTER)_Clone, (CHARACTER)_Player);
+DB_GLO_MESMER_CLONES((CHARACTER)_Clone, (CHARACTER)_Player);
+RealtimeObjectTimerLaunch(_Clone, "MesmerCloneEQDup", 100);
+
+IF
+ObjectTimerFinished(_Clone, "MesmerCloneEQDup")
+AND
+DB_GLO_MESMER_CLONES((CHARACTER)_Clone, (CHARACTER)_Player)
+THEN
+Transform(_Clone, _Player, MESMERCLONE_cf3f0d40-fa12-483a-bf7d-438a8711498b);
+PROC_CCO_CreatedMesmerClone(_Clone, _Player);
+//RemoveStatus(_Duplicity, "MESMER_CLONE_ALIVE", _Player);
+//END_REGION
+
+//Create Clone when "MESMER_CLONE_SPAWN" gets applied
+IF
+StatusApplied(_Char,"MESMER_CLONE_SPAWN",_Caster,_)
+AND
+GetPosition(_Char,_CharX,_CharY,_CharZ)
+AND
+GetUUID(_Caster, _CasterUUID)
+AND
+Concatenate("MesmerCloneCounter_", _CasterUUID, _CounterName)
+AND
+IsTagged(_Caster, (TAG)MESMER_CLONE_LIMIT_3_5f546d59-2381-4061-a81a-05be70879cd2, 0)
+AND
+CreateAt(5b2d100d-2080-41a0-ab7f-66d6e73f706f,_CharX,_CharY,_CharZ,1,1,"",_MesmerClone)
+THEN
+ApplyStatus(_MesmerClone, "MESMER_CLONE_ALIVE", -1.0, 0, _Caster);
+RemoveStatus(_Char,"MESMER_CLONE_SPAWN",_MesmerClone);
+//PROC_TestMesmer((CHARACTER)_Char, (CHARACTER)_Caster);
+//PROC_CCO_CreatedMesmerClone((CHARACTER)_Char, (CHARACTER)_Caster);
+//DebugText(_Caster, _CounterName);
+/*
+IF
+StatusApplied(_Char,"MESMER_CLONE_CREATE_NEW_CLONE",_Caster,_)
+THEN
+PROC_CCO_CreatedMesmerClone(_Char, _Caster);
+ApplyStatus(_Char, "MESMER_CLONE_SPAWN", 1.0, 0, _Caster);
+*/
+IF
+CastSpell(_Char, "Target_Mesmer_Decoy", _, _, _)
+AND
+GetPosition(_Char,_CharX,_CharY,_CharZ)
+AND
+CreateAt(5b2d100d-2080-41a0-ab7f-66d6e73f706f,_CharX,_CharY,_CharZ,1,1,"",_MesmerClone)
+THEN
+ApplyStatus(_MesmerClone, "MESMER_CLONE_ALIVE", -1.0, 0, _Char);
+
+
+//Mind The Gap create clone
+IF
+CastSpell(_Char, "Shout_Mesmer_MindTheGap", _, _, _)
+THEN
+ApplyStatus(_Char, "MESMER_CLONE_SPAWN", 1.0, 0, _Char);
+//DebugText((CHARACTER)_Char, "MTG_SPAWN");
+
+//REGION Chaos Aura
+
+//Give yourself positive conditions and your foe random negative conditions whenever you are struck.
+IF
+StatusApplied((CHARACTER)_Target,"GW_CHAOS_AURA_APPLY_RANDOM", _Cause,_)
+AND
+Random(3, _RandomPositiveID)
+AND
+Random(3, _RandomNegativeID)
+THEN
+PROC_GW_CHAOSAURA_APPLY_POSITIVE((CHARACTER)_Cause, _RandomPositiveID);
+PROC_GW_CHAOSAURA_APPLY_NEGATIVE((CHARACTER)_Cause, _RandomNegativeID, (CHARACTER)_Target);
+RemoveStatus(_Target,"GW_CHAOS_AURA_APPLY_RANDOM",_Cause);
+
+PROC
+PROC_GW_CHAOSAURA_APPLY_POSITIVE((CHARACTER)_Caster, (INTEGER)_ID)
+AND
+_ID == 1
+THEN
+ApplyStatus(_Caster, "GW_SWIFTNESS", 1.0, 0, _Caster);
+
+PROC
+PROC_GW_CHAOSAURA_APPLY_POSITIVE((CHARACTER)_Caster, (INTEGER)_ID)
+AND
+_ID == 2
+THEN
+ApplyStatus(_Caster, "GW_REGENERATION", 1.0, 0, _Caster);
+
+PROC
+PROC_GW_CHAOSAURA_APPLY_POSITIVE((CHARACTER)_Caster, (INTEGER)_ID)
+AND
+_ID == 0
+THEN
+ApplyStatus(_Caster, "GW_FURY", 1.0, 0, _Caster);
+
+PROC
+PROC_GW_CHAOSAURA_APPLY_NEGATIVE((CHARACTER)_Caster, (INTEGER)_ID, (CHARACTER)_Target)
+AND
+_ID == 1
+THEN
+ApplyStatus(_Target, "GW_WEAKNESS", 1.0, 0, _Caster);
+
+PROC
+PROC_GW_CHAOSAURA_APPLY_NEGATIVE((CHARACTER)_Caster, (INTEGER)_ID, (CHARACTER)_Target)
+AND
+_ID == 2
+THEN
+ApplyStatus(_Target, "GW_TORMENT", 1.0, 0, _Caster);
+
+PROC
+PROC_GW_CHAOSAURA_APPLY_NEGATIVE((CHARACTER)_Caster, (INTEGER)_ID, (CHARACTER)_Target)
+AND
+_ID == 0
+THEN
+ApplyStatus(_Target, "GW_CRIPPLE", 1.0, 0, _Caster);
+
+//END_REGION
+
+// The Prestige
+IF
+StatusRemoved(_Target,"MESMER_THE_PRESTIGE", _Cause, _)
+THEN
+CreateExplosion(_Target, "Projectile_Mesmer_ThePrestige_Removed", 1, _Target);
+
+//Mind The Gap additional damage outer circle
+IF
+StatusApplied((CHARACTER)_Target,"MESMER_MIND_THE_GAP_HIT", _Cause,_)
+AND
+GetDistanceTo(_Target, _Cause, _Dist)
+AND
+_Dist > 2
+THEN
+ApplyDamage(_Target, 6, "Psychic", _Cause);
+RemoveStatus(_Target,"MESMER_MIND_THE_GAP_HIT",_Cause);
+DebugText((CHARACTER)_Target, "Mind the Gap outer cirle");
+
+//Spatial Surge additional damage by distance
+IF
+StatusApplied((CHARACTER)_Target,"MESMER_SPATIAL_SURGE_HIT", _Cause,_)
+AND
+GetDistanceTo(_Target, _Cause, _Dist)
+AND
+RealDivide(_Dist, 6.0, _ExtraDamageReal)
+AND
+RealToInteger(_ExtraDamageReal, _ExtraDamageInt)
+THEN
+ApplyDamage(_Target, _ExtraDamageInt, "Psychic", _Cause);
+RemoveStatus(_Target,"MESMER_SPATIAL_SURGE_HIT",_Cause);
+
+//Illusionary Leap
+IF
+StatusApplied(_Target,"MESMER_ILLUSIONARY_LEAP_TARGET", _Caster,_)
+AND
+GetPosition(_Caster,_CharX,_CharY,_CharZ)
+AND
+GetUUID(_Caster, _CasterUUID)
+AND
+Concatenate("MesmerCloneCounter_", _CasterUUID, _CounterName)
+AND
+IsTagged(_Caster, (TAG)MESMER_CLONE_LIMIT_3_5f546d59-2381-4061-a81a-05be70879cd2, 0)
+AND
+CreateAt(5b2d100d-2080-41a0-ab7f-66d6e73f706f,_CharX,_CharY,_CharZ,1,1,"",_MesmerClone)
+THEN
+ApplyStatus(_MesmerClone, "MESMER_CLONE_ALIVE", -1.0, 0, _Caster);
+UseSpell(_MesmerClone, "Rush_Mesmer_IllusionaryCloneLeap", _Target);
+//ApplyStatus(_MesmerClone, "MESMER_CLONE_ALIVE", -1.0, 0, _Caster);
+
+/*
+//REGION Clones act on the same turn as the player
+IF
+CombatStarted(_Combat)
+AND
+DB_GLO_MESMER_CLONES(_MesmerClone, _Caster)
+THEN
+ApplyStatus(_MesmerClone, "DEACTIVATED", -1.0, 0, _Caster);
+DebugText(_MesmerClone, "Deactivated");
+
+IF
+TurnEnded(_Player)
+AND
+HasActiveStatus(_Player, "MESMER_CLONE_LIMIT", 1)
+AND
+DB_GLO_MESMER_CLONES(_MesmerClone, _Caster)
+THEN
+ApplyStatus(_MesmerClone, "DEACTIVATED", -1.0, 0, _Caster);
+DebugText(_MesmerClone, "Activated");
+
+IF
+TurnStarted(_Player)
+AND
+HasActiveStatus(_Player, "MESMER_CLONE_LIMIT", 1)
+AND
+DB_GLO_MESMER_CLONES(_MesmerClone, _Caster)
+THEN
+RemoveStatus(_MesmerClone, "DEACTIVATED");
+DebugText(_MesmerClone, "Deactivated");
+//END_REGION
+*/
+
+IF
+CombatEnded(_CombatID)
+AND
+DB_GLO_MESMER_CLONES(_Clones, _Creator)
+THEN
+DebugText((CHARACTER)_clones, "Combat ended for clone");
+Die(_Clones, DEATHTYPE.Lifetime, _Clones, 0, 1, 0.0);
+
+PROC
+PROC_TestMesmer((CHARACTER)_MesmerClone, (CHARACTER)_Caster)
+AND
+GetUUID(_Caster, _CasterUUID)
+THEN
+DebugText(_Caster, _CasterUUID);
+
+
+//REGION testing a counter
+
+// declaring the counter
+PROC
+PROC_CCO_CreatedMesmerClone((CHARACTER)_MesmerClone, (CHARACTER)_Caster)
+AND
+    DB_GLO_MESMER_CLONES(_MesmerClone, _Caster)
+AND
+    GetUUID(_Caster, _CasterUUID)
+AND
+    Concatenate("MesmerCloneCounter_", _CasterUUID, _CounterName)
+AND
+    NOT DB_GlobalCounter(_CounterName, _)
+THEN
+    PROC_DeclareCounter(_CounterName);
+	DB_CCO_CasterCounter(_CounterName, _Caster);
+
+// Increase counter when a servant is created
+PROC
+PROC_CCO_CreatedMesmerClone((CHARACTER)_MesmerClone, (CHARACTER)_Caster)
+AND
+    DB_GLO_MESMER_CLONES(_MesmerClone, _Caster)
+AND
+    GetUUID(_Caster, _CasterUUID)
+AND
+    Concatenate("MesmerCloneCounter_", _CasterUUID, _CounterName)
+THEN
+    PROC_IncreaseCounter(_CounterName, 1);
+    PROC_CCO_DisplayCounter(_Caster);
+
+
+// Decrease counter when a servant dies
+IF
+    Died(_MesmerClone)
+AND
+    DB_GLO_MESMER_CLONES(_MesmerClone, _Caster)
+AND
+    GetUUID(_Caster, _CasterUUID)
+AND
+    Concatenate("MesmerCloneCounter_", _CasterUUID, _CounterName)
+AND
+    DB_GlobalCounter(_CounterName, _Count)
+AND
+    _Count > 0
+THEN
+    PROC_DecreaseCounter(_CounterName, 1);
+    PROC_CCO_DisplayCounter(_Caster);
+
+
+// Check when the limit is reached and TAG the owner.
+IF
+    DB_GlobalCounter(_CounterName, _Count)
+AND
+    _Count == 3
+AND
+    DB_CCO_CasterCounter(_CounterName, _Caster)
+AND
+    IsTagged(_Caster, (TAG)MESMER_CLONE_LIMIT_3_5f546d59-2381-4061-a81a-05be70879cd2, 0)
+THEN
+    DebugText(_Caster, "Upper limit was reached - owner has 3 summons.");
+    SetTag(_Caster, (TAG)MESMER_CLONE_LIMIT_3_5f546d59-2381-4061-a81a-05be70879cd2);
+
+// Reset the flag when the counter drops below 3
+IF
+    DB_CCO_CasterCounter(_CounterName, _Caster)
+AND
+    DB_GlobalCounter(_CounterName, _Count)
+AND
+    _Count < 3
+AND
+    IsTagged(_Caster, (TAG)MESMER_CLONE_LIMIT_3_5f546d59-2381-4061-a81a-05be70879cd2, 1)
+THEN
+    DebugText(_Caster, "Owner can have summons again");
+    ClearTag(_Caster, (TAG)MESMER_CLONE_LIMIT_3_5f546d59-2381-4061-a81a-05be70879cd2);
+
+
+// Procedure to display current counter for debug reasons.
+PROC
+PROC_CCO_DisplayCounter((CHARACTER)_Caster)
+AND
+    GetUUID(_Caster, _CasterUUID)
+AND
+    Concatenate("MesmerCloneCounter_", _CasterUUID, _CounterName)
+AND
+    DB_GlobalCounter(_CounterName, _Count)
+AND
+    ConcatenateInteger("Counter is: ", _Count, _CountText)
+THEN
+    DebugText(_Caster, _CountText);
+
+//END_REGION
+EXITSECTION
+
+ENDEXITSECTION
+ParentTargetEdge "__Start"

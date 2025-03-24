@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="7" revision="1" build="3"/>
+    <region id="Progressions">
+        <node id="root">
+            <children>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,2,1);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(HeavyArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons)"/>
+                    <attribute id="Level" type="uint8" value="1"/>
+                    <attribute id="Name" type="LSString" value="Mesmer"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(7aea6e79-0b8d-4a48-8f9c-ea6debfdd9c7,2,0);SelectSpells(365e305d-5903-4b82-845a-c02bd42127ce,2,0)"/>
+                    <attribute id="TableUUID" type="guid" value="3d4d07e7-3f82-498d-b70c-81605bb9411e"/>
+                    <attribute id="UUID" type="guid" value="33712e9c-5d65-4552-aba7-fa1952365d01"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,2,1);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(HeavyArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons)"/>
+                    <attribute id="IsMulticlass" type="bool" value="true"/>
+                    <attribute id="Level" type="uint8" value="1"/>
+                    <attribute id="Name" type="LSString" value="Mesmer"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(7aea6e79-0b8d-4a48-8f9c-ea6debfdd9c7,2,0);SelectSpells(365e305d-5903-4b82-845a-c02bd42127ce,2,0)"/>
+                    <attribute id="TableUUID" type="guid" value="3d4d07e7-3f82-498d-b70c-81605bb9411e"/>
+                    <attribute id="UUID" type="guid" value="6c232b62-e624-46ac-9874-f13b89e60e81"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,1,1)"/>
+                    <attribute id="Level" type="uint8" value="2"/>
+                    <attribute id="Name" type="LSString" value="Mesmer"/>
+                    <attribute id="PassivesAdded" type="LSString" value="IllusoryClones"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(e056c664-5787-4258-aae3-c66c9690276c,1,0)"/>
+                    <attribute id="TableUUID" type="guid" value="3d4d07e7-3f82-498d-b70c-81605bb9411e"/>
+                    <attribute id="UUID" type="guid" value="3c3dd90f-2c31-4ff1-9481-bd51be030ebd"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,2,2)"/>
+                    <attribute id="Level" type="uint8" value="3"/>
+                    <attribute id="Name" type="LSString" value="Mesmer"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(921fba0e-8442-47c5-b56f-1566d0310a8c);AddSpells(7374f315-3032-4c39-ac02-7102fe6d02ce);AddSpells(d4a39ac6-127d-49b7-a2bc-79874e732177);AddSpells(96c84e15-fe83-4885-b13a-f41644876918);AddSpells(13e08df9-426b-49b5-b8cf-5b8990e22e4e)"/>
+                    <attribute id="TableUUID" type="guid" value="3d4d07e7-3f82-498d-b70c-81605bb9411e"/>
+                    <attribute id="UUID" type="guid" value="e910b2b2-b541-47b3-be68-73501311723f"/>
+                    <children>
+                        <node id="SubClasses">
+                            <children>
+                                <node id="SubClass">
+                                    <attribute id="Object" type="guid" value="09a70fb3-7c00-44fe-8d17-34dfaab9ce4c"/>
+                                </node>
+                                <node id="SubClass">
+                                    <attribute id="Object" type="guid" value="e0173edb-9b9d-469e-b880-04449f17ad85"/>
+                                </node>
+                                <node id="SubClass">
+                                    <attribute id="Object" type="guid" value="a955fc9b-f7ee-41cd-bc03-b0ea814af0af"/>
+                                </node>
+                                <node id="SubClass">
+                                    <attribute id="Object" type="guid" value="c42d82e5-19bd-40b2-b7f1-f7a942cf9af7"/>
+                                </node>
+                            </children>
+                        </node>
+                    </children>
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,1,2)"/>
+                    <attribute id="Level" type="uint8" value="4"/>
+                    <attribute id="Name" type="LSString" value="Mesmer"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(ae714eba-42ff-4c07-a089-867af9c9c229)"/>
+                    <attribute id="TableUUID" type="guid" value="3d4d07e7-3f82-498d-b70c-81605bb9411e"/>
+                    <attribute id="UUID" type="guid" value="f7aa1a70-53ef-4fdb-977e-35b332270fbb"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="AllowImprovement" type="bool" value="true"/>
+                    <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,2,3)"/>
+                    <attribute id="Level" type="uint8" value="5"/>
+                    <attribute id="Name" type="LSString" value="Mesmer"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(b19f8233-5303-486d-8bf8-2d550e8b67b2)"/>
+                    <attribute id="TableUUID" type="guid" value="3d4d07e7-3f82-498d-b70c-81605bb9411e"/>
+                    <attribute id="UUID" type="guid" value="3a44e4a7-9d0a-4c04-bbab-d168c2d0b99c"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="3"/>
+                    <attribute id="Name" type="LSString" value="Chronomancer"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="452b74c8-d357-43a1-8748-5ab351fc01a7"/>
+                    <attribute id="UUID" type="guid" value="9641eaa4-e1a1-4186-b3b3-3e349a117844"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="3"/>
+                    <attribute id="Name" type="LSString" value="Mirage"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="da553557-728b-4f5f-a275-d734248c37b0"/>
+                    <attribute id="UUID" type="guid" value="b7c5d693-0aba-406a-9535-376a25460a40"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="3"/>
+                    <attribute id="Name" type="LSString" value="Virtuoso"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="61d5c83d-a8c1-4690-8231-eda53ba244dc"/>
+                    <attribute id="UUID" type="guid" value="76cc5c88-5825-42b2-86ce-8e71eb92312c"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="3"/>
+                    <attribute id="Name" type="LSString" value="Illusionist"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="bec62cc4-9795-4cee-86e9-d5f23f1fa7ab"/>
+                    <attribute id="UUID" type="guid" value="809f038a-6527-42b2-a688-ca9b2453327b"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

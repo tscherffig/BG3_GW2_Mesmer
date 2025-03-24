@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="7" revision="1" build="3"/>
+    <region id="SpellLists">
+        <node id="root">
+            <children>
+                <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="New_Stat_0"/>
+                    <attribute id="Spells" type="LSString" value="Target_ShockingGrasp;Target_TrueStrike"/>
+                    <attribute id="UUID" type="guid" value="36ed1c8d-b1a9-470a-afe8-1da3406b386a"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="New_Stat_1"/>
+                    <attribute id="Spells" type="LSString" value="Zone_BurningHands;Target_Jump"/>
+                    <attribute id="UUID" type="guid" value="cb75c1e8-f0cc-4454-87d0-6e13b9f0ae7b"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="New_Stat_2"/>
+                    <attribute id="Spells" type="LSString" value="Target_CureWounds;Target_Longstrider"/>
+                    <attribute id="UUID" type="guid" value="921fba0e-8442-47c5-b56f-1566d0310a8c"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="New_Stat_3"/>
+                    <attribute id="Spells" type="LSString" value="Projectile_FireBolt"/>
+                    <attribute id="UUID" type="guid" value="ae714eba-42ff-4c07-a089-867af9c9c229"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="New_Stat_4"/>
+                    <attribute id="Spells" type="LSString" value="Shout_Aid"/>
+                    <attribute id="UUID" type="guid" value="b19f8233-5303-486d-8bf8-2d550e8b67b2"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="Mesmer cantrips (Charisma)"/>
+                    <attribute id="Spells" type="LSString" value="Target_ViciousMockery;Shout_BladeWard;Target_MageHand;Target_Friends;Target_Light;Target_MinorIllusion;Projectile_Mesmer_SpatialSurge"/>
+                    <attribute id="UUID" type="guid" value="7aea6e79-0b8d-4a48-8f9c-ea6debfdd9c7"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="Mesmer spells level 1"/>
+                    <attribute id="Spells" type="LSString" value="Zone_Mesmer_IllusionaryWave;Target_Bane;Target_DissonantWhispers;Shout_Mesmer_TestSpell"/>
+                    <attribute id="UUID" type="guid" value="365e305d-5903-4b82-845a-c02bd42127ce"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="Mesmer Clone Spells"/>
+                    <attribute id="Spells" type="LSString" value="Shout_Mesmer_Shatter_Container"/>
+                    <attribute id="UUID" type="guid" value="e056c664-5787-4258-aae3-c66c9690276c"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="Mesmer spells level 2"/>
+                    <attribute id="Spells" type="LSString" value="Target_Mesmer_Decoy;Target_Mesmer_MirrorImages;Shout_Mesmer_Mantra_Of_Pain;Shout_Mesmer_Mantra_Of_Distraction;Shout_Mesmer_Mantra_Of_Concentration;Target_Mesmer_IllusionaryLeap;Target_Mesmer_IllusionaryRiposte;Projectile_Mesmer_MirrorBlade;Target_Mesmer_MindStab;Target_Mesmer_PhaseRetreat;Zone_Mesmer_ConfusingImages;Projectile_Mesmer_WindsOfChaos;Shout_Mesmer_ChaosArmor;Shout_Mesmer_ThePrestige"/>
+                    <attribute id="UUID" type="guid" value="7374f315-3032-4c39-ac02-7102fe6d02ce"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="Mesmer spells level 3"/>
+                    <attribute id="UUID" type="guid" value="e419fd62-6d9f-49a9-8f5c-1000c0d31982"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="Mesmer spells level 4"/>
+                    <attribute id="Spells" type="LSString" value="Target_Mesmer_Feedback;Wall_Mesmer_Veil;Target_Mesmer_IllusionOfLife"/>
+                    <attribute id="UUID" type="guid" value="d4a39ac6-127d-49b7-a2bc-79874e732177"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="Mesmer Chain Attacks Mind"/>
+                    <attribute id="Spells" type="LSString" value="Target_Mesmer_MindSlash;Target_Mesmer_LaceratingChop;Target_Mesmer_Psycut;Shout_Mesmer_MindTheGap"/>
+                    <attribute id="UUID" type="guid" value="96c84e15-fe83-4885-b13a-f41644876918"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="Mesmer Weapon Attacks"/>
+                    <attribute id="Spells" type="LSString" value="Target_Mesmer_PhantasmalSwordsman"/>
+                    <attribute id="UUID" type="guid" value="13e08df9-426b-49b5-b8cf-5b8990e22e4e"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>
