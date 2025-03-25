@@ -1,0 +1,8 @@
+new entry "CLONE_FX"
+type "StatusData"
+data "StatusType" "EFFECT"
+data "DisplayName" "h76a5c33ag6042g5f86g85feg00aa7c20ce1f;1"
+data "Description" "h73294be9g1edeg0e95ge83cgd0e167108603;1"
+data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator;ApplyToDead"
+data "StatusEffect" "50ada10b-b74b-4eb1-a61d-5f2df7ed9bfa"
+

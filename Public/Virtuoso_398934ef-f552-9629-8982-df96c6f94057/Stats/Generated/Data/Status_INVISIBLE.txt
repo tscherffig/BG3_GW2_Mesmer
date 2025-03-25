@@ -1,0 +1,11 @@
+new entry "MESMER_THE_PRESTIGE"
+type "StatusData"
+data "StatusType" "INVISIBLE"
+using "INVISIBILITY"
+data "DisplayName" "hc21f2305g5ad2g1498g2871gec34c1f5577b;1"
+data "Icon" "Action_UmbralCloak"
+data "SoundStop" "Spell_Status_UmbralCloak_End"
+data "StatusPropertyFlags" "UnavailableInActiveRoll;ExcludeFromPortraitRendering"
+data "OnRemoveFunctors" "CreateExplosion(Projectile_Mesmer_ThePrestige_Removed)"
+data "StatusEffect" "bcb8586f-b17d-42f6-8ea9-210952604780"
+

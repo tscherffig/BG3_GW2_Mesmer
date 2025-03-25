@@ -1,0 +1,281 @@
+<?xml version="1.0"?>
+<contentList xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <content contentuid="h9370ba04g63f8g9502g19d8gde7abc42df17" version="2">Mesmer</content>
+  <content contentuid="hf3fd9b2bge7cfg2f9age7cdge9c79b96d8dd" version="2">Mirage</content>
+  <content contentuid="h640b1f2ag84c2g0845g6c77g0c5c380dbbe4" version="2">Chronomancer</content>
+  <content contentuid="h05f975f7gd7bfge5cfg62e7g522c0ca70ca3" version="2">Virtuoso</content>
+  <content contentuid="hd6b99ab3g0078g2185gbf6ega43c3886b1f4" version="1">Illusionary Wave</content>
+  <content contentuid="h0c11d607g07f3g1cc3g6bffg8de32f8ea4eb" version="2">Illusionary Wave</content>
+  <content contentuid="h9cdf239agb093gef42g4c0ag8b8918c753f1" version="3">Illusionist</content>
+  <content contentuid="h97f9704eg785cge3b5gf344gf09a2d925f9c" version="1">Illusory Clone</content>
+  <content contentuid="h10357ff0g5ac9g1418gb36cg566dfde03fa1" version="1">Mesmer: Clone</content>
+  <content contentuid="he47bebedga116g48c2gfc87gbd5838e9c4e9" version="1">Summon a Clone</content>
+  <content contentuid="hd6566baag20d5g0273g1b68gc875caa5c039" version="1">Ghost Dog</content>
+  <content contentuid="h9f99333dgf4bdgdf33g2e9dg51d28f320d03" version="7">Illusory Clone</content>
+  <content contentuid="h76a5c33ag6042g5f86g85feg00aa7c20ce1f" version="1">%%%Clone FX</content>
+  <content contentuid="h73294be9g1edeg0e95ge83cgd0e167108603" version="1">%%%Technical status to apply the clone shader.</content>
+  <content contentuid="h25153699gd65cg12efgc338gf66c8e2d3cfd" version="1">Illusory Clones</content>
+  <content contentuid="h77a2d6bfge2c1g12ecgbb0ega4d9edbe3d8f" version="3">After you cast a spell or higher you can &lt;LSTag Type="Spell" Tooltip="Target_Mesmer_SummonClone"&gt;Fly&lt;/LSTag&gt; as a &lt;LSTag Tooltip="Bonus_Action"&gt;bonus action&lt;/LSTag&gt; until the end of your turn.</content>
+  <content contentuid="he8b7f5cfg164cge1e3g682dg70eb5e6de92b" version="1">Summon Clone</content>
+  <content contentuid="h477d5fc2ga8cbg713dgb782g80b32618c8ba" version="1">Grant the ability to summon an illusory clone.</content>
+  <content contentuid="h87edd4fdgee78gc2f2g6291g617decd16392" version="1">Summon Clone</content>
+  <content contentuid="h6d57e234g044dgabcagaa7dg60197da6a40f" version="1">Grant the ability to summon an illusory clone.</content>
+  <content contentuid="h217f241fg0c86g1e6agc53ag34683ffd2793" version="2">Shatter: Mind Wrack</content>
+  <content contentuid="h55415ec8g6660gb6d9g3a85gcc74e6fd9693" version="2">Shatter: Mind Wrack Desc</content>
+  <content contentuid="h431cae62g79c4g8a71gf697gfb87b0402971" version="1">Death Burst</content>
+  <content contentuid="h80010bbdga940g9c29g52d3g2ffa264ae0d3" version="1">Explode in a burst of fire.</content>
+  <content contentuid="h45aaab28g3eddg4725ge377g632cc0971543" version="2">Shatter1</content>
+  <content contentuid="h4face413g43d3gf6d0g2826gfc21a07dd53f" version="1">You can use the Shatter feature.</content>
+  <content contentuid="h538e4ec8gfa11gdf1dg4758g315c27811b13" version="1">Shatter Clones</content>
+  <content contentuid="ha076e804gd8bfg899egd13ag3f063c2d5821" version="1">Shatter Clones Desc</content>
+  <content contentuid="h7bfdebf2g4c76gdc9dg1982g740878e3d1ce" version="2">Shatter: Cry of Frustration</content>
+  <content contentuid="hb647bf04g382cg32cegd7c4g503453ad2d5a" version="2">Shatter: Cry of Frustration</content>
+  <content contentuid="h7782a6a8gee6fg0613g021cg92bb45b23378" version="2">Shatter: Diversion</content>
+  <content contentuid="hdb5fcad4g4185gfc83gc0e1gf3c6d064b7a9" version="1">Shatter: Diversion</content>
+  <content contentuid="h82214cd1g50bfgd0b3g1f7fg2c509730cb46" version="2">Clone Summoned</content>
+  <content contentuid="h5ffdd600g5eccg4148g496fg194f73fcd85d" version="2">Affected entity has a [1] active clone.</content>
+  <content contentuid="h0db84d48g0be9g619bg427agc38771d686a5" version="1">Scarlet Remittance</content>
+  <content contentuid="he7141c94g29aegc57dg17c4gedee2809f6d9" version="1">Gain a +[1] bonus to &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt;, damage, and &lt;LSTag Tooltip="SpellDifficultyClass"&gt;Spell Save DC&lt;/LSTag&gt; for every foe you slay, up to a maximum of +[2].</content>
+  <content contentuid="h5d9054c5gc0beg0bdcg2c80gb9c46e414c41" version="1">Clone Summoned</content>
+  <content contentuid="h41728f65g48eeg6577g1a44g789a2259a5f4" version="1">Affected entity has a [1] active clone.</content>
+  <content contentuid="h8b37e9b6g47d1g93b1g27fbg678aa76ad31d" version="2">Mesmer: Clone2</content>
+  <content contentuid="h01e02a82g78a5g544ag161dgdda40e2b4305" version="2">Summon a Clone2</content>
+  <content contentuid="h790d8802g5274gcd17g675bg49b9924556d0" version="1">Confusion</content>
+  <content contentuid="hf5a56c81ge497g117bg57bfg65fac88a71a6" version="1">Takes [1] per turn and additional [2] damage each time they cast a spell.</content>
+  <content contentuid="h4cdb91abg1607g7828g423egeba4aa50e40d" version="1">Death Burst</content>
+  <content contentuid="ha2e5fe74gf0efg15d4ga76dg16c4d6596677" version="1">Explode in a burst of fire.</content>
+  <content contentuid="hc3a7027ag7b9bg6f6fg95e5g407de933a8f6" version="1">Confusion</content>
+  <content contentuid="haca2e3c1g5475g90aag8da7g228a88944bb9" version="1">You take [1] when you cast a spell.</content>
+  <content contentuid="hc4d88493gb547gb5bagd878gc72d212af257" version="1">Mesmer_TestSpell</content>
+  <content contentuid="h57a01067g326bga8dbg6a92g577d0a7034c3" version="1">Mesmer_TestSpell</content>
+  <content contentuid="h59c22396g6827g742eg93ebg514b31f379ef" version="2">Decoy</content>
+  <content contentuid="h751c8ef2g5017gb01cg99f8g2afcc46fdea3" version="2">Decoy Dsc</content>
+  <content contentuid="h3bc8b83fg49e7ga1e8gf1c0gbd6ae927c33d" version="1">Mirror Images</content>
+  <content contentuid="hd96451b5ga9acge34eg8a65gd0bca9990258" version="1">Mirror Images Dsc</content>
+  <content contentuid="h4f17b1e7g4db8g75e0g50f4g63134c824aae" version="1">Feedback</content>
+  <content contentuid="h4976907bg04e8g1116gd3e2g405979d20c82" version="1">Feedback</content>
+  <content contentuid="h39bf8dc4g3887ge1c0g87a2g855157b047d4" version="1">Create a dome around your foes that reflects projectiles.</content>
+  <content contentuid="h699cad33g18d6g0de3gb154g97920bce06d0" version="1">Veil</content>
+  <content contentuid="h4c6fb33bg6f1bgc94fgee24g43dde857623a" version="2">Veil</content>
+  <content contentuid="h98cc2610g7df0g8faeg2d2cg672bd05da3f5" version="1">Veil: Invisibility</content>
+  <content contentuid="h1f7c14a6ga823gcaf9g0dbag434a8d7a31f3" version="1">A blazing wall of fire that deals [2] to anyone within [1].</content>
+  <content contentuid="h21ecf97cg7e20g1454gffc0gacd03a58d7ec" version="1">Veil: Invisibility Aura</content>
+  <content contentuid="ha0cb2a01ge0c3g5d2fg679egad27a58587b2" version="1">Engulfed in a wall of blazing flames. The affected entity takes [2] per turn it stays within [1] of the fire.</content>
+  <content contentuid="h5e61cd62g9901g7f6fg8777ge9dd28ed1b77" version="1">%%% EMPTY</content>
+  <content contentuid="h563d1f27gc271gba7cg784agaced0fd4f3a8" version="1">Illusion of Life</content>
+  <content contentuid="h60b79e58g054cge800g3b0fg016589de284a" version="1">&lt;LSTag Type="Status" Tooltip="CONFUSION"&gt;Confuse&lt;/LSTag&gt; a group of creatures, causing them to attack at random, wander around aimlessly, and occasionally skip turns in the stupor.</content>
+  <content contentuid="h937d2be8gec13g0a04g7feeg84232b286ae7" version="3">Illusion of Life: Downed</content>
+  <content contentuid="h94f4db61gb682g087eg7280g2d2115cd2ea8" version="1">Illusion of Life</content>
+  <content contentuid="hd8501c42gaef8g7759g72f7g6157ca83c795" version="1">The next time damage would reduce the affected entity to 0 &lt;LSTag Tooltip="HitPoints"&gt;hit points&lt;/LSTag&gt;, it remains conscious with [2] hit point left.</content>
+  <content contentuid="hc4c6c0edg7a40gc08cg7063gd1dfdc396398" version="1">Illusion of Life</content>
+  <content contentuid="h6edf1e4bg6c09g1834g5ef2g53a6f7dc846b" version="1">When you kill a creature, your next &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; will be a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt;. Once spent, this effect refreshes after a &lt;LSTag Tooltip="LongRest"&gt;Long Rest&lt;/LSTag&gt;.</content>
+  <content contentuid="h0ce78d10g4c37g2857g14abg99b607636b84" version="1">%%% Illusion of Life Damage</content>
+  <content contentuid="h35a8d951g4d3fgac2cgc472g40f4bcfa2e65" version="1">%%% Illusion of Life Damage</content>
+  <content contentuid="he3e8d00bg0517g0d82g1b9fg0586d0de5e44" version="1">Illusion of Life</content>
+  <content contentuid="hf2943b20g54f4g1179g840cgebcf25605866" version="1">When you kill a creature, your next &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; will be a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt;. Once spent, this effect refreshes after a &lt;LSTag Tooltip="LongRest"&gt;Long Rest&lt;/LSTag&gt;.</content>
+  <content contentuid="h9515c691gaeb5g5d19g5acbg334eb8602627" version="1">Mantra of Pain</content>
+  <content contentuid="ha63996a7g8acbgdc54gc4f8g6f0417ad6f29" version="2">Mantra of Pain DSC</content>
+  <content contentuid="h0f1b17cag5564gaa44g51d8g572d18a3becd" version="1">When you deal spell damage, gain [1] &lt;LSTag Type="Status" Tooltip="MAG_CHARGED_LIGHTNING"&gt;Lightning Charge&lt;/LSTag&gt;. While attuned to Kereska's Bolt you can cast &lt;LSTag Type="Spell" Tooltip="Projectile_ChainLightning"&gt;Chain Lightning&lt;/LSTag&gt; and &lt;LSTag Type="Spell" Tooltip="Zone_LightningBolt"&gt;Lightning Bolt&lt;/LSTag&gt;.</content>
+  <content contentuid="h36ec9a57g3414g15f7gcd4bg9df06bcef6cb" version="1">Crackling with Kereska's Lightning </content>
+  <content contentuid="hdfaf4b4fg4a55g625fg9350g66638c9b95f3" version="1">Affected entity has &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Lightning damage. Its lightning spells deal additional Lightning damage equal to its &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt;.When it deals spell damage, it gains [1] &lt;LSTag Type="Status" Tooltip="MAG_CHARGED_LIGHTNING"&gt;Lightning Charge&lt;/LSTag&gt;. While attuned to Kereska's lightning, it can cast &lt;LSTag Type="Spell" Tooltip="Projectile_ChainLightning"&gt;Chain Lightning&lt;/LSTag&gt; and &lt;LSTag Type="Spell" Tooltip="Zone_LightningBolt"&gt;Lightning Bolt&lt;/LSTag&gt;.</content>
+  <content contentuid="h9fd3b1b0g226cg5c97g4a25g5e83fa811000" version="1">Dizzy</content>
+  <content contentuid="hd0f85173g37c9g64a6g50dbgd7187982b577" version="1">GW DAZE</content>
+  <content contentuid="h28e1f115gee6fg67a4gf081g8c78642b24c8" version="1">Shatter Clones</content>
+  <content contentuid="h00accdebg8f8dge846g9ee6gd20a1f34f881" version="1">Shatter Clones Desc</content>
+  <content contentuid="h66549f31g0a04g1761g73ebg0bd4bad33cbb" version="1">Shatter: Mind Wrack</content>
+  <content contentuid="he8b0d16bga71ag49a3gaca6g1dbed398cd3c" version="1">Shatter: Mind Wrack Desc</content>
+  <content contentuid="h288c5f70gb4ffg169agd08agc2c63b413519" version="1">Shatter: Cry of Frustration</content>
+  <content contentuid="h00e76b35g3809g5004gff65g602c8adbce26" version="1">Shatter: Cry of Frustration</content>
+  <content contentuid="h8507af9cg16c9g464eg4644g3231d9401875" version="1">Shatter: Diversion</content>
+  <content contentuid="h8fa63fe3ga5e3gd2c2g4ac5g2f1eac636deb" version="1">Shatter: Diversion</content>
+  <content contentuid="h28ce3631gc45bgcd66g733bg611ce7b9d076" version="2">Power Spike</content>
+  <content contentuid="hc3c642dbgc1ceg021cgb4b8gcd31b225fce1" version="1">Make a pillar of divine fire roar down from the heavens like the wrath of affronted angels.</content>
+  <content contentuid="h8573625ag4b8agfeaeg3c92g2cb15f96b4b3" version="3">Mantra of Pain Charges</content>
+  <content contentuid="hd467e628g99bdg0117g401ega627bb96c6d1" version="1">Grant the ability to summon an illusory clone.</content>
+  <content contentuid="h15ace566gb9eeg9281gb829gafd9192e9bca" version="1">Power Spike</content>
+  <content contentuid="h9bcb7d3fge598g8b73g5173g06721d8ad57a" version="1">Affected entity is &lt;LSTag Tooltip="Vulnerable"&gt;Vulnerable&lt;/LSTag&gt; to all damage, but when it attacks it heals [1].</content>
+  <content contentuid="h630b2507gcf8ag2ebagbb76gce785fa425cf" version="2">Mantra of Pain 1 Ammo</content>
+  <content contentuid="hfc6eb724ga9a3g6162g0b22g019cb44d263b" version="1">Grant the ability to summon an illusory clone.</content>
+  <content contentuid="h4bd3c695g4f8fg8204gb5fdg7082a3749b35" version="1">Mantra of Distraction</content>
+  <content contentuid="h2da8c8d1gaf63gd65eg7c40gab3a03b9baa8" version="1">Mantra of Distraction DSC</content>
+  <content contentuid="hfa8b3e26gce43ga8abg0c4dg39af431eab98" version="1">Mantra of Distraction Charges</content>
+  <content contentuid="h92b92d1fgc302g849ag823eg7fe73ebd31c9" version="1">Grant the ability to summon an illusory clone.</content>
+  <content contentuid="h62996814g9c56g5c95g5bb8g4edce991c706" version="2">Power Lock</content>
+  <content contentuid="h2e9b8439g4672g8d68g3eeeg7a53b8a18d39" version="1">Make a pillar of divine fire roar down from the heavens like the wrath of affronted angels.</content>
+  <content contentuid="hd9c6e4fcgc808g8e95g6843gb76d4cb96a20" version="2">Mantra of Concentration</content>
+  <content contentuid="h0dea6a2bg1d94gb452g40d1g8a890b69d91d" version="2">Mantra of Concentration DSC</content>
+  <content contentuid="hf7fe708ag15cbg11bfg03cdg7e26b262533d" version="1">Mantra of Concentration Charges</content>
+  <content contentuid="h641f2379gfd3bg087dg0498g10d6e454ddd7" version="1">Grant the ability to summon an illusory clone.</content>
+  <content contentuid="h43746781gcad0gc17cg55edg7387ebb08470" version="1">Power Break</content>
+  <content contentuid="hf2cdc395gba4dg006fg63d3g463bcbec4665" version="1">Power Break DSC</content>
+  <content contentuid="hc8777becgc906g01e5g7f9cg39035529aeac" version="2">MESMER_CLONE_ALIVE</content>
+  <content contentuid="h797d0184g7723g41bcgd007gba533ab1a494" version="1">Grant the ability to summon an illusory clone.</content>
+  <content contentuid="h8c19ee74g2cd7g857eg5c3dg7b34611e5a8a" version="1">MESMER_CLONE_LIMIT</content>
+  <content contentuid="hd541f266gda91gbfa6g77c9g55a788bfcae9" version="1">Grant the ability to summon an illusory clone.</content>
+  <content contentuid="h2d054a6ag8f8bg07f5g3d38g0fabbb498154" version="1">MESMER_CLONE_ALIVE_TECHNICAL</content>
+  <content contentuid="hcdeffe5cged0eg1e1cg3a85gec1dbbde277c" version="1">Grant the ability to summon an illusory clone.</content>
+  <content contentuid="h0d0fa926g9ff6g03d7gb9a7ge47dc834d4af" version="1">MESMER_CLONE_ONDEATH</content>
+  <content contentuid="h5afe0653g9c36ga1e3ge052g2fba1cad1c5b" version="1">MESMER_CLONE_ONDEATH DSC</content>
+  <content contentuid="h1e13551agdaaegfec2g034ag53f3dfdad1fa" version="1">The number you need to &lt;LSTag Tooltip="AttackRoll"&gt;roll&lt;/LSTag&gt; a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt; while attacking is reduced by 1. This effect can stack.</content>
+  <content contentuid="h62ab7994geb60gd825g3da0g8965be400f91" version="1">Fury</content>
+  <content contentuid="h7283d4f2gb1a2g9405g1c19g00ba00582c2b" version="1">Stacking(turns) buff that heals by proficiency of the source every turn.</content>
+  <content contentuid="hced2cefagced5g056dgbc4bge0ba84aa026e" version="1">Regeneration</content>
+  <content contentuid="hbd8ffe21g5725g7edag7813g272e7f16638d" version="1">Weak</content>
+  <content contentuid="h97f4eb03gf36eg9f4dgf84dg400e5511899d" version="1">Your next weapon attack only deals half damage.</content>
+  <content contentuid="hbe41b9a6gd399gaa98g933cg87abf410b09f" version="1">Crippled</content>
+  <content contentuid="heda165b1g5cebg46d7g83abg015476dbf30a" version="1">-50% Movement Speed</content>
+  <content contentuid="h8f3a0992g2d6dgce10g58f0g4e9875d66743" version="1">Vulnerable</content>
+  <content contentuid="h8defed05gf71cg0aa7gd31eg1b985ca32139" version="1">Your next weapon attack only deals half damage.</content>
+  <content contentuid="h79a1ffe8g5ac2gcf10g1641g0102868be8b1" version="2">Quickness</content>
+  <content contentuid="h5fa7712age057gc54cg3862gc88873248068" version="1">Creature can take one additional action per turn.</content>
+  <content contentuid="h6e20e1f6g053fgc947g1abdg692904836f08" version="1">Mind Slash</content>
+  <content contentuid="h66bf9b45g3117gf520g2142g92861d1488a9" version="1">Possibly knock your enemy &lt;LSTag Type="Status" Tooltip="PRONE"&gt;Prone&lt;/LSTag&gt;.</content>
+  <content contentuid="hb3a637d0ga3fag682bgc465g0e9e03bf9c41" version="1">Mind Gash</content>
+  <content contentuid="hff0ce1d7g7d9dg6f94g79acg089c6bc53082" version="1">Possibly knock your enemy &lt;LSTag Type="Status" Tooltip="PRONE"&gt;Prone&lt;/LSTag&gt;.</content>
+  <content contentuid="h28d81259g59f9ge7e6gf5e6g5e666629d9f6" version="1">Mind Spike</content>
+  <content contentuid="h915de5a9g7180g00f5g05c0g3ba1fa4dac46" version="2">MESMER_CHAIN_ATTACK_MIND_GASH_UNLOCK</content>
+  <content contentuid="hc4d97defg3869g25f2g015agc7092b78ba28" version="1">Grant the ability to summon an illusory clone.</content>
+  <content contentuid="h095696f4g14a9g862cgf3a6gef05f791db83" version="1">Possibly knock your enemy &lt;LSTag Type="Status" Tooltip="PRONE"&gt;Prone&lt;/LSTag&gt;.</content>
+  <content contentuid="h52f81e11g532cge47dg3272g4ef55fc5f0a8" version="1">MESMER_CHAIN_ATTACK_MIND_SPIKE_UNLOCK</content>
+  <content contentuid="he8499dc9ge977g941cg849cgbe2c05e05bff" version="1">Grant the ability to summon an illusory clone.</content>
+  <content contentuid="hde4f919cg3fa0g0663g934bgcdc967650b68" version="2">Ethereal Chop</content>
+  <content contentuid="h570eb6b2g7808gf4e7g1406g149c2efbed4b" version="1">Possibly knock your enemy &lt;LSTag Type="Status" Tooltip="PRONE"&gt;Prone&lt;/LSTag&gt;.</content>
+  <content contentuid="h9d2267d2g54c9g7599g20bcg11d66900d49f" version="2">Lacerating Chop</content>
+  <content contentuid="h3e849ba6g933fg2a38gd063g6e6eab2a1135" version="1">Possibly knock your enemy &lt;LSTag Type="Status" Tooltip="PRONE"&gt;Prone&lt;/LSTag&gt;.</content>
+  <content contentuid="h4d26de18g5261ga8d3g8f98g5399ae81053c" version="2">Mirror Strikes</content>
+  <content contentuid="he2015fe1g1051gd7f9ga9a6ge7a20d64b039" version="1">Possibly knock your enemy &lt;LSTag Type="Status" Tooltip="PRONE"&gt;Prone&lt;/LSTag&gt;.</content>
+  <content contentuid="h5322b075gc638gf0f0g416bgec8bd038d1b0" version="1">MESMER_CHAIN_ATTACK_ETHEREAL_CHOP_UNLOCK</content>
+  <content contentuid="hb47af173ge59bgf452gb093g09e9135e10e9" version="1">Grant the ability to summon an illusory clone.</content>
+  <content contentuid="habdb0d11gaa3dgcf24g3d2bg1d193b8cc639" version="1">MESMER_CHAIN_ATTACK_MIRROR_STRIKES_UNLOCK</content>
+  <content contentuid="h4e0cdeb2ge267g5934g75bbga5b3813ddd69" version="1">Grant the ability to summon an illusory clone.</content>
+  <content contentuid="h23a0025fgfabdg8680g7c54g292e584b7543" version="2">MESMER_CHAIN_ATTACK_PSYSTRIKE_UNLOCK</content>
+  <content contentuid="h88fff0c7g67f3g3fd9g6418gb0286895ce25" version="1">Grant the ability to summon an illusory clone.</content>
+  <content contentuid="h7c7e5155gb46ag3ab0g905ag30d2e4abb3da" version="2">MESMER_CHAIN_ATTACK_MIND_PIERCE_UNLOCK</content>
+  <content contentuid="h39331934g6bd4g76a7g421cg731823ef5a5c" version="1">Grant the ability to summon an illusory clone.</content>
+  <content contentuid="h79b84f10g376dg8ee8g15c3gb64738dcffe0" version="2">Psystrike</content>
+  <content contentuid="h0c58719cg5f19ge149gd4bfg12754d77b1d8" version="1">Possibly knock your enemy &lt;LSTag Type="Status" Tooltip="PRONE"&gt;Prone&lt;/LSTag&gt;.</content>
+  <content contentuid="hf1ce53ccg65edgcae4geeacg06d31745e66b" version="2">Psycut</content>
+  <content contentuid="hcd5efe55g57cfg4a8cg8a92gee28cd040d2d" version="1">Possibly knock your enemy &lt;LSTag Type="Status" Tooltip="PRONE"&gt;Prone&lt;/LSTag&gt;.</content>
+  <content contentuid="hc2b43f38g7a1cg7c1egfe62gf77793033ef4" version="2">Mind Pierce</content>
+  <content contentuid="h0afd712fg819bg667ag6b17geeff859bbcde" version="1">Possibly knock your enemy &lt;LSTag Type="Status" Tooltip="PRONE"&gt;Prone&lt;/LSTag&gt;.</content>
+  <content contentuid="h4ed6e636g6939g4a0bg6e15gb3c432973f36" version="1">Stacking(turns) buff that heals by proficiency of the source every turn.</content>
+  <content contentuid="h461baa4eg11d7gcaa1ge67bg95a94689d37b" version="1">Distortion</content>
+  <content contentuid="hc58d19f1g221eg1d65gf1ddg7a8d04ceb5ff" version="1">Blurred Frenzy</content>
+  <content contentuid="hb9aa14d5gf8c4g600dg316dgcc33650d6716" version="1">Possibly knock your enemy &lt;LSTag Type="Status" Tooltip="PRONE"&gt;Prone&lt;/LSTag&gt;.</content>
+  <content contentuid="h28797815g3a68gec41g6473gf6585b1d4b7a" version="2">Clone Leap</content>
+  <content contentuid="h58f3d103g5277gea4cg2115g971d20d11d9c" version="1">Charge forward and attack the first enemy in your way, possibly pushing them &lt;LSTag Type="Status" Tooltip="OFF_BALANCED"&gt;Off Balance&lt;/LSTag&gt;.</content>
+  <content contentuid="hef83b313g9683g6cfag4b02gf0b021f063f1" version="19">Clone</content>
+  <content contentuid="hca38f6b0g23b3gd7acg7b45g680c2f75fda6" version="1">%%% EMPTY</content>
+  <content contentuid="h09c7fd23gec91g5fbfg523agbd37e143edab" version="1">Mind the Gap</content>
+  <content contentuid="h1c6860e6gdd93gfc27gb91eg21f324fd1b2c" version="1">Strike out at all nearby foes, making separate &lt;LSTag Tooltip="AttackRoll"&gt;attack rolls&lt;/LSTag&gt; against each target. </content>
+  <content contentuid="h4faf6cebg118egf03fg1116gb56496926c55" version="1">%%% EMPTY</content>
+  <content contentuid="h73a483a5g4265gc648g7a1bg2e0ba6c69e82" version="2">Psychic Hit</content>
+  <content contentuid="hc4bb6203gc5ddgb03ag5d07g56fd20ec42af" version="2">Psychic Hit</content>
+  <content contentuid="h7d60ef0fg0847g3388g252ag9e52da7da381" version="1">Illusionary Leap</content>
+  <content contentuid="h1b2e1e19g6a6fgfc4ag69b9g77d45374b7e7" version="1">Illusionary Leap Dsc</content>
+  <content contentuid="h063fa8ebg6e35g750fg5b18g20980167e395" version="1">Torment</content>
+  <content contentuid="hcb87a14fg4fd0g959dg50e7g934a99c8f479" version="1">Takes [1] at the start of each turn and has &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt; on Constitution &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt;. &lt;br&gt;&lt;br&gt;Removed by healing.</content>
+  <content contentuid="hda085415g8e2fg5b58gc475g5f874984b233" version="1">Blurred Frenzy</content>
+  <content contentuid="h335c60f5g4396g26bagecefgb34302b807d5" version="1">Mind Slash</content>
+  <content contentuid="hcb213e67g6c1fgb92ag29c6gd2611733f71f" version="1">Mind Gash</content>
+  <content contentuid="h7e93dbd7g1bedg7ee5g9e6eg69a5db307e9f" version="1">Mind Spike</content>
+  <content contentuid="h937023d7g233cg6801g97d6gaee343aa9597" version="1">Lacerating Chop</content>
+  <content contentuid="h577a5ba7g5128g7836g28a5g43875e15ed87" version="1">Ethereal Chop</content>
+  <content contentuid="h36fd6a01g0fd0gb851g2dcagd047a932cfaa" version="1">Mirror Strikes</content>
+  <content contentuid="h69242c02gaa40gfae5g2c9bg36ec4243cb44" version="1">Psycut</content>
+  <content contentuid="h3dfdda75g90d3gbaa4g870ag5188f26b0c04" version="1">Psystrike</content>
+  <content contentuid="hc4f166ddg1894g23cagb75dg8960ececd385" version="1">Mind Pierce</content>
+  <content contentuid="ha576a1c8g8499gdf6eg7304g32f7bb93775e" version="1">Lingering Thoughts</content>
+  <content contentuid="h356cbdc8ge4ddg2b2dg2598g8b5face7f42e" version="1">Charge forward, attacking all enemies in the way and possibly knocking them &lt;LSTag Type="Status" Tooltip="PRONE"&gt;Prone&lt;/LSTag&gt;.</content>
+  <content contentuid="h4c4ee188gee6bg7a0egb951gf836353e3ced" version="1">Available only when Raging.</content>
+  <content contentuid="h70742bc4g7549g9c18g7735g74e93e55dd9d" version="2">Illusionary Leap</content>
+  <content contentuid="h4fcf42bdg4036g14b5g534cg7f25afaf3f79" version="1">Plants take maximum damage from this spell, and have &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt; on the &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt; against it. </content>
+  <content contentuid="h979f167egbc41g3b12gc36ag53527f323371" version="1">%%% EMPTY</content>
+  <content contentuid="h27c74c6cg6d58g02c8ge6a7g64abe2fa129b" version="1">Illusionary Riposte</content>
+  <content contentuid="h43632cdbg238bg0744g788cgd6c65b66cfc7" version="1">Retaliate with a formidable strike when a creature misses you with a melee attack.</content>
+  <content contentuid="h69a8be5fgcc63gc5afge19dgf93d93d27ae5" version="1">Illusionary Riposte</content>
+  <content contentuid="he5d22cfbg2b8fg1b1bgdab0g2666e4a089d0" version="1">When a creature misses you with a melee attack, you can retaliate with a powerful strike that deals an additional 1d8 damage if you are wielding a melee weapon. </content>
+  <content contentuid="h31794481g8092g6b9dga61bg1bc0e106b26c" version="1">Phantasmal Swordsman</content>
+  <content contentuid="hce0dde97g233fg633bgbd63g0674aec0b50a" version="1">PhantasmalSwordsman</content>
+  <content contentuid="hedbc24ccg6201g5f83g4d34g412234481e55" version="1">Spatial Surge</content>
+  <content contentuid="h9808ec4bg34a8g6f57g9607gf8d97cb28e27" version="1">Spatial Surge</content>
+  <content contentuid="ha8d307c4gf77fgc1a9g98dege1dc568f516f" version="1">%%% EMPTY</content>
+  <content contentuid="h1af0e8d1g19e0g7289gf1b8gcd2060c538ca" version="1">Mirror Blade</content>
+  <content contentuid="hf3f49595g2127geb2eg06eag8ac66f151309" version="1">Mirror Blade</content>
+  <content contentuid="h8a9a21ddgf1bdg5660g0fbcgb62e393f9544" version="1">Mind Stab</content>
+  <content contentuid="h314730e8g1ef4g5207gc74eg5f4a0b77d645" version="1">Mind Stab</content>
+  <content contentuid="h13429805g3e88g01c6gceebg6e7cef00076a" version="1">Confusion</content>
+  <content contentuid="h2b5d8bacgee58ga688gd6begec3862dcb09a" version="1">Takes [1] at the start of each turn and has &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt; on Constitution &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt;. &lt;br&gt;&lt;br&gt;Removed by healing.</content>
+  <content contentuid="hb785f35egccfbg2e63gb080g2cfa371830bb" version="2">Confusion on Skilluse</content>
+  <content contentuid="h3fc6c03agce65g0125g28d7g23c99737e3d1" version="1">Takes [1] at the start of each turn and has &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt; on Constitution &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt;. &lt;br&gt;&lt;br&gt;Removed by healing.</content>
+  <content contentuid="hc300138eg4373g6f85g790eg70055fa32f97" version="1">Winds of Chaos</content>
+  <content contentuid="h58223ba5g3484g2beegf5c8gff94ec67690b" version="1">Winds of Chaos</content>
+  <content contentuid="h99e417d2g2426g4920g8cf0gf7ff3db11cde" version="1">Winds of Chaos</content>
+  <content contentuid="h46eb7f5dg6d9eg15d5g8397g83eef9f86367" version="1">Winds of Chaos</content>
+  <content contentuid="h9a7b242egb2acg5601g33c0g20083c1437b6" version="1">Phase Retreat</content>
+  <content contentuid="h65b5b0f2g2e00g028egccd6g95e0b8a169c3" version="1">Phase Retreat</content>
+  <content contentuid="he206a652g432dg256cgefeeg41fffccfa7ce" version="1">Chaos Armor</content>
+  <content contentuid="h2c884b12g890cgbfe8g3733g00f8308e9304" version="1">Chaos Armor</content>
+  <content contentuid="hfcbd7bfdg6998g5a23g2097g895f3033a3ca" version="1">Give yourself positive conditions and your foe random negative conditions whenever you are struck.</content>
+  <content contentuid="hdc8c0c36g2381g36a9g2a60g381cdf2772f4" version="1">Chaos Armor</content>
+  <content contentuid="h8858b74bg6af2gd343g0e3bg3b10e94cd40f" version="1">Chaos Aura</content>
+  <content contentuid="h8a71a825g68f3g039eg9bc7ga4ff6487c7fb" version="1">Chaos Aura</content>
+  <content contentuid="h026a395cg183agee88g34a5gf0bfe94ade21" version="1">%%% Chaos Aura Random Apply</content>
+  <content contentuid="hce73d2dcgab1ag54beg1314g229a0b8f2d45" version="1">%%% Technical status; doesn't need to be destubbed.</content>
+  <content contentuid="heafab405g7618gbc17gb032g6418f00b5d99" version="2">Confusing Images</content>
+  <content contentuid="h832b2df5g5575g9a6fg1f8bgfacc592b59ec" version="2">Confusing Images</content>
+  <content contentuid="h89e07469ge630g22b4g2839g2c9dbaa30f00" version="1">Swiftness</content>
+  <content contentuid="hb3993a2fg3c03ge30fga8b9g4c831d6ece0c" version="1">Creature can take one additional action per turn.</content>
+  <content contentuid="h2911c3f0g6125g90ccg6a87g1af0372f30c2" version="1">Ignited</content>
+  <content contentuid="h5b935625g673bgfd9dg1d09g6f2ad80f1e1d" version="1">Takes [1] at the start of each turn and has &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt; on Constitution &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt;. &lt;br&gt;&lt;br&gt;Removed by healing.</content>
+  <content contentuid="h5abcd22ag9c00g3890g423egfa03756a8ed4" version="1">Stacking(turns) buff that heals by proficiency of the source every turn.</content>
+  <content contentuid="h6038b371g5760ge24bgf972g73bc5a694a5a" version="1">The Prestige</content>
+  <content contentuid="ha6975a2bg4e67ga684g02ebg4a9a06438b80" version="1">Temporal Curtain</content>
+  <content contentuid="he2901929g15c5g9f2dgbf7fgec02040652f1" version="1">Temporal Curtain</content>
+  <content contentuid="hb79beadcg80ffga489g0c61g4124b4c9603a" version="1">The Prestige</content>
+  <content contentuid="hb9940824g913agc234g5488gca4604a1ff42" version="1">The Prestige</content>
+  <content contentuid="hc21f2305g5ad2g1498g2871gec34c1f5577b" version="1">The Prestige</content>
+  <content contentuid="h1558b1b6g8fa6ge0bcgc082g4807e6f4281b" version="1">%%% The Prestige Removed</content>
+  <content contentuid="h0bd691eege457gc2eag4644g6614d7d0c667" version="1">%%% The Prestige Removed</content>
+  <content contentuid="haae20f1cgafa4g2daegf444gf56f6e69529f" version="1">%%% EMPTY</content>
+  <content contentuid="h8665ed67gf9abgce36gcef4g6a40a6dfd7d0" version="1">The Prestige ended</content>
+  <content contentuid="h52f53767gd319g72b8g6299g1cf65aabde59" version="1">The Prestige ended</content>
+  <content contentuid="hc2c6e759gb6a3g86d1gf871gb12b9892eb0e" version="1">Flying Cutter</content>
+  <content contentuid="h6450ecbbgc42egd052g4318gb830a8f37eb0" version="1">Reduces the target's &lt;LSTag Tooltip="MovementSpeed"&gt;movement speed&lt;/LSTag&gt; by [1].</content>
+  <content contentuid="h5abba93fg87deg700cgf175g44d1ff2efc56" version="1">Flying Cutter</content>
+  <content contentuid="h605aad93g61c9g65b7g3c2egab499b676bbd" version="1">Hit by Flying Cutter</content>
+  <content contentuid="h16761511g24dcg47b1g0803g0f4d70ca62ba" version="1">Cutter Burst</content>
+  <content contentuid="h94b4b290g6db8g6099g2591gc319c9303413" version="1">Hit by Flying Cutter</content>
+  <content contentuid="hef9eda2cg4970gfa96gb67dg95184bc96f30" version="2">Cutter Burst Damage</content>
+  <content contentuid="hafc09be1ga1e9g39deg52f9gfc9493869a08" version="1">Hit by Flying Cutter</content>
+  <content contentuid="h52ef5b67g0237gd80cgbfcegb0d2316cc45c" version="1">MESMER_MAGIC_BULLET_STUN</content>
+  <content contentuid="h40e54bfbgf433g66b6g7dc5gccd1042318a8" version="1">Hit by Flying Cutter</content>
+  <content contentuid="h0268c5aegca35g291cg87b8g1e4bac97037b" version="1">Mirror Blade</content>
+  <content contentuid="h1ac3e7c2g1e90g0170g1ee2g725cebada7bc" version="1">Mirror Blade</content>
+  <content contentuid="hefa07de9g39b1ga543gfc91gbcf769522427" version="1">Mass Invisibility</content>
+  <content contentuid="h87461f18g059dg1b24g4a75g5a11e5d0db94" version="1">MassInvisibility</content>
+  <content contentuid="h4058ff27g1affg662cg8849gbfc0244a5afe" version="1">Decoy</content>
+  <content contentuid="hce50190dg27cbga0edg03eag88da4bdc1d99" version="1">Decoy</content>
+  <content contentuid="h3320547cgf254g49d9ga6f3ga03656d461ab" version="1">Veil: Invisibility</content>
+  <content contentuid="h409376e8g4029gc3b6g1059g01044adfd8fc" version="1">A blazing wall of fire that deals [2] to anyone within [1].</content>
+  <content contentuid="h23ac08b5gb393gb12dg5c5fg5e5f411d3286" version="1">Veil: Invisibility Aura</content>
+  <content contentuid="ha4fe1e11gb40dg2f6dg258bg6140b8b80389" version="1">Engulfed in a wall of blazing flames. The affected entity takes [2] per turn it stays within [1] of the fire.</content>
+  <content contentuid="hba872ec3gab1bge3f4g225bg1429eee0b194" version="1">%%% EMPTY</content>
+  <content contentuid="h65c4c7adg5264g6a7fg7953g7bd5d2c7e324" version="1">Blink</content>
+  <content contentuid="h0951139eg2a74gedd8gd3cag8fb0c3727268" version="1">Surrounded by silver mist, you teleport to an unoccupied space you can see.</content>
+  <content contentuid="h3e1cbb0fgaaceg9eccg00d6ga9248991333f" version="1">Aegis</content>
+  <content contentuid="h89c99169g9f4bgebd0gc98cgffb117a712dc" version="1">Creature can take one additional action per turn.</content>
+  <content contentuid="h822f5a10g6a76g1c99g6098g2e167d6be749" version="1">Echo of Memory</content>
+  <content contentuid="hf8a980efg93bbgbf05g3648g91eadd2a9134" version="1">Echo of Memory</content>
+  <content contentuid="h60f7664ag434eg93dag2cdcgf16f222d8d59" version="1">Deja Vu</content>
+  <content contentuid="ha85dd6f2g7779g9e54g1f54gb8992c0b01c1" version="1">Deja Vu</content>
+  <content contentuid="hc06f8e5egf179gb03bg3561g31bd523e9598" version="1">Echo of Memory</content>
+  <content contentuid="hb73984cfg5cf5gbd65g99edg6d2199f2da9b" version="1">Creature can take one additional action per turn.</content>
+  <content contentuid="h6a159ee7gfcb6gcab6g45a1g32bbbeb49d9c" version="1">%%% EMPTY</content>
+  <content contentuid="hb0f1bd9dg4870g2490gf5b9g09686c024c87" version="1">%%% EMPTY</content>
+  <content contentuid="h5368dc63gab87g6b47gbfbdg8ffb7291a099" version="2">Echo of Memory ended</content>
+  <content contentuid="hd693763cgab20gab75g5580gd65bd5f45fc8" version="1">Stacking(turns) buff that heals by proficiency of the source every turn.</content>
+  <content contentuid="h6acec87bg2ffega9e9gc55cg77c8e7c622a3" version="1">Protection</content>
+  <content contentuid="hf4e02643g554cg9cc6gb922gd7fd52a8a0e0" version="1">Aegis</content>
+  <content contentuid="hc633d7c0gbbdbgf982g483dg7a2abe74c30d" version="1">Shield yourself from a spell attack: when you fail a Dexterity &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt; on a spell, you only take half damage. When you succeed, you take no damage.</content>
+</contentList>
