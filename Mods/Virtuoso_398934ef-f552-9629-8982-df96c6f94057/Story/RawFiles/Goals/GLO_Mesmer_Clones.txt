@@ -41,24 +41,210 @@ CreateAt(5b2d100d-2080-41a0-ab7f-66d6e73f706f,_CharX,_CharY,_CharZ,1,1,"",_Mesme
 THEN
 ApplyStatus(_MesmerClone, "MESMER_CLONE_ALIVE", -1.0, 0, _Caster);
 RemoveStatus(_Char,"MESMER_CLONE_SPAWN",_MesmerClone);
-//PROC_TestMesmer((CHARACTER)_Char, (CHARACTER)_Caster);
-//PROC_CCO_CreatedMesmerClone((CHARACTER)_Char, (CHARACTER)_Caster);
-//DebugText(_Caster, _CounterName);
-/*
+
+// Decoy
 IF
-StatusApplied(_Char,"MESMER_CLONE_CREATE_NEW_CLONE",_Caster,_)
-THEN
-PROC_CCO_CreatedMesmerClone(_Char, _Caster);
-ApplyStatus(_Char, "MESMER_CLONE_SPAWN", 1.0, 0, _Caster);
-*/
-IF
-CastSpell(_Char, "Target_Mesmer_Decoy", _, _, _)
+UsingSpellAtPosition(_Char, _TargetX,_TargetY,_TargetZ, "Target_Mesmer_Decoy", _, _, _)
 AND
-GetPosition(_Char,_CharX,_CharY,_CharZ)
-AND
-CreateAt(5b2d100d-2080-41a0-ab7f-66d6e73f706f,_CharX,_CharY,_CharZ,1,1,"",_MesmerClone)
+CreateAt(5b2d100d-2080-41a0-ab7f-66d6e73f706f,_TargetX,_TargetY,_TargetZ,1,1,"",_MesmerClone)
 THEN
 ApplyStatus(_MesmerClone, "MESMER_CLONE_ALIVE", -1.0, 0, _Char);
+
+// Mirror Images
+IF
+UsingSpellAtPosition(_Char, _TargetX,_TargetY,_TargetZ, "Target_Mesmer_MirrorImages", _, _, _)
+AND
+CreateAt(5b2d100d-2080-41a0-ab7f-66d6e73f706f,_TargetX,_TargetY,_TargetZ,1,1,"",_MesmerClone)
+AND
+CreateAt(5b2d100d-2080-41a0-ab7f-66d6e73f706f,_TargetX,_TargetY,_TargetZ,1,1,"",_MesmerClone2)
+THEN
+ApplyStatus(_MesmerClone, "MESMER_CLONE_ALIVE", -1.0, 0, _Char);
+ApplyStatus(_MesmerClone2, "MESMER_CLONE_ALIVE", -1.0, 0, _Char);
+
+//Shatter: Distortion
+IF
+CastSpell(_Caster, "Shout_Mesmer_Shatter_Distortion", _, _, _)
+AND
+DB_GLO_MESMER_CLONES(_MesmerClone, (CHARACTER)_Caster)
+AND
+GetUUID(_Caster, _CasterUUID)
+AND
+Concatenate("MesmerCloneCounter_", _CasterUUID, _CounterName)
+AND
+DB_GlobalCounter(_CounterName, _TurnsInt)
+AND
+IntegerToReal(_TurnsInt, _TurnsReal)
+AND
+RealProduct(_TurnsReal, 6.0, _DurationReal)
+THEN
+ApplyStatus(_Caster, "GW_DISTORTION", _DurationReal, 0, _Caster);
+
+//REGION Continuum Split
+//Shatter: Continuum Split
+IF
+CastSpell(_Caster, "Shout_Mesmer_Shatter_ContinuumSplit", _, _, _)
+AND
+GetPosition(_Caster, _CharX, _CharY, _CharZ)
+AND
+GetHitpoints(_Caster, _HP)
+AND
+DB_GLO_MESMER_CLONES(_MesmerClone, (CHARACTER)_Caster)
+AND
+GetUUID(_Caster, _CasterUUID)
+AND
+Concatenate("MesmerCloneCounter_", _CasterUUID, _CounterName)
+AND
+DB_GlobalCounter(_CounterName, _TurnsInt)
+AND
+IntegerToReal(_TurnsInt, _TurnsReal)
+AND
+RealProduct(_TurnsReal, 6.0, _DurationReal)
+THEN
+ApplyStatus(_Caster, "MESMER_TIME_ANCHORED", _DurationReal, 0, _Caster);
+DB_MESMER_CONTINUUMSPLIT(_Caster, _HP, _CharX, _CharY, _CharZ);
+
+
+//Continuum Shift
+IF
+StatusRemoved(_Caster, "MESMER_TIME_ANCHORED", _, _)
+AND
+DB_MESMER_CONTINUUMSPLIT((CHARACTER)_Caster, _HP, _CharX, _CharY, _CharZ)
+THEN
+SetHitpoints(_Caster, _HP);
+TeleportToPosition(_Caster, _CharX, _CharY, _CharZ);
+NOT DB_MESMER_CONTINUUMSPLIT(_Caster, _HP, _CharX, _CharY, _CharZ);
+//END_REGION
+
+//REGION Well of Action
+IF
+StatusApplied(_Target,"MESMER_WELL_OF_ACTION_AURA",_Caster,_)
+THEN
+DB_MESMER_WELLOFACTION(_Target, _Caster);
+ApplyStatus(_Caster, "MESMER_WELL_OF_ACTION_TURN_COUNTER", 6.0, 0, _Caster);
+
+IF
+StatusRemoved(_Target, "MESMER_WELL_OF_ACTION_AURA", _, _)
+AND
+DB_MESMER_WELLOFACTION(_Target, _Caster)
+THEN
+RemoveStatus(_Caster,"MESMER_WELL_OF_ACTION_TURN_COUNTER",_Caster);
+NOT DB_MESMER_WELLOFACTION(_Target, _Caster);
+
+IF
+StatusApplied(_Caster, "MESMER_WELL_OF_ACTION_TURN_COUNTER_MAX", _, _)
+AND
+DB_MESMER_WELLOFACTION(_Target, _Caster)
+THEN
+ApplyStatus(_Target, "MESMER_WELL_OF_ACTION_FINAL_EFFECT", 1.0, 0, _Caster);
+RemoveStatus(_Caster,"MESMER_WELL_OF_ACTION_TURN_COUNTER",_Caster);
+NOT DB_MESMER_WELLOFACTION(_Target, _Caster);
+//END_REGION
+
+//REGION Well of Calamity
+IF
+StatusApplied(_Target,"MESMER_WELL_OF_CALAMITY_AURA",_Caster,_)
+THEN
+DB_MESMER_WELLOFCALAMITY(_Target, _Caster);
+ApplyStatus(_Caster, "MESMER_WELL_OF_CALAMITY_TURN_COUNTER", 6.0, 0, _Caster);
+
+IF
+StatusRemoved(_Target, "MESMER_WELL_OF_CALAMITY_AURA", _, _)
+AND
+DB_MESMER_WELLOFCALAMITY(_Target, _Caster)
+THEN
+RemoveStatus(_Caster,"MESMER_WELL_OF_CALAMITY_TURN_COUNTER",_Caster);
+NOT DB_MESMER_WELLOFCALAMITY(_Target, _Caster);
+
+IF
+StatusApplied(_Caster, "MESMER_WELL_OF_CALAMITY_TURN_COUNTER_MAX", _, _)
+AND
+DB_MESMER_WELLOFCALAMITY(_Target, _Caster)
+THEN
+ApplyStatus(_Target, "MESMER_WELL_OF_CALAMITY_FINAL_EFFECT", 1.0, 0, _Caster);
+RemoveStatus(_Caster,"MESMER_WELL_OF_CALAMITY_TURN_COUNTER",_Caster);
+NOT DB_MESMER_WELLOFCALAMITY(_Target, _Caster);
+//END_REGION
+
+//REGION Well of Senility
+IF
+StatusApplied(_Target,"MESMER_WELL_OF_SENILITY_AURA",_Caster,_)
+THEN
+DB_MESMER_WELLOFSENILITY(_Target, _Caster);
+ApplyStatus(_Caster, "MESMER_WELL_OF_SENILITY_TURN_COUNTER", 6.0, 0, _Caster);
+
+IF
+StatusRemoved(_Target, "MESMER_WELL_OF_SENILITY_AURA", _, _)
+AND
+DB_MESMER_WELLOFSENILITY(_Target, _Caster)
+THEN
+RemoveStatus(_Caster,"MESMER_WELL_OF_SENILITY_TURN_COUNTER",_Caster);
+NOT DB_MESMER_WELLOFCALAMITY(_Target, _Caster);
+
+IF
+StatusApplied(_Caster, "MESMER_WELL_OF_SENILITY_TURN_COUNTER_MAX", _, _)
+AND
+DB_MESMER_WELLOFSENILITY(_Target, _Caster)
+THEN
+ApplyStatus(_Target, "MESMER_WELL_OF_SENILITY_FINAL_EFFECT", 1.0, 0, _Caster);
+RemoveStatus(_Caster,"MESMER_WELL_OF_SENILITY_TURN_COUNTER",_Caster);
+NOT DB_MESMER_WELLOFSENILITY(_Target, _Caster);
+//END_REGION
+
+//REGION Gravity Well
+IF
+StatusApplied(_Target,"MESMER_GRAVITY_WELL_AURA",_Caster,_)
+THEN
+DB_MESMER_GRAVITYWELL(_Target, _Caster);
+ApplyStatus(_Caster, "MESMER_GRAVITY_WELL_TURN_COUNTER", 6.0, 0, _Caster);
+
+IF
+StatusRemoved(_Target, "MESMER_GRAVITY_WELL_AURA", _, _)
+AND
+DB_MESMER_GRAVITYWELL(_Target, _Caster)
+THEN
+RemoveStatus(_Caster,"MESMER_GRAVITY_WELL_TURN_COUNTER",_Caster);
+NOT DB_MESMER_GRAVITYWELL(_Target, _Caster);
+
+IF
+StatusApplied(_Caster, "MESMER_GRAVITY_WELL_TURN_EFFECT_TRIGGER", _, _)
+AND
+DB_MESMER_GRAVITYWELL(_Target, _Caster)
+THEN
+ApplyStatus(_Target, "MESMER_GRAVITY_WELL_TURN_EFFECT", 1.0, 0, _Caster);
+
+IF
+StatusApplied(_Caster, "MESMER_GRAVITY_WELL_TURN_COUNTER_MAX", _, _)
+AND
+DB_MESMER_GRAVITYWELL(_Target, _Caster)
+THEN
+ApplyStatus(_Target, "MESMER_GRAVITY_WELL_FINAL_EFFECT", 1.0, 0, _Caster);
+RemoveStatus(_Caster,"MESMER_GRAVITY_WELL_TURN_COUNTER",_Caster);
+NOT DB_MESMER_GRAVITYWELL(_Target, _Caster);
+//END_REGION
+
+//REGION Virtuoso
+// Rain of Swords
+IF
+CastSpell(_Caster, "Target_Mesmer_RainOfSwords", _, _, _)
+THEN
+ApplyStatus(_Caster, "MESMER_CLONE_SPAWN", 1.0, 0, _Caster);
+
+// Psychic Force
+IF
+CastSpell(_Caster, "Shout_Mesmer_PsychicForce", _, _, _)
+THEN
+ApplyStatus(_Caster, "MESMER_CLONE_SPAWN", 1.0, 0, _Caster);
+
+//END_REGION
+
+//REGION Mirage
+// Sand through Glass
+IF
+CastSpell(_Caster, "Rush_Mesmer_SandThroughGlass", _, _, _)
+THEN
+ApplyStatus(_Caster, "MESMER_MIRAGE_CLOAK", 6.0, 0, _Caster);
+
+//END_REGION
 
 //Phase Retreat
 IF
@@ -72,6 +258,70 @@ CastSpell(_Char, "Shout_Mesmer_MindTheGap", _, _, _)
 THEN
 ApplyStatus(_Char, "MESMER_CLONE_SPAWN", 1.0, 0, _Char);
 //DebugText((CHARACTER)_Char, "MTG_SPAWN");
+
+//REGION Chaos Storm
+
+//Give allies positive conditions and your enemies random negative conditions
+IF
+StatusApplied((CHARACTER)_Target,"MESMER_CHAOS_STORM_APPLY_RANDOM_POSITIVE", _Cause,_)
+AND
+Random(3, _RandomID)
+THEN
+PROC_GW_CHAOSSTORM_APPLY_POSITIVE((CHARACTER)_Target, _RandomID, (CHARACTER)_Cause);
+RemoveStatus(_Target,"MESMER_CHAOS_STORM_APPLY_RANDOM_POSITIVE",_Cause);
+
+IF
+StatusApplied((CHARACTER)_Target,"MESMER_CHAOS_STORM_APPLY_RANDOM_NEGATIVE", _Cause,_)
+AND
+Random(3, _RandomID)
+THEN
+PROC_GW_CHAOSSTORM_APPLY_NEGATIVE((CHARACTER)_Target, _RandomID, (CHARACTER)_Cause);
+RemoveStatus(_Target,"MESMER_CHAOS_STORM_APPLY_RANDOM_NEGATIVE",_Cause);
+
+
+PROC
+PROC_GW_CHAOSSTORM_APPLY_POSITIVE((CHARACTER)_Target, (INTEGER)_ID, (CHARACTER)_Cause)
+AND
+_ID == 1
+THEN
+ApplyStatus(_Target, "GW_SWIFTNESS", 6.0, 0, _Cause);
+
+PROC
+PROC_GW_CHAOSSTORM_APPLY_POSITIVE((CHARACTER)_Target, (INTEGER)_ID, (CHARACTER)_Cause)
+AND
+_ID == 2
+THEN
+ApplyStatus(_Target, "GW_AEGIS", 6.0, 0, _Cause);
+
+PROC
+PROC_GW_CHAOSSTORM_APPLY_POSITIVE((CHARACTER)_Target, (INTEGER)_ID, (CHARACTER)_Cause)
+AND
+_ID == 0
+THEN
+ApplyStatus(_Target, "GW_PROTECTION", 6.0, 0, _Cause);
+
+PROC
+PROC_GW_CHAOSSTORM_APPLY_NEGATIVE((CHARACTER)_Target, (INTEGER)_ID, (CHARACTER)_Cause)
+AND
+_ID == 1
+THEN
+ApplyStatus(_Target, "GW_WEAKNESS", 6.0, 0, _Cause);
+
+PROC
+PROC_GW_CHAOSSTORM_APPLY_NEGATIVE((CHARACTER)_Target, (INTEGER)_ID, (CHARACTER)_Cause)
+AND
+_ID == 2
+THEN
+ApplyStatus(_Target, "BLEEDING", 6.0, 0, _Cause);
+
+PROC
+PROC_GW_CHAOSSTORM_APPLY_NEGATIVE((CHARACTER)_Target, (INTEGER)_ID, (CHARACTER)_Cause)
+AND
+_ID == 0
+THEN
+ApplyStatus(_Target, "GW_CRIPPLE", 6.0, 0, _Cause);
+
+//END_REGION
 
 //REGION Chaos Aura
 
@@ -92,42 +342,42 @@ PROC_GW_CHAOSAURA_APPLY_POSITIVE((CHARACTER)_Caster, (INTEGER)_ID)
 AND
 _ID == 1
 THEN
-ApplyStatus(_Caster, "GW_SWIFTNESS", 1.0, 0, _Caster);
+ApplyStatus(_Caster, "GW_SWIFTNESS", 6.0, 0, _Caster);
 
 PROC
 PROC_GW_CHAOSAURA_APPLY_POSITIVE((CHARACTER)_Caster, (INTEGER)_ID)
 AND
 _ID == 2
 THEN
-ApplyStatus(_Caster, "GW_REGENERATION", 1.0, 0, _Caster);
+ApplyStatus(_Caster, "GW_REGENERATION", 6.0, 0, _Caster);
 
 PROC
 PROC_GW_CHAOSAURA_APPLY_POSITIVE((CHARACTER)_Caster, (INTEGER)_ID)
 AND
 _ID == 0
 THEN
-ApplyStatus(_Caster, "GW_FURY", 1.0, 0, _Caster);
+ApplyStatus(_Caster, "GW_FURY", 6.0, 0, _Caster);
 
 PROC
 PROC_GW_CHAOSAURA_APPLY_NEGATIVE((CHARACTER)_Caster, (INTEGER)_ID, (CHARACTER)_Target)
 AND
 _ID == 1
 THEN
-ApplyStatus(_Target, "GW_WEAKNESS", 1.0, 0, _Caster);
+ApplyStatus(_Target, "GW_WEAKNESS", 6.0, 0, _Caster);
 
 PROC
 PROC_GW_CHAOSAURA_APPLY_NEGATIVE((CHARACTER)_Caster, (INTEGER)_ID, (CHARACTER)_Target)
 AND
 _ID == 2
 THEN
-ApplyStatus(_Target, "GW_TORMENT", 1.0, 0, _Caster);
+ApplyStatus(_Target, "GW_TORMENT", 6.0, 0, _Caster);
 
 PROC
 PROC_GW_CHAOSAURA_APPLY_NEGATIVE((CHARACTER)_Caster, (INTEGER)_ID, (CHARACTER)_Target)
 AND
 _ID == 0
 THEN
-ApplyStatus(_Target, "GW_CRIPPLE", 1.0, 0, _Caster);
+ApplyStatus(_Target, "GW_CRIPPLE", 6.0, 0, _Caster);
 
 //END_REGION
 
@@ -171,6 +421,8 @@ AND
 CreateAt(5b2d100d-2080-41a0-ab7f-66d6e73f706f,_CharX,_CharY,_CharZ,1,1,"",_MesmerClone)
 THEN
 ApplyStatus(_MesmerClone, "MESMER_CLONE_ALIVE", -1.0, 0, _Caster);
+ApplyStatus(_MesmerClone, "MESMER_ILLUSIONARY_LEAP_SWAP_TARGET", -1.0, 0, _Caster);
+ApplyStatus(_Caster, "MESMER_ILLUSIONARY_LEAP_SWAP_POSSIBLE", 12.0, 0, _Caster);
 UseSpell(_MesmerClone, "Rush_Mesmer_IllusionaryCloneLeap", _Target);
 //ApplyStatus(_MesmerClone, "MESMER_CLONE_ALIVE", -1.0, 0, _Caster);
 

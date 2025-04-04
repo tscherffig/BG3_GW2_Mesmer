@@ -48,8 +48,8 @@
   <content contentuid="haca2e3c1g5475g90aag8da7g228a88944bb9" version="1">You take [1] when you cast a spell.</content>
   <content contentuid="hc4d88493gb547gb5bagd878gc72d212af257" version="1">Mesmer_TestSpell</content>
   <content contentuid="h57a01067g326bga8dbg6a92g577d0a7034c3" version="1">Mesmer_TestSpell</content>
-  <content contentuid="h59c22396g6827g742eg93ebg514b31f379ef" version="2">Decoy</content>
-  <content contentuid="h751c8ef2g5017gb01cg99f8g2afcc46fdea3" version="2">Decoy Dsc</content>
+  <content contentuid="h59c22396g6827g742eg93ebg514b31f379ef" version="3">Decoy</content>
+  <content contentuid="h751c8ef2g5017gb01cg99f8g2afcc46fdea3" version="3">Decoy Dsc</content>
   <content contentuid="h3bc8b83fg49e7ga1e8gf1c0gbd6ae927c33d" version="1">Mirror Images</content>
   <content contentuid="hd96451b5ga9acge34eg8a65gd0bca9990258" version="1">Mirror Images Dsc</content>
   <content contentuid="h4f17b1e7g4db8g75e0g50f4g63134c824aae" version="1">Feedback</content>
@@ -164,7 +164,7 @@
   <content contentuid="hb9aa14d5gf8c4g600dg316dgcc33650d6716" version="1">Possibly knock your enemy &lt;LSTag Type="Status" Tooltip="PRONE"&gt;Prone&lt;/LSTag&gt;.</content>
   <content contentuid="h28797815g3a68gec41g6473gf6585b1d4b7a" version="2">Clone Leap</content>
   <content contentuid="h58f3d103g5277gea4cg2115g971d20d11d9c" version="1">Charge forward and attack the first enemy in your way, possibly pushing them &lt;LSTag Type="Status" Tooltip="OFF_BALANCED"&gt;Off Balance&lt;/LSTag&gt;.</content>
-  <content contentuid="hef83b313g9683g6cfag4b02gf0b021f063f1" version="19">Clone</content>
+  <content contentuid="hef83b313g9683g6cfag4b02gf0b021f063f1" version="20">Clone</content>
   <content contentuid="hca38f6b0g23b3gd7acg7b45g680c2f75fda6" version="1">%%% EMPTY</content>
   <content contentuid="h09c7fd23gec91g5fbfg523agbd37e143edab" version="1">Mind the Gap</content>
   <content contentuid="h1c6860e6gdd93gfc27gb91eg21f324fd1b2c" version="1">Strike out at all nearby foes, making separate &lt;LSTag Tooltip="AttackRoll"&gt;attack rolls&lt;/LSTag&gt; against each target. </content>
@@ -278,4 +278,130 @@
   <content contentuid="h6acec87bg2ffega9e9gc55cg77c8e7c622a3" version="1">Protection</content>
   <content contentuid="hf4e02643g554cg9cc6gb922gd7fd52a8a0e0" version="1">Aegis</content>
   <content contentuid="hc633d7c0gbbdbgf982g483dg7a2abe74c30d" version="1">Shield yourself from a spell attack: when you fail a Dexterity &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt; on a spell, you only take half damage. When you succeed, you take no damage.</content>
+  <content contentuid="h8bc8d835g314dgf75dg4559ge72b464cc8b7" version="1">Tides of Time</content>
+  <content contentuid="he6ea2978g2408gae52g5b3cg99142a891a8b" version="1">Tides of Time</content>
+  <content contentuid="h99464622gc3fag6721gced2ge2ad97393d25" version="2">Shatter: Distortion</content>
+  <content contentuid="h4758de03gf4f7gfb36g28a7g004219b93a56" version="2">Shatter: Distortion</content>
+  <content contentuid="h46d9266ag85bcga48fg47deg6edccec84ca4" version="1">Shatter Clones</content>
+  <content contentuid="ha1339de6g781egbea1g70f2g57a83f5e729f" version="1">Shatter Clones Desc</content>
+  <content contentuid="h782f9423geb8bgd38bge587g66d0f59d0a12" version="2">Shatter: Split Second</content>
+  <content contentuid="h74c95cadg5d6fgb29fg6279gd630cd3613c8" version="2">Shatter: Split Second</content>
+  <content contentuid="h4a633495g372cg5db9g98d1g53671cf423af" version="2">Shatter: Rewinder</content>
+  <content contentuid="hcae69050g28fag79bbg4885g2adf2522b7f1" version="2">Shatter: Rewinder</content>
+  <content contentuid="hb9688b0agf3acgb765ga7e3g8def172b03f3" version="2">Shatter: Time Sink</content>
+  <content contentuid="hdcfbbee2g7e88g1314ge596g6caa30d04a60" version="2">Shatter: Time Sink</content>
+  <content contentuid="h01232483g51aag3177g1fc2ge4ceac2f1439" version="2">Shatter: Continuum Split</content>
+  <content contentuid="hd57a2f22g60deg8adbgf436g0de9f71be948" version="2">Shatter: Continuum Split</content>
+  <content contentuid="h97b566e0g08b5g9ddcg8459g9994ef515ff1" version="1">Death Burst</content>
+  <content contentuid="hc316dc67g90fdg8ec0g3f45g062437b0a553" version="1">Explode in a burst of fire.</content>
+  <content contentuid="hc7b77e17gc12eg78abg1471g32359e369df7" version="1">Death Burst</content>
+  <content contentuid="ha32101bcg1cb8g625fg8bb6g6344359326c0" version="1">Explode in a burst of fire.</content>
+  <content contentuid="hda6c294fg7930g084ag9024g55bc0b9e4b03" version="1">Split Second</content>
+  <content contentuid="hb9aef0feg7681gbd23ge222g427b404cdcfa" version="1">Marked by Split Second</content>
+  <content contentuid="h9e2adca4g4f19gafb9g4f57g88a811c98b23" version="1">Continuum Shift</content>
+  <content contentuid="h2dce8279g573dgff8dg5be6g4f47aa9e12ba" version="1">Continuum Shift</content>
+  <content contentuid="h82e48efeg27fdg6a78g3588g8f9c0d0cef47" version="1">Stacking(turns) buff that heals by proficiency of the source every turn.</content>
+  <content contentuid="h9b47a785gd0bbg4e89g8574g124c028904cd" version="1">Time Anchored</content>
+  <content contentuid="h724336edg5ae6ge674gcd63g4c2267db7562" version="1">%%% EMPTY</content>
+  <content contentuid="haa6f6f1ega183g81b6gf1ccgc6d93493b4bb" version="1">Illusionary Leap</content>
+  <content contentuid="h4e6553b3gb85cge5bagf484g46a920a59d12" version="1">Illusionary Leap</content>
+  <content contentuid="hcd33b02cg3c74gef7ag6478g4ef8d2d0a488" version="1">Swap</content>
+  <content contentuid="hb7aade75g76e1g33e2g4885g6d5546d8f75e" version="1">Swap positions with your Illusionary Leap Clone</content>
+  <content contentuid="h3a5643bbgd354gc635g3de1g1db95f571024" version="1">Stability</content>
+  <content contentuid="h8a88e836g7fe6gfa5bg1c1cg96784829dfa7" version="1">&lt;LSTag Tooltip="MovementSpeed"&gt;Movement speed&lt;/LSTag&gt; can't be reduced by Difficult Terrain, spells, or magical effects. Can't be &lt;LSTag Type="Status" Tooltip="PARALYZED"&gt;Paralysed&lt;/LSTag&gt; or &lt;LSTag Type="Status" Tooltip="RESTRAINED"&gt;Restrained&lt;/LSTag&gt;.</content>
+  <content contentuid="habd36a87ga73eg4472g1a23g41fa71836714" version="3">Chaos Storm</content>
+  <content contentuid="hac6b7abeg906bgecdeg3c2fg15af22deb2af" version="3">A sphere of utter blackness and bitter cold. It emits a cacophony of soft whispers and slurping noises.</content>
+  <content contentuid="h5f648bbfg1296g4ea6g769ag6ae231950bb5" version="1">Chaos Storm</content>
+  <content contentuid="h020ee325g7fe1g84cdg847cg123fd6ca952a" version="1">A sphere of cold blackness, teeming with unknown horrors.&lt;br&gt;&lt;br&gt;Creatures starting their turn in the area take [1]. Creatures ending their turn in the area possibly take [2].&lt;br&gt;&lt;br&gt;The area is &lt;LSTag Type="Status" Tooltip="DIFFICULT_TERRAIN"&gt;Difficult Terrain&lt;/LSTag&gt;, and creatures within are &lt;LSTag Type="Status" Tooltip="BLINDED"&gt;Blinded&lt;/LSTag&gt;.</content>
+  <content contentuid="hc9553abcgf62ag29b1ga534g14e7b02418d1" version="1">Chaos Storm</content>
+  <content contentuid="hf0826adag29b6g1ae1g83cfg1c487fa7674d" version="1">Creatures within this black sphere are &lt;LSTag Type="Status" Tooltip="BLINDED"&gt;Blinded&lt;/LSTag&gt; and take damage at the end of their turn and the start of their turn. </content>
+  <content contentuid="hd5171966g5d19g85f7geca2g734cf161c497" version="1">Creatures starting their turn in the area take [1]. Creatures ending their turn in the area possibly take [2].&lt;br&gt;&lt;br&gt;The area is &lt;LSTag Type="Status" Tooltip="DIFFICULT_TERRAIN"&gt;Difficult Terrain&lt;/LSTag&gt;.</content>
+  <content contentuid="h7759cb04g5f5dg1e94g6ad0g6269b00e2122" version="1">Chaos Storm</content>
+  <content contentuid="h16f30643g96d0g2fa2gf4fdgbb164221a3a9" version="1">Locusts attack everyone within range, make the area &lt;LSTag Type="Status" Tooltip="DIFFICULT_TERRAIN"&gt;Difficult Terrain&lt;/LSTag&gt;, and impose &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt; on Perception &lt;LSTag Tooltip="AbilityCheck"&gt;Checks&lt;/LSTag&gt;.</content>
+  <content contentuid="ha34f39b3g56abg519bg9afcg7b1bcc85a864" version="1">Chaos Storm</content>
+  <content contentuid="haaf7b8efge753ga5e9ga876g3118bbab58f2" version="1">&lt;LSTag Tooltip="MovementSpeed"&gt;Movement speed&lt;/LSTag&gt; halved. &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt; on Perception &lt;LSTag Tooltip="AbilityCheck"&gt;Checks&lt;/LSTag&gt;.</content>
+  <content contentuid="h63d113a4g58b5g8a72g97bfg2d4b53a9c2c2" version="1">Chaos Storm</content>
+  <content contentuid="h6ad03edfgfdd9g860aga755g94add21bbaed" version="1">Swarming, biting locusts fill the air. They deal [1] per turn, make the area &lt;LSTag Type="Status" Tooltip="DIFFICULT_TERRAIN"&gt;Difficult Terrain&lt;/LSTag&gt;, and impose &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt; on Perception &lt;LSTag Tooltip="AbilityCheck"&gt;Checks&lt;/LSTag&gt;.</content>
+  <content contentuid="h821f3acbg714bga216gd409gd1778fbdbe72" version="1">Immobilized</content>
+  <content contentuid="h5303fe0bg4de9g41b3g35ebg718f177d8a63" version="1">Cannot move</content>
+  <content contentuid="hc1359c79gf4a0gd01bg5fd1g6831f74e533b" version="1">%%% EMPTY</content>
+  <content contentuid="h1b295c70g404cgee1fgc0d9g827026403138" version="1">Chaos Storm</content>
+  <content contentuid="h45660bc3g2a68g5f65g4686ge870f292062b" version="1">&lt;LSTag Tooltip="MovementSpeed"&gt;Movement speed&lt;/LSTag&gt; halved. &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt; on Perception &lt;LSTag Tooltip="AbilityCheck"&gt;Checks&lt;/LSTag&gt;.</content>
+  <content contentuid="h3f5214dfgd60dg458dg0f65gcee66a6f39b6" version="1">Well of Action</content>
+  <content contentuid="h8bf6ea6dg10eeg2ed0g081dg312ae366eeaa" version="1">A sphere of utter blackness and bitter cold. It emits a cacophony of soft whispers and slurping noises.</content>
+  <content contentuid="h705d444cgcdcag8edbg45bdg681475ecd95a" version="1">Well of Calamity</content>
+  <content contentuid="hf987edadg93ecgc7fdg32acg46d434f1636c" version="1">A sphere of utter blackness and bitter cold. It emits a cacophony of soft whispers and slurping noises.</content>
+  <content contentuid="h5fc9421ega055g6611g5e78gd7590f2478e9" version="1">Well of Senility</content>
+  <content contentuid="h0202d6aeg649egbd3cg2915gab5d3b2d9334" version="1">A sphere of utter blackness and bitter cold. It emits a cacophony of soft whispers and slurping noises.</content>
+  <content contentuid="h123ea0adg24b4g277bg6ec0gf4a1c8d57f5a" version="1">Unstable Bladestorm</content>
+  <content contentuid="h00d43a90g4631g260cg7417gf419af8b604a" version="1">A sphere of utter blackness and bitter cold. It emits a cacophony of soft whispers and slurping noises.</content>
+  <content contentuid="hc3f00821g5b36gac38g7965g84b7373cca7e" version="1">Rain of Swords</content>
+  <content contentuid="h33c997d1g78e8g41eeg57f7g16facfa02f1c" version="1">A sphere of utter blackness and bitter cold. It emits a cacophony of soft whispers and slurping noises.</content>
+  <content contentuid="h17d25c72gcf05g5f05g8fc8gc46449799f92" version="1">Gravity Well</content>
+  <content contentuid="h87c2cd5ag9f15gda2cgf200g72e645c6ddca" version="1">A sphere of utter blackness and bitter cold. It emits a cacophony of soft whispers and slurping noises.</content>
+  <content contentuid="hd5e7710agc3e9gc926g51c3g91c5fa33642f" version="2">Well of Action</content>
+  <content contentuid="h5484cf34ge87fg1792g50eagc69e4a729ff4" version="1">Swarming, biting locusts fill the air. They deal [1] per turn, make the area &lt;LSTag Type="Status" Tooltip="DIFFICULT_TERRAIN"&gt;Difficult Terrain&lt;/LSTag&gt;, and impose &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt; on Perception &lt;LSTag Tooltip="AbilityCheck"&gt;Checks&lt;/LSTag&gt;.</content>
+  <content contentuid="ha0f30466g6290g373fgfb03g24e9e69d591b" version="2">Well of Action: Allies</content>
+  <content contentuid="h4d11f357g4f84gc11fg99b6g02187fcbf7d0" version="1">&lt;LSTag Tooltip="MovementSpeed"&gt;Movement speed&lt;/LSTag&gt; halved. &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt; on Perception &lt;LSTag Tooltip="AbilityCheck"&gt;Checks&lt;/LSTag&gt;.</content>
+  <content contentuid="hf532ff7egce63g6113g56fcge7eb52b6fc4f" version="2">Well of Action: Enemies</content>
+  <content contentuid="h0da082afg9258gb656g8bfegcf88c9448909" version="1">&lt;LSTag Tooltip="MovementSpeed"&gt;Movement speed&lt;/LSTag&gt; halved. &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt; on Perception &lt;LSTag Tooltip="AbilityCheck"&gt;Checks&lt;/LSTag&gt;.</content>
+  <content contentuid="hc5561c10g1f82g3fa8ge1e3g50e91e2b6d61" version="1">%%% EMPTY</content>
+  <content contentuid="hbaf69169g71bbg8a1age706gc60dde244b52" version="2">WTC</content>
+  <content contentuid="hfcad9391g6022gb5f0g3ef5g6c5ee9d22261" version="1">Well of Action</content>
+  <content contentuid="ha2d1e3e3g3f7fgebc4gda6ag449346f32755" version="1">Locusts attack everyone within range, make the area &lt;LSTag Type="Status" Tooltip="DIFFICULT_TERRAIN"&gt;Difficult Terrain&lt;/LSTag&gt;, and impose &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt; on Perception &lt;LSTag Tooltip="AbilityCheck"&gt;Checks&lt;/LSTag&gt;.</content>
+  <content contentuid="hb8b7dd97g0700gb933ga545g1abee9bb9e15" version="1">Superspeed</content>
+  <content contentuid="hc7b3b2f6g1312g6bbeg6820g89e6cb867fa1" version="1">Creature can take one additional action per turn.</content>
+  <content contentuid="h27c416d4ga556gd7eag9ab4g108bd0553f41" version="2">Well of Action ended</content>
+  <content contentuid="h953f8a6eg1e16gee34g3705gdec1f1e986fe" version="1">%%% EMPTY</content>
+  <content contentuid="h68b2ce5bge926ge141g2956ga584b3f894d8" version="1">%%% EMPTY</content>
+  <content contentuid="h3f89c8b5g3389g1220g44e8gdb36b8e03545" version="2">Well of Calamity</content>
+  <content contentuid="he121edcbg14bfgdd71gf1d8g14a4d7529e18" version="1">Locusts attack everyone within range, make the area &lt;LSTag Type="Status" Tooltip="DIFFICULT_TERRAIN"&gt;Difficult Terrain&lt;/LSTag&gt;, and impose &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt; on Perception &lt;LSTag Tooltip="AbilityCheck"&gt;Checks&lt;/LSTag&gt;.</content>
+  <content contentuid="h46146c27ga091g0d3dgaae4g4c58780f8169" version="1">%%% EMPTY</content>
+  <content contentuid="h6f76a64fga952g5467gc0cfg9f037fc6275b" version="1">Well of Calamity</content>
+  <content contentuid="hb5b42a65ge1a1g9927gd38bg298c8fc28804" version="1">Swarming, biting locusts fill the air. They deal [1] per turn, make the area &lt;LSTag Type="Status" Tooltip="DIFFICULT_TERRAIN"&gt;Difficult Terrain&lt;/LSTag&gt;, and impose &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt; on Perception &lt;LSTag Tooltip="AbilityCheck"&gt;Checks&lt;/LSTag&gt;.</content>
+  <content contentuid="h11ae8d29gc8e2g35fdgb017g6fae8b465962" version="1">Well of Calamity: Allies</content>
+  <content contentuid="h1d0b1b3cgc57cg1c1cg44d4gadc7caf26d0b" version="1">&lt;LSTag Tooltip="MovementSpeed"&gt;Movement speed&lt;/LSTag&gt; halved. &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt; on Perception &lt;LSTag Tooltip="AbilityCheck"&gt;Checks&lt;/LSTag&gt;.</content>
+  <content contentuid="hb77c1fc7ge5b9gfadcgeda1gff4c64be1d3d" version="1">Well of Calamity: Enemies</content>
+  <content contentuid="hd1b79000gc5ceg48e3g3248g4685f2084fce" version="1">&lt;LSTag Tooltip="MovementSpeed"&gt;Movement speed&lt;/LSTag&gt; halved. &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt; on Perception &lt;LSTag Tooltip="AbilityCheck"&gt;Checks&lt;/LSTag&gt;.</content>
+  <content contentuid="h82c8c05eg7b1fg9497g0b5fg028226afdd34" version="1">%%% EMPTY</content>
+  <content contentuid="hfd0a1f76g94eag73e7gf7dcga98e0087a33b" version="1">%%% EMPTY</content>
+  <content contentuid="h3848b6f5g7583g1537g833dg9c4051af2722" version="1">%%% EMPTY</content>
+  <content contentuid="ha9d08463gf479g631fgad33g8451cd224510" version="1">%%% EMPTY</content>
+  <content contentuid="hbfc6176fg6a5fg7446gc160g08de80c126f3" version="1">Well of Calamity ended</content>
+  <content contentuid="hb8812a28g4af0g6e97gf4aag9c119b3283b9" version="1">Well of Senility ended</content>
+  <content contentuid="he75b7072gd31fgc566g160eg7d85f46e8303" version="1">Well of Senility</content>
+  <content contentuid="h0966e289g88bcg11c1gb09cgad062334446f" version="1">Swarming, biting locusts fill the air. They deal [1] per turn, make the area &lt;LSTag Type="Status" Tooltip="DIFFICULT_TERRAIN"&gt;Difficult Terrain&lt;/LSTag&gt;, and impose &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt; on Perception &lt;LSTag Tooltip="AbilityCheck"&gt;Checks&lt;/LSTag&gt;.</content>
+  <content contentuid="h4773e51bgdd37g6382gafc1g19a9aa945649" version="1">Well of Senility: Enemies</content>
+  <content contentuid="hc95581d2g37a3g0e78g74ebge107e5525f6f" version="1">&lt;LSTag Tooltip="MovementSpeed"&gt;Movement speed&lt;/LSTag&gt; halved. &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt; on Perception &lt;LSTag Tooltip="AbilityCheck"&gt;Checks&lt;/LSTag&gt;.</content>
+  <content contentuid="h48bc0e9eg9af6g8aebg1691gccc690f59fa3" version="1">%%% EMPTY</content>
+  <content contentuid="h5583f573g0eceg4495g52bag347a3ccc11aa" version="1">%%% EMPTY</content>
+  <content contentuid="h40f6202cg9761g39fcg0468g07affab1c162" version="1">%%% EMPTY</content>
+  <content contentuid="h2073fbe7g7d19gd1b2gb716g5a1dbd7ed994" version="1">%%% EMPTY</content>
+  <content contentuid="h45bdad39gba81gaa18gee59gaa7b052b4e23" version="1">Well of Senility</content>
+  <content contentuid="hcbf87457g88eagf364g9b4bge4a1af39c6d6" version="1">Locusts attack everyone within range, make the area &lt;LSTag Type="Status" Tooltip="DIFFICULT_TERRAIN"&gt;Difficult Terrain&lt;/LSTag&gt;, and impose &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt; on Perception &lt;LSTag Tooltip="AbilityCheck"&gt;Checks&lt;/LSTag&gt;.</content>
+  <content contentuid="h448c6358gbb24g4d3fga9ebg4cc15aca0b87" version="1">Gravity Well</content>
+  <content contentuid="h655c03bdg8c89g3cb0ge75dg35f5ce9b88f1" version="1">Gravity Well ended</content>
+  <content contentuid="haa9b7cccg9af3g5786ge653g2b927a9d9835" version="1">Gravity Well</content>
+  <content contentuid="h88d41360g84b9g9f91g3f61g2ea9fbacbcf0" version="1">Locusts attack everyone within range, make the area &lt;LSTag Type="Status" Tooltip="DIFFICULT_TERRAIN"&gt;Difficult Terrain&lt;/LSTag&gt;, and impose &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt; on Perception &lt;LSTag Tooltip="AbilityCheck"&gt;Checks&lt;/LSTag&gt;.</content>
+  <content contentuid="h4f9c20a0g3eabgb772g4ebfg60649367aea4" version="1">Gravity Well</content>
+  <content contentuid="h9d0510edg24a6g9f65g2deeg1d080875e816" version="1">Swarming, biting locusts fill the air. They deal [1] per turn, make the area &lt;LSTag Type="Status" Tooltip="DIFFICULT_TERRAIN"&gt;Difficult Terrain&lt;/LSTag&gt;, and impose &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt; on Perception &lt;LSTag Tooltip="AbilityCheck"&gt;Checks&lt;/LSTag&gt;.</content>
+  <content contentuid="h914934fcg70b7gece8g5597gdfb34810bc56" version="1">%%% EMPTY</content>
+  <content contentuid="hbceb4f50g2374g4fabgcc2fg9dab01e5cd50" version="1">%%% EMPTY</content>
+  <content contentuid="hb2486fb9g7b88g4119gea0bg9a957b1938d6" version="1">%%% EMPTY</content>
+  <content contentuid="hcb522031g360fge0b4g55b0ge18132338136" version="1">%%% EMPTY</content>
+  <content contentuid="h7fd662c2gc5e0g6ec0g3120g25805d35147b" version="1">Rain of Swords</content>
+  <content contentuid="hce066a63gfefag386cgabf7g1a07ad9bdf54" version="1">Swarming, biting locusts fill the air. They deal [1] per turn, make the area &lt;LSTag Type="Status" Tooltip="DIFFICULT_TERRAIN"&gt;Difficult Terrain&lt;/LSTag&gt;, and impose &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt; on Perception &lt;LSTag Tooltip="AbilityCheck"&gt;Checks&lt;/LSTag&gt;.</content>
+  <content contentuid="hdb4d40a1g138dg917cgd4fcg861f124c255e" version="1">Rain of Swords</content>
+  <content contentuid="hc5b8b312gabd8g8810g54acg4e82223d65c9" version="1">&lt;LSTag Tooltip="MovementSpeed"&gt;Movement speed&lt;/LSTag&gt; halved. &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt; on Perception &lt;LSTag Tooltip="AbilityCheck"&gt;Checks&lt;/LSTag&gt;.</content>
+  <content contentuid="h016c9b2fg8ac5g9bc8g5cc9g1430f027ee75" version="1">%%% EMPTY</content>
+  <content contentuid="h3f4fb4f7g1024gb565ge271g9724e464fd07" version="1">Rain of Swords</content>
+  <content contentuid="h3a2ebe9cg8003g130fga7afg65134b4b2b08" version="1">Locusts attack everyone within range, make the area &lt;LSTag Type="Status" Tooltip="DIFFICULT_TERRAIN"&gt;Difficult Terrain&lt;/LSTag&gt;, and impose &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt; on Perception &lt;LSTag Tooltip="AbilityCheck"&gt;Checks&lt;/LSTag&gt;.</content>
+  <content contentuid="habb0fbb4g5a36g1175g1fdbg520cf4cc0edf" version="1">Mirage Cloak</content>
+  <content contentuid="h7927e100ga5ecg335cg6588g1ae0413a968e" version="1">Affected entity has &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Lightning damage. Its lightning spells deal additional Lightning damage equal to its &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt;.When it deals spell damage, it gains [1] &lt;LSTag Type="Status" Tooltip="MAG_CHARGED_LIGHTNING"&gt;Lightning Charge&lt;/LSTag&gt;. While attuned to Kereska's lightning, it can cast &lt;LSTag Type="Spell" Tooltip="Projectile_ChainLightning"&gt;Chain Lightning&lt;/LSTag&gt; and &lt;LSTag Type="Spell" Tooltip="Zone_LightningBolt"&gt;Lightning Bolt&lt;/LSTag&gt;.</content>
+  <content contentuid="hd2352ee4g7913ga3e2gf480g0ad391dce2a4" version="1">Sand through Glass</content>
+  <content contentuid="hb1ed69b5g34e8g1087g6016g0c963b4ee307" version="1">Charge forward and attack the first enemy in your way, possibly pushing them &lt;LSTag Type="Status" Tooltip="OFF_BALANCED"&gt;Off Balance&lt;/LSTag&gt;.</content>
+  <content contentuid="hdddb6227ga209g3616g8329gc29ce80e5c26" version="1">Psychic Force</content>
+  <content contentuid="hae8a2551ga954gc664g6e48g6d355bd59b11" version="1">Strike out at all nearby foes, making separate &lt;LSTag Tooltip="AttackRoll"&gt;attack rolls&lt;/LSTag&gt; against each target. </content>
+  <content contentuid="h213868c9g46degb42cgbfb6g2c036829dcde" version="1">Sword of Decimation</content>
+  <content contentuid="h76ea9817g86afg2f4ag98a3g9225fbfcac37" version="1">Make a pillar of divine fire roar down from the heavens like the wrath of affronted angels.</content>
 </contentList>
