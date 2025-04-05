@@ -42,24 +42,11 @@ THEN
 ApplyStatus(_MesmerClone, "MESMER_CLONE_ALIVE", -1.0, 0, _Caster);
 RemoveStatus(_Char,"MESMER_CLONE_SPAWN",_MesmerClone);
 
-// Decoy
-IF
-UsingSpellAtPosition(_Char, _TargetX,_TargetY,_TargetZ, "Target_Mesmer_Decoy", _, _, _)
-AND
-CreateAt(5b2d100d-2080-41a0-ab7f-66d6e73f706f,_TargetX,_TargetY,_TargetZ,1,1,"",_MesmerClone)
-THEN
-ApplyStatus(_MesmerClone, "MESMER_CLONE_ALIVE", -1.0, 0, _Char);
-
 // Mirror Images
 IF
-UsingSpellAtPosition(_Char, _TargetX,_TargetY,_TargetZ, "Target_Mesmer_MirrorImages", _, _, _)
-AND
-CreateAt(5b2d100d-2080-41a0-ab7f-66d6e73f706f,_TargetX,_TargetY,_TargetZ,1,1,"",_MesmerClone)
-AND
-CreateAt(5b2d100d-2080-41a0-ab7f-66d6e73f706f,_TargetX,_TargetY,_TargetZ,1,1,"",_MesmerClone2)
+UsingSpell(_Caster, "Shout_Mesmer_MirrorImages", _, _, _)
 THEN
-ApplyStatus(_MesmerClone, "MESMER_CLONE_ALIVE", -1.0, 0, _Char);
-ApplyStatus(_MesmerClone2, "MESMER_CLONE_ALIVE", -1.0, 0, _Char);
+ApplyStatus(_Caster, "MESMER_CLONE_SPAWN", 1.0, 0, _Caster);
 
 //Shatter: Distortion
 IF
@@ -235,6 +222,12 @@ CastSpell(_Caster, "Shout_Mesmer_PsychicForce", _, _, _)
 THEN
 ApplyStatus(_Caster, "MESMER_CLONE_SPAWN", 1.0, 0, _Caster);
 
+// Bladecall
+IF
+CastSpell(_Caster, "Projectile_Mesmer_Bladecall", _, _, _)
+THEN
+ApplyStatus(_Caster, "MESMER_CLONE_SPAWN", 1.0, 0, _Caster);
+
 //END_REGION
 
 //REGION Mirage
@@ -244,6 +237,42 @@ CastSpell(_Caster, "Rush_Mesmer_SandThroughGlass", _, _, _)
 THEN
 ApplyStatus(_Caster, "MESMER_MIRAGE_CLOAK", 6.0, 0, _Caster);
 
+// Jaunt
+IF
+CastedSpell(_Caster, "Target_Mesmer_Jaunt", _, _, _)
+THEN
+ApplyStatus(_Caster, "MESMER_JAUNT", 1.0, 0, _Caster);
+
+// Mirage Advance save previous location
+IF
+UsingSpell(_Caster, "Target_Mesmer_MirageAdvance", _, _, _)
+AND
+GetPosition(_Caster, _CharX, _CharY, _CharZ)
+THEN
+DB_MESMER_MIRAGEADVANCE(_Caster, _CharX, _CharY, _CharZ);
+
+// Mirage Retreat: Create clone
+IF
+UsingSpell(_Caster, "Shout_Mesmer_MirageRetreat", _, _, _)
+THEN
+ApplyStatus(_Caster, "MESMER_CLONE_SPAWN", 1.0, 0, _Caster);
+
+// Mirage Retreat: Return to previous location
+IF
+CastSpell(_Caster, "Shout_Mesmer_MirageRetreat", _, _, _)
+AND
+GetPosition(_Caster, _X, _Y, _Z)
+AND
+DB_MESMER_MIRAGEADVANCE((CHARACTER)_Caster, _CharX, _CharY, _CharZ)
+THEN
+TeleportToPosition(_Caster, _CharX, _CharY, _CharZ);
+NOT DB_MESMER_MIRAGEADVANCE(_Caster, _CharX, _CharY, _CharZ);
+
+// Mirage Advance damage
+IF
+CastedSpell(_Caster, "Target_Mesmer_MirageAdvance", _, _, _)
+THEN
+ApplyStatus(_Caster, "MESMER_MIRAGE_ADVANCE", 12.0, 0, _Caster);
 //END_REGION
 
 //Phase Retreat

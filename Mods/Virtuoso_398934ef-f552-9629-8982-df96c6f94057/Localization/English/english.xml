@@ -256,9 +256,9 @@
   <content contentuid="h87461f18g059dg1b24g4a75g5a11e5d0db94" version="1">MassInvisibility</content>
   <content contentuid="h4058ff27g1affg662cg8849gbfc0244a5afe" version="1">Decoy</content>
   <content contentuid="hce50190dg27cbga0edg03eag88da4bdc1d99" version="1">Decoy</content>
-  <content contentuid="h3320547cgf254g49d9ga6f3ga03656d461ab" version="1">Veil: Invisibility</content>
+  <content contentuid="h3320547cgf254g49d9ga6f3ga03656d461ab" version="2">Temporal Curtain</content>
   <content contentuid="h409376e8g4029gc3b6g1059g01044adfd8fc" version="1">A blazing wall of fire that deals [2] to anyone within [1].</content>
-  <content contentuid="h23ac08b5gb393gb12dg5c5fg5e5f411d3286" version="1">Veil: Invisibility Aura</content>
+  <content contentuid="h23ac08b5gb393gb12dg5c5fg5e5f411d3286" version="2">Temporal Curtain Aura</content>
   <content contentuid="ha4fe1e11gb40dg2f6dg258bg6140b8b80389" version="1">Engulfed in a wall of blazing flames. The affected entity takes [2] per turn it stays within [1] of the fire.</content>
   <content contentuid="hba872ec3gab1bge3f4g225bg1429eee0b194" version="1">%%% EMPTY</content>
   <content contentuid="h65c4c7adg5264g6a7fg7953g7bd5d2c7e324" version="1">Blink</content>
@@ -404,4 +404,33 @@
   <content contentuid="hae8a2551ga954gc664g6e48g6d355bd59b11" version="1">Strike out at all nearby foes, making separate &lt;LSTag Tooltip="AttackRoll"&gt;attack rolls&lt;/LSTag&gt; against each target. </content>
   <content contentuid="h213868c9g46degb42cgbfb6g2c036829dcde" version="1">Sword of Decimation</content>
   <content contentuid="h76ea9817g86afg2f4ag98a3g9225fbfcac37" version="1">Make a pillar of divine fire roar down from the heavens like the wrath of affronted angels.</content>
+  <content contentuid="h9b7df673g0703g0bc4gc63aga708080e0d6d" version="1">Jaunt</content>
+  <content contentuid="hae3eb281gb6d7gde98g1319g009117e86f9c" version="1">Surrounded by silver mist, you teleport to an unoccupied space you can see.</content>
+  <content contentuid="h319b7136g98a3ga06dg2c9dg86c1ab69982f" version="1">Mirage Advance</content>
+  <content contentuid="h7a8d7febg6b2fgf2c6gd8f1g965c2743d004" version="1">Surrounded by silver mist, you teleport to an unoccupied space you can see.</content>
+  <content contentuid="hdb3948ffg3016g4a31gbc51ga919dca3a739" version="1">Jaunt</content>
+  <content contentuid="h232b8927g5eadg07d4ga5a8ga70bed86cf6f" version="1">Mirage Retreat</content>
+  <content contentuid="h0d877e18g60ceg9046g817bg5aa1c7db368c" version="1">Decoy</content>
+  <content contentuid="h0636fe07g9ae7g4e35g4e3egef5b972d2faa" version="1">Mirage Advance</content>
+  <content contentuid="h77d48e0dg7ccdgca4bg1b98g162109ac5b0b" version="1">Affected entity has &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Lightning damage. Its lightning spells deal additional Lightning damage equal to its &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt;.When it deals spell damage, it gains [1] &lt;LSTag Type="Status" Tooltip="MAG_CHARGED_LIGHTNING"&gt;Lightning Charge&lt;/LSTag&gt;. While attuned to Kereska's lightning, it can cast &lt;LSTag Type="Spell" Tooltip="Projectile_ChainLightning"&gt;Chain Lightning&lt;/LSTag&gt; and &lt;LSTag Type="Spell" Tooltip="Zone_LightningBolt"&gt;Lightning Bolt&lt;/LSTag&gt;.</content>
+  <content contentuid="hdc1d6e2bgbbf5g24bcg5588g34d47f7f27f9" version="1">Jaunt</content>
+  <content contentuid="hbbdabe28g07c2gfd5dg0553g6c5cf28225d9" version="1">Affected entity has &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Lightning damage. Its lightning spells deal additional Lightning damage equal to its &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt;.When it deals spell damage, it gains [1] &lt;LSTag Type="Status" Tooltip="MAG_CHARGED_LIGHTNING"&gt;Lightning Charge&lt;/LSTag&gt;. While attuned to Kereska's lightning, it can cast &lt;LSTag Type="Spell" Tooltip="Projectile_ChainLightning"&gt;Chain Lightning&lt;/LSTag&gt; and &lt;LSTag Type="Spell" Tooltip="Zone_LightningBolt"&gt;Lightning Bolt&lt;/LSTag&gt;.</content>
+  <content contentuid="h88996dd3gdfa9geb94gb1eegbf0a004ef2aa" version="1">Mirror Images</content>
+  <content contentuid="hcc8cb7f3ge1a9gc81ag63ebgff82fd516f76" version="1">Mirror Images</content>
+  <content contentuid="ha13be6a1g0cefg0573g8884g701f9ed0e29d" version="1">Portal Entre</content>
+  <content contentuid="h71f8bbf9g0896g1b2bg8842gffdacec8414e" version="1">Create two linked teleportation portals.</content>
+  <content contentuid="hfae59daeg61feg15e7g2268g0d95f493e9f7" version="1">Into the Void</content>
+  <content contentuid="ha2cf75e9gd5d6g84cag42feg59ca59df2639" version="1">Affected entity has &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Lightning damage. Its lightning spells deal additional Lightning damage equal to its &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt;.When it deals spell damage, it gains [1] &lt;LSTag Type="Status" Tooltip="MAG_CHARGED_LIGHTNING"&gt;Lightning Charge&lt;/LSTag&gt;. While attuned to Kereska's lightning, it can cast &lt;LSTag Type="Spell" Tooltip="Projectile_ChainLightning"&gt;Chain Lightning&lt;/LSTag&gt; and &lt;LSTag Type="Spell" Tooltip="Zone_LightningBolt"&gt;Lightning Bolt&lt;/LSTag&gt;.</content>
+  <content contentuid="h7ae95f54g276bg1d81g59a8g9d80618707e8" version="1">Bladecall</content>
+  <content contentuid="h5f4a1ab4g6c3ag9b46g28d0gcbf7b3ad5f09" version="1">Reduces the target's &lt;LSTag Tooltip="MovementSpeed"&gt;movement speed&lt;/LSTag&gt; by [1].</content>
+  <content contentuid="hd7f1c3dbg512age36bgca6dgffe046da8c81" version="1">Bladecall</content>
+  <content contentuid="h48efbc76g6cc1g1ca9g0835g088894097bb7" version="1">%%% EMPTY</content>
+  <content contentuid="hf0358bb0ga281g42f0g4db8ga093ec51820c" version="1">Blade Renewal</content>
+  <content contentuid="h9c8d4b1dg72b0g39d0gad1eg9be0f060203d" version="1">Decoy</content>
+  <content contentuid="hb893791ag29d3ga91fg8262gc886f19f8666" version="1">Friendly Fire</content>
+  <content contentuid="h00264ae2gfa0fge98fgf9a5gada462fe4622" version="1">Reduces the target's &lt;LSTag Tooltip="MovementSpeed"&gt;movement speed&lt;/LSTag&gt; by [1].</content>
+  <content contentuid="h9ff950bcgbf83ga58dgaca8gfb8d6c36d7f3" version="1">Journey</content>
+  <content contentuid="hc44e21ceg8737g4318g6544g369ae7e2d0cc" version="1">Journey</content>
+  <content contentuid="h1228276fg74a9g8d3cge11fgebbbfcc935d4" version="1">Journey</content>
+  <content contentuid="h73dc6cc1g47d8g77b0ga23fgea9a1bce07e7" version="1">Make a pillar of divine fire roar down from the heavens like the wrath of affronted angels.</content>
 </contentList>
