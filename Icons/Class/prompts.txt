@@ -1,0 +1,2 @@
+<lora:bg3_classicons_offset_mix2:1> mesmer, icon,illusions,woman body made of stained glass breaks into shards, nebula,watercolor art, simple background
+<lora:bg3_classicons_offset_mix2:1> mesmer, icon,translucent illusions,woman shirt made of stained glass breaks into shards, nebula pants, stone eyepatch,crystal shards,watercolor art, simple background
