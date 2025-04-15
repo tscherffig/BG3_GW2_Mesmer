@@ -27,7 +27,7 @@
                     <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,1,1)"/>
                     <attribute id="Level" type="uint8" value="2"/>
                     <attribute id="Name" type="LSString" value="Mesmer"/>
-                    <attribute id="PassivesAdded" type="LSString" value="IllusoryClones"/>
+                    <attribute id="PassivesAdded" type="LSString" value="Mesmer_Psychic_Blades_Passive;Mesmer_Psychic_Blades_Counter_Passive"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <attribute id="Selectors" type="LSString" value="AddSpells(e056c664-5787-4258-aae3-c66c9690276c,1,0)"/>
                     <attribute id="TableUUID" type="guid" value="3d4d07e7-3f82-498d-b70c-81605bb9411e"/>

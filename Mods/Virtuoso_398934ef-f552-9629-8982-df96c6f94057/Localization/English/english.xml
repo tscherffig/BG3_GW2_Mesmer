@@ -120,7 +120,7 @@
   <content contentuid="h62ab7994geb60gd825g3da0g8965be400f91" version="1">Fury</content>
   <content contentuid="h7283d4f2gb1a2g9405g1c19g00ba00582c2b" version="1">Stacking(turns) buff that heals by proficiency of the source every turn.</content>
   <content contentuid="hced2cefagced5g056dgbc4bge0ba84aa026e" version="1">Regeneration</content>
-  <content contentuid="hbd8ffe21g5725g7edag7813g272e7f16638d" version="1">Weak</content>
+  <content contentuid="hbd8ffe21g5725g7edag7813g272e7f16638d" version="2">Weakness</content>
   <content contentuid="h97f4eb03gf36eg9f4dgf84dg400e5511899d" version="1">Your next weapon attack only deals half damage.</content>
   <content contentuid="hbe41b9a6gd399gaa98g933cg87abf410b09f" version="1">Crippled</content>
   <content contentuid="heda165b1g5cebg46d7g83abg015476dbf30a" version="1">-50% Movement Speed</content>
@@ -164,7 +164,7 @@
   <content contentuid="hb9aa14d5gf8c4g600dg316dgcc33650d6716" version="1">Possibly knock your enemy &lt;LSTag Type="Status" Tooltip="PRONE"&gt;Prone&lt;/LSTag&gt;.</content>
   <content contentuid="h28797815g3a68gec41g6473gf6585b1d4b7a" version="2">Clone Leap</content>
   <content contentuid="h58f3d103g5277gea4cg2115g971d20d11d9c" version="1">Charge forward and attack the first enemy in your way, possibly pushing them &lt;LSTag Type="Status" Tooltip="OFF_BALANCED"&gt;Off Balance&lt;/LSTag&gt;.</content>
-  <content contentuid="hef83b313g9683g6cfag4b02gf0b021f063f1" version="20">Clone</content>
+  <content contentuid="hef83b313g9683g6cfag4b02gf0b021f063f1" version="25">Clone</content>
   <content contentuid="hca38f6b0g23b3gd7acg7b45g680c2f75fda6" version="1">%%% EMPTY</content>
   <content contentuid="h09c7fd23gec91g5fbfg523agbd37e143edab" version="1">Mind the Gap</content>
   <content contentuid="h1c6860e6gdd93gfc27gb91eg21f324fd1b2c" version="1">Strike out at all nearby foes, making separate &lt;LSTag Tooltip="AttackRoll"&gt;attack rolls&lt;/LSTag&gt; against each target. </content>
@@ -217,7 +217,7 @@
   <content contentuid="he206a652g432dg256cgefeeg41fffccfa7ce" version="1">Chaos Armor</content>
   <content contentuid="h2c884b12g890cgbfe8g3733g00f8308e9304" version="1">Chaos Armor</content>
   <content contentuid="hfcbd7bfdg6998g5a23g2097g895f3033a3ca" version="1">Give yourself positive conditions and your foe random negative conditions whenever you are struck.</content>
-  <content contentuid="hdc8c0c36g2381g36a9g2a60g381cdf2772f4" version="1">Chaos Armor</content>
+  <content contentuid="hdc8c0c36g2381g36a9g2a60g381cdf2772f4" version="2">Chaos Aura</content>
   <content contentuid="h8858b74bg6af2gd343g0e3bg3b10e94cd40f" version="1">Chaos Aura</content>
   <content contentuid="h8a71a825g68f3g039eg9bc7ga4ff6487c7fb" version="1">Chaos Aura</content>
   <content contentuid="h026a395cg183agee88g34a5gf0bfe94ade21" version="1">%%% Chaos Aura Random Apply</content>
@@ -433,4 +433,143 @@
   <content contentuid="hc44e21ceg8737g4318g6544g369ae7e2d0cc" version="1">Journey</content>
   <content contentuid="h1228276fg74a9g8d3cge11fgebbbfcc935d4" version="1">Journey</content>
   <content contentuid="h73dc6cc1g47d8g77b0ga23fgea9a1bce07e7" version="1">Make a pillar of divine fire roar down from the heavens like the wrath of affronted angels.</content>
+  <content contentuid="h753ecf68g2413g8701g85c2g74185cd8d350" version="1">Rending Shatter</content>
+  <content contentuid="hcdeb4a75ge8ccg0b54gb914ge9fd92728efc" version="3">Shatter skills inflict 1 turn of &lt;LSTag Type="Status" Tooltip="GW_VULNERABILITY"&gt;Vulnerability&lt;/LSTag&gt; on hit.</content>
+  <content contentuid="hfb1525feg6453g5881ga597g035574a4cb90" version="1">Dazzling</content>
+  <content contentuid="hbbacb73ag9ef1g6533g620agc12004975f78" version="2">&lt;LSTag Type="Status" Tooltip="GW_DAZE"&gt;Dizzy&lt;/LSTag&gt; of stunning an enemy also inflicts 1 turn of &lt;LSTag Type="Status" Tooltip="GW_VULNERABILITY"&gt;Vulnerability&lt;/LSTag&gt;.</content>
+  <content contentuid="h650ed953g8cd3g16deg72d2g8a52fdd3f7da" version="1">Furious Interruption</content>
+  <content contentuid="hc24e8c59g78d8g558cg8e51gb872f2ecb8c5" version="2">Gain 1 turn of &lt;LSTag Type="Status" Tooltip="GW_QUICKNESS"&gt;Quickness&lt;/LSTag&gt; when you &lt;LSTag Type="Status" Tooltip="GW_DISABLE"&gt;Disable&lt;/LSTag&gt; an enemy.</content>
+  <content contentuid="h2f663670gd341g804cg3f74g461fb5ab559a" version="1">Power Block</content>
+  <content contentuid="hbbfadc4cg8f1cg18d8g968ag587f2c6ae2ae" version="2">Deal [1] and inflict 1 turn of &lt;LSTag Type="Status" Tooltip="GW_WEAKNESS"&gt;Weakness&lt;/LSTag&gt; when you &lt;LSTag Type="Status" Tooltip="GW_DISABLE"&gt;Disable&lt;/LSTag&gt; an enemy.</content>
+  <content contentuid="h097b556eg2877g6456gdaabg82a3db3a849c" version="1">%%% EMPTY</content>
+  <content contentuid="h121add81g175eg97deg1cc0g35078ac1f029" version="1">%%% EMPTY</content>
+  <content contentuid="h629e297fg79c8g786eg812cgd9bddabc7801" version="1">%%% EMPTY</content>
+  <content contentuid="h8700b0ebgce78gce9bg773bg16e796728c92" version="1">Disabled enemies are ones that are Stunned, [[Conditions#Dizzy(Daze)|Dizzy]], Prone or Frightened.</content>
+  <content contentuid="h61028ab3gd223gd46ag792dg700c1a18e759" version="1">Disabled</content>
+  <content contentuid="hf33c860fg07e6g298dged50gdcb915ce7630" version="1">Critical Infusion</content>
+  <content contentuid="h04cab67ag4855g6969g45bfg56847b2f6149" version="2">When you land a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt; against a creature, inflict 2 turns of &lt;LSTag Type="Status" Tooltip="BLEEDING"&gt;Bleeding&lt;/LSTag&gt; on that creature.</content>
+  <content contentuid="h0accab39g4a74g02cbgc5cbgfb7368497e39" version="1">Blinding Dissipation</content>
+  <content contentuid="h777e4199gaf6fg13cbg75f8g7061c3c4e8fb" version="1">&lt;LSTag Type="Spell" Tooltip="Shout_Mesmer_Shatter_CryOfFrustration"&gt;Shatter: Cry of Frustration&lt;/LSTag&gt; inflicts 1 turn of &lt;LSTag Type="Status" Tooltip="BLINDED"&gt;Blinded&lt;/LSTag&gt;.</content>
+  <content contentuid="h644a41aagd75fg8f02g23efg38f776faaaa2" version="1">The number you need to &lt;LSTag Tooltip="AttackRoll"&gt;roll&lt;/LSTag&gt; a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt; while attacking is reduced by 1. This effect can stack.</content>
+  <content contentuid="ha7866344g0fe7ge0c4g89cfg4b6ad2defb6b" version="1">Quiet Intensity</content>
+  <content contentuid="ha6480761g218ag17f8g230aga22c9b3c0448" version="1">Quiet Intensity</content>
+  <content contentuid="hc294954fg727ag3ca9g0641g28534a89ccbf" version="1">While under the effect of &lt;LSTag Type="Status" Tooltip="GW_FURY"&gt;Fury&lt;/LSTag&gt;: The number you need to &lt;LSTag Tooltip="AttackRoll"&gt;roll&lt;/LSTag&gt; a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt; while attacking is reduced by 1. This effect can stack.</content>
+  <content contentuid="h630d72d8g601eg281agb611gc71150292a81" version="1">Superiority Complex</content>
+  <content contentuid="h30484442g6b58g9ee1g3bfagfe0f97c9b24a" version="1">Your &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hits&lt;/LSTag&gt; deal more damage. Critical Hit damage against &lt;LSTag Type="Status" Tooltip="GW_DISABLE"&gt;Disabled&lt;/LSTag&gt; enemies, is further increased. Add an extra dice of weapon damage to any critical you land. Add an additional dice of weapon damage if the target is Disabled.</content>
+  <content contentuid="hab52c6d5g0ef4g54begeae8g4d3082d82f59" version="1">Superiority Complex</content>
+  <content contentuid="h7b4b820eg38bbg2f28g77d4ga7970ecd27e3" version="1">Illusionary Membrane</content>
+  <content contentuid="h3cf6d8b0g5f5fg4b79g9e5bg57d9403336d8" version="2">Gain 1 turn of &lt;LSTag Type="Status" Tooltip="GW_CHAOS_AURA"&gt;Chaos Aura&lt;/LSTag&gt; when you use &lt;LSTag Type="Spell" Tooltip="Shout_Mesmer_Shatter_CryOfFrustration"&gt;Shatter: Cry of Frustration&lt;/LSTag&gt; for each clone shattered.</content>
+  <content contentuid="h84dd7427g863cg0d21g4ce2ga29e415d084f" version="1">Method of Madness</content>
+  <content contentuid="h0cf3a0a4gff04g084fg4daeg041787a9958f" version="2">Gain access to &lt;LSTag Type="Spell" Tooltip="Interrupt_Method_of_Madness"&gt;Method of Madness&lt;/LSTag&gt;.</content>
+  <content contentuid="h4a41ff37g308ag288dgeea8ga614de48a8b9" version="1">Illusionary Riposte</content>
+  <content contentuid="h54bb0274g0087g56a2gb784g9e7b3810ae9c" version="1">Aegis</content>
+  <content contentuid="h58a68fb5ga191g0653g51e2g32fef000c466" version="1">Method of Madness</content>
+  <content contentuid="hd4badf73gcc73g2740gcc36gef7b9e368c12" version="1">Lesser Chaos Storm</content>
+  <content contentuid="h68895671g4506g6548g1394g06303b55b189" version="1">Locusts attack everyone within range, make the area &lt;LSTag Type="Status" Tooltip="DIFFICULT_TERRAIN"&gt;Difficult Terrain&lt;/LSTag&gt;, and impose &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt; on Perception &lt;LSTag Tooltip="AbilityCheck"&gt;Checks&lt;/LSTag&gt;.</content>
+  <content contentuid="h186b37c5ga788gdcfegddfegb1d6d9ce6d3d" version="1">Chaotic Transference</content>
+  <content contentuid="h91f927b7g8f86g2ab4gec9dg122cf4bed06f" version="1">Gaining &lt;LSTag Type="Status" Tooltip="GW_CHAOS_AURA"&gt;Chaos Aura&lt;/LSTag&gt; grants 1 turn of &lt;LSTag Type="Status" Tooltip="GW_REGENERATION"&gt;Regeneration&lt;/LSTag&gt; to nearby(10m) allies.</content>
+  <content contentuid="h7ee40a0dga069g557eg3b68g2c761f4e6fca" version="1">Chaotic Transference</content>
+  <content contentuid="h41e16f6dgf0a0g1e7egbb8fg27270e380923" version="1">Chaotic Transference</content>
+  <content contentuid="h05afc4c2g98e4g6450gd036g6a50534b6ad3" version="1">Bountiful Disillusionment</content>
+  <content contentuid="h4e06f125g7553g5138g6b8egb0c46077e915" version="1">Gain 1 turn of &lt;LSTag Type="Status" Tooltip="GW_STABILITY"&gt;Stability&lt;/LSTag&gt; when you use a &lt;LSTag Type="Spell" Tooltip="Shout_Mesmer_Shatter_Container"&gt;Shatter&lt;/LSTag&gt; skill. Grant an additional boon to nearby allies based on which Shatter is used.</content>
+  <content contentuid="hb864a2b7gc014gc835g65f7g3664b3adbbb5" version="1">Chaotic Transference</content>
+  <content contentuid="hc7ca136bg0dfdg1b79g5045gb9cd147c4053" version="2">Bountiful Disillusionment</content>
+  <content contentuid="he1b87a86g50bfg4f06g51ecg76621016dc5b" version="1">Bountiful Disillusionment</content>
+  <content contentuid="h30488690g33f2ge2e7g8644gf5a316bd008f" version="1">Bountiful Disillusionment</content>
+  <content contentuid="h79413f7cg4880g6f0egab29g8e3586040e11" version="1">Bountiful Disillusionment</content>
+  <content contentuid="h773de1a6g9a8cgd38ag6c6dg8ef782e0dd33" version="1">Mental Defense</content>
+  <content contentuid="h4dab5e5ag204ag850ag1f0egfd35d8ddff6f" version="1">Mental Defense</content>
+  <content contentuid="h43d4e3eag6e82g7276g1e69gfd836da81bf5" version="1">&lt;LSTag Type="Spell" Tooltip="Mesmer_Shatter_Distortion"&gt;Shatter: Distortion&lt;/LSTag&gt; grants 1 turn of &lt;LSTag Type="Status" Tooltip="GW_PROTECTION"&gt;Protection&lt;/LSTag&gt; and breaks allies who are within 10m of a shattered clone out of stun.</content>
+  <content contentuid="h86095769g2aeag8bf8g27e4gbcc3c6e713e1" version="1">Desc</content>
+  <content contentuid="h45aca359g1a10gdb1dgda34gd8d0b2e4edce" version="1">Ego Restoration</content>
+  <content contentuid="h3eba7271g76f5g8574gab83g4dc0a6a3be12" version="1">Once per turn, create a clone when you heal an ally.</content>
+  <content contentuid="h9842ac12g64a8gffadge0f1ge3b4b8749694" version="2">Illusionary Inspiration</content>
+  <content contentuid="he60bd0a6gc67agaa32g3ba5g96d1c7f8a235" version="2">Increase healing to other allies. You restore an additional [1] every time you heal another creature.</content>
+  <content contentuid="h6ba52c0ag4885g59b5g5ea7gfab920990da5" version="1">Restorative Mantras</content>
+  <content contentuid="hc498a62dgde61g3696g48e0g4aaa91f8fabf" version="1">When you use a charge of a Mantra: Heals allies within [1] of you by [2].</content>
+  <content contentuid="h78b1b2c2g4c06g9d5bg1f2agc205ea9b181e" version="1">Restorative Mantras</content>
+  <content contentuid="h8ac59c82g12e7g05b2g3a48g775d0de7194b" version="1">Compounding Power</content>
+  <content contentuid="hb6b0c312gfce4gbad5g779dg6ca468456da1" version="1">When you use a charge of a Mantra: Heals allies within [1] of you by [2].</content>
+  <content contentuid="hbb1d7d95gde9dg7ad9gbdfbg57a555bf6add" version="1">%%% EMPTY</content>
+  <content contentuid="hb40df62egfe4ag3686gb7a5g53a97b3e22be" version="1">Maim the Disillusioned</content>
+  <content contentuid="ha6f8a354gdca1ge173g9ba1gffd50022120c" version="1">Shatter skills 1,2 and 3 inflict 1 turn of &lt;LSTag Type="Status" Tooltip="GW_TORMENT"&gt;Torment&lt;/LSTag&gt; on hit.</content>
+  <content contentuid="hfecd9941gdcb1gbc73gd528g364b721d264c" version="1">Illusionary Reversion</content>
+  <content contentuid="h69f8218fg0b1aga3a1g0115gbdafdf8a801f" version="1">&lt;LSTag Type="Spell" Tooltip="Shout_Mesmer_Shatter_Container"&gt;Shatter&lt;/LSTag&gt; skills generate a clone if you have enough (3) clones present.</content>
+  <content contentuid="hf1b84082g2ba6g0770g8515g6f2ca52800c4" version="1">Master of Fragmentation</content>
+  <content contentuid="h2de04db8g7d2dgf798g8493ge9deb0a45e18" version="1">Your Shatter skills are improved.</content>
+  <content contentuid="h47b359dcgd067g0534g88a4g4adfa8dd35fa" version="1">Delayed Reactions</content>
+  <content contentuid="hea01a956ge7b4g0a2fg366ag224b45773c8b" version="1">&lt;LSTag Type="Status" Tooltip="GW_DISABLE"&gt;Disabling&lt;/LSTag&gt; an enemy &lt;LSTag Type="Status" Tooltip="SLOW"&gt;slows&lt;/LSTag&gt; them for 1 turn.</content>
+  <content contentuid="h34166a27gc499g2f28g1137g153892cef4e9" version="1">Time Splitter</content>
+  <content contentuid="h35ae2667g2b97g3adcgc9ebg4325af0527ef" version="1">Gain access to &lt;LSTag Type="Spell" Tooltip="Mesmer_Shatter_Chronomancer_Container"&gt;Chronomancer Shatters&lt;/LSTag&gt; and Wells.</content>
+  <content contentuid="hee13f570gb668g3871g1d9eg1040624d9229" version="1">Danger Time</content>
+  <content contentuid="h2593bfdfgda91gdd00g7289g804a2d5ac7c4" version="1">The number you need to &lt;LSTag Tooltip="AttackRoll"&gt;roll&lt;/LSTag&gt; a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt; while attacking is reduced by 1. This effect can stack.</content>
+  <content contentuid="h6cf584b7gb92cg2473g1619g3f31d3d4dcfe" version="1">Compounding Power</content>
+  <content contentuid="h6181ed79gf391gbfc6g98ebge0d8ddefdeb1" version="1">%%% EMPTY</content>
+  <content contentuid="h00176c5eg8f38g7003g0821g25fa18adf304" version="1">%%% EMPTY</content>
+  <content contentuid="hb870d388gbdf2gacb5g93f4g4b86f1f3e365" version="1">Seize the Moment</content>
+  <content contentuid="h4ddeee86g3821g4b72ga1a5g4fe766ffe94c" version="1">Seize the Moment</content>
+  <content contentuid="ha3b7ac29g4356gca9fgccecge45461817c10" version="1">&lt;LSTag Type="Spell" Tooltip="Shout_Mesmer_Shatter_Container"&gt;Shatter&lt;/LSTag&gt; skills generate a clone if you have enough (3) clones present.</content>
+  <content contentuid="hb60ec35bge87eg6417g262dg8ea077664877" version="1">Mirage Cloak</content>
+  <content contentuid="h6c9d1b9cg8e42g2656g206egdb6ab5dd1429" version="1">Mirage Cloak</content>
+  <content contentuid="h8864e223ge03eg84e2g7c3fgab39f2403a1a" version="1">Mirage Cloak</content>
+  <content contentuid="hda13c6a8gb7b1gbf28gfab3g26d1e025bd5d" version="1">Gain access to &lt;LSTag Type="Spell" Tooltip="Shout_Mesmer_MirageCloak"&gt;Mirage Cloak&lt;/LSTag&gt;, during which ambush skills may be used.</content>
+  <content contentuid="hee767826g9b21g0030gf818g16cd585d208a" version="1">Speed of Sand</content>
+  <content contentuid="h2ebe1686gbfacg598cge098g0f04d0b09c68" version="1">&lt;LSTag Type="Status" Tooltip="MESMER_MIRAGE_CLOAK"&gt;Mirage Cloak&lt;/LSTag&gt; increases your movement speed by [1].</content>
+  <content contentuid="h4fc0ee3cg351cgf155g0119g4b583dfd4988" version="1">Mirage Mantle</content>
+  <content contentuid="h915a2b5fga503g34bbgacb3gacf2b9a802be" version="1">Ambush skills are improved.</content>
+  <content contentuid="hf0b1d79fg9e73g979agaab7gdb7d156a50b4" version="1">%%% EMPTY</content>
+  <content contentuid="h95d53334g2ce3g6527ge9edgd422f2b17404" version="1">Dune Cloak</content>
+  <content contentuid="hc53982eegbdf2gafd4gd5c5gb947db9ddeb2" version="1">&lt;LSTag Type="Spell" Tooltip="Shout_Mesmer_Shatter_Container"&gt;Shatter&lt;/LSTag&gt; skills grant &lt;LSTag Type="Status" Tooltip="MESMER_MIRAGE_CLOAK"&gt;Mirage Cloak&lt;/LSTag&gt; when 2 or more clones are present.</content>
+  <content contentuid="h571defd5g5eadg0dd6gca43g27a6ecc3dd3b" version="1">Psychic Blades</content>
+  <content contentuid="h58739302g0467gd592g6580g58d9855a8636" version="1">Psychic Blades</content>
+  <content contentuid="h7a7c726cg1603gcf40g0705g4fc1133a7f1c" version="1">Whenever a clone would be summoned, you instead stock a blade. Blades persist indefinitely until used. Your shatters are replaced with Bladesongs that consume your stocked blades, but still count as shatters.</content>
+  <content contentuid="h7add43feg49f9gbeadgb1b7g2d9510c1753c" version="1">2 Psychic Blades</content>
+  <content contentuid="h9d962db3gf4c2ge52ege9a0gb8c32a56b99c" version="1">3 Psychic Blades</content>
+  <content contentuid="hfa2faad6gbb24g2728gc734gd8eefd3f4ff3" version="1">4 Psychic Blades</content>
+  <content contentuid="hafc0d544g34d9g419fg429dg1e5559edc391" version="1">5 Psychic Blades</content>
+  <content contentuid="ha1655ed8gf4bcg2287g1a35ga4d9f6e0dca9" version="1">Bladesongs</content>
+  <content contentuid="hd79f1083g599dgaa3dgdfddg4c5f4a504f4d" version="1">Bladesongs</content>
+  <content contentuid="h4fe83066g908bg5cabg3e57ga77eaabf9556" version="1">Bladesong Distortion</content>
+  <content contentuid="h2a371d57ge3f8g98c0g8bd2g8f21203ee612" version="1">Bladesong Distortion</content>
+  <content contentuid="h12898305g472fg5869g5712gf136046e0c1f" version="1">Bladeturn Requiem</content>
+  <content contentuid="h60957ef7g76f7g4281geef4gd796e20b39ed" version="1">Bladeturn Requiem</content>
+  <content contentuid="h0b474b5fgb296g6a05g59bcgafa9be16dc22" version="3">Bladesong Harmony 1</content>
+  <content contentuid="h7bd085d2g690bg9a40g22c8gcdea931f3a8e" version="1">Reduces the target's &lt;LSTag Tooltip="MovementSpeed"&gt;movement speed&lt;/LSTag&gt; by [1].</content>
+  <content contentuid="hd095732cgc67bgccdegc556gc0db9497bd6a" version="2">Bladesong Sorrow 1</content>
+  <content contentuid="ha5cd41f8g549fg4dfagce21g2c192605f02f" version="1">Reduces the target's &lt;LSTag Tooltip="MovementSpeed"&gt;movement speed&lt;/LSTag&gt; by [1].</content>
+  <content contentuid="hd5d1b9aeg3f3eg9b7eg8166ge873f91f8ab7" version="1">Bladesong Dissonance</content>
+  <content contentuid="h532031e1g1f67g9eb8geefdg8afba995eaab" version="1">Bladeturn Refrain</content>
+  <content contentuid="h83714f9bg8ce0gf669g765fg5c531c2c15cd" version="1">Using a &lt;LSTag Type="Spell" Tooltip="Shout_Mesmer_Bladesong_Container"&gt;Bladesong&lt;/LSTag&gt; grants 1 turn of &lt;LSTag Type="Status" Tooltip="GW_AEGIS"&gt;Aegis&lt;/LSTag&gt;</content>
+  <content contentuid="h20d5beafga2dcg7056g3391gc5a515e85152" version="1">Psychic Blades</content>
+  <content contentuid="hee18f0b8gb43cgdaf8g47ffg6a4019bd7252" version="1">Psychic Blades</content>
+  <content contentuid="hc3dd52aag0756gb88dgeedcgcc2ad084e5fb" version="1">Whenever a clone would be summoned, you instead stock a blade. Blades persist indefinitely until used. Your shatters are replaced with Bladesongs that consume your stocked blades, but still count as shatters.</content>
+  <content contentuid="h90e3e5f1g1b5ag04eeg7629g6f7736b7ac45" version="1">Bladesong Harmony</content>
+  <content contentuid="h0edec25fg952dg00d8gd4f2ge59496618780" version="1">Reduces the target's &lt;LSTag Tooltip="MovementSpeed"&gt;movement speed&lt;/LSTag&gt; by [1].</content>
+  <content contentuid="h869a71beg6c3bg9ca1gcb44g6dc5683307db" version="1">%%% EMPTY</content>
+  <content contentuid="hcd2f01dagf5ddg2264gd2b7g7a70fc8ecab9" version="2">Bladesong Harmony 2</content>
+  <content contentuid="h4b339e43gd2a7g958cgdf66g7455857df01a" version="1">Reduces the target's &lt;LSTag Tooltip="MovementSpeed"&gt;movement speed&lt;/LSTag&gt; by [1].</content>
+  <content contentuid="h97118d9cg4185g25fdge206g25f74f7c1455" version="2">Bladesong Harmony 3</content>
+  <content contentuid="h6aa08983g8c28g4255g9ff7gae9ba2193866" version="1">Reduces the target's &lt;LSTag Tooltip="MovementSpeed"&gt;movement speed&lt;/LSTag&gt; by [1].</content>
+  <content contentuid="hf17cf402ga1e0gd8dfg0b38g19225049aeea" version="2">Bladesong Harmony 4</content>
+  <content contentuid="hf03abdc2g181fg98cfge047gcee83d9dfd99" version="1">Reduces the target's &lt;LSTag Tooltip="MovementSpeed"&gt;movement speed&lt;/LSTag&gt; by [1].</content>
+  <content contentuid="h12abfd2dgaf1fg2d68g5a28g9dda332cff99" version="2">Bladesong Harmony 5</content>
+  <content contentuid="h8d001419gd910gebc7g9e8eg11b4965b5b6d" version="1">Reduces the target's &lt;LSTag Tooltip="MovementSpeed"&gt;movement speed&lt;/LSTag&gt; by [1].</content>
+  <content contentuid="h1d9ad770g5852gb969g7c0fg8921f4bbb498" version="1">Bladesong Sorrow 2</content>
+  <content contentuid="h1764422dg4acagb57dgbb10gd4f421c8d240" version="1">Reduces the target's &lt;LSTag Tooltip="MovementSpeed"&gt;movement speed&lt;/LSTag&gt; by [1].</content>
+  <content contentuid="h7f24137cg91caged12g8e72gfb7c4e43ff48" version="1">Bladesong Sorrow 3</content>
+  <content contentuid="hfdaf8c02g8a22g7d81g8b64g7e59ef0cb494" version="1">Reduces the target's &lt;LSTag Tooltip="MovementSpeed"&gt;movement speed&lt;/LSTag&gt; by [1].</content>
+  <content contentuid="hf27a1d68g9e62gb2e5g2a42g585d695e6eb9" version="1">Bladesong Sorrow 4</content>
+  <content contentuid="hc86a522egd268g5943ga839g62e6cdef56cb" version="1">Reduces the target's &lt;LSTag Tooltip="MovementSpeed"&gt;movement speed&lt;/LSTag&gt; by [1].</content>
+  <content contentuid="h3bcd6de3g7762gf2bdg6842g1dfdd5977826" version="1">Bladesong Sorrow 5</content>
+  <content contentuid="heecb70d7g69ccgd2a3gaae0g79e7f4c5b322" version="1">Reduces the target's &lt;LSTag Tooltip="MovementSpeed"&gt;movement speed&lt;/LSTag&gt; by [1].</content>
+  <content contentuid="h53110b2cgb0c7g508ag97b0g422ec3a80186" version="1">%%% EMPTY</content>
+  <content contentuid="hf12e31begb593g4f5fge92eg602c50915a1e" version="1">Deadly Blades</content>
+  <content contentuid="h0c8a7d0dg18ccg073cg6d78g02c7dd687bb6" version="2">Enemies hit by Bladesong Harmony, Bladesong Sorrow or Bladesong Dissonance must succeed a Charisma &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt; or be inflict with 1 turn of &lt;LSTag Type="Status" Tooltip="GW_VULNERABILITY"&gt;Vulnerability&lt;/LSTag&gt;. After successfully casting a Bladesong, gain 1 turn of &lt;LSTag Type="Status" Tooltip="GW_FURY"&gt;Fury&lt;/LSTag&gt;.</content>
+  <content contentuid="h702f710dgbf89gc78eg25adg9682dea4bcd2" version="1">Infinite Forge</content>
+  <content contentuid="hbfd9e695gacc0g394dgab1bg4ce54e30ab5f" version="1">Automatically stock blades while in combat. At the beginning of every turn gain 2 blades. When you use bladesong while holding 5 blades, refund 2 blades.</content>
+  <content contentuid="hc07e5b2eg5b5egc056g1e7ag8476453769f0" version="1">%%% EMPTY</content>
+  <content contentuid="ha3dda787g5fccg420dg33fag0ec429ddf38a" version="1">Infinite Forge</content>
+  <content contentuid="h4172ed11g7e82gbef7g7e9eg7f4cf26bce27" version="1">Automatically stock blades while in combat. At the beginning of every turn gain 2 blades. When you use bladesong while holding 5 blades, refund 2 blades.</content>
+  <content contentuid="hd032e699g241fgb647g8be3g8da2ac37e6a6" version="1">%%% EMPTY</content>
+  <content contentuid="h77a2cac7g9efeg2b18ge12ag6a9fd60f2ce1" version="1">%%% EMPTY</content>
 </contentList>

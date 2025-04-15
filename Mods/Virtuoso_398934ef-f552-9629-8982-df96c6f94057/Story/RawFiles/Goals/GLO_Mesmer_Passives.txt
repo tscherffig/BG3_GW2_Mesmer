@@ -1,0 +1,129 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+
+KBSECTION
+// Mesmer Illusionary Reversion
+PROC
+PROC_MESMER_Illusionary_Reversion((CHARACTER)_Caster)
+AND
+HasPassive(_Caster, "Mesmer_Illusionary_Reversion_Passive", 1)
+AND
+HasActiveStatus(_Caster, "MESMER_ILLUSIONARY_REVERSION", _Bool)
+AND
+_Bool == 1
+THEN
+ApplyStatus(_Caster, "MESMER_CLONE_SPAWN", 1.0, 0, _Caster);
+RemoveStatus(_Caster,"MESMER_ILLUSIONARY_REVERSION",_Caster);
+
+//REGION Compounding Power
+PROC
+PROC_GW_COMPOUNDING_POWER_ADD((GUIDSTRING)_Target)
+AND
+HasPassive(_Target, "Mesmer_Compounding_Power_Passive", 1)
+AND
+GetStatusTurns(_Target, "MESMER_COMPOUNDING_POWER", _Turns)
+AND
+_Turns < 5
+THEN
+ApplyStatus(_Target, "MESMER_COMPOUNDING_POWER", 6.0, 0, _Target);
+
+IF
+StatusApplied(_Target, "MESMER_SHATTER_MIND_WRECK", _Caster, _)
+AND
+HasPassive(_Caster, "Mesmer_Compounding_Power_Passive", 1)
+AND
+GetUUID(_Caster, _CasterUUID)
+AND
+Concatenate("MesmerCloneCounter_", _CasterUUID, _CounterName)
+AND
+DB_GlobalCounter(_CounterName, _TurnsInt)
+THEN
+ApplyDamage(_Target, _TurnsInt, "Psychic", _Caster);
+
+IF
+StatusApplied(_Target, "MESMER_SHATTER_CRY_OF_FRUSTRATION", _Caster, _)
+AND
+HasPassive(_Caster, "Mesmer_Compounding_Power_Passive", 1)
+AND
+GetUUID(_Caster, _CasterUUID)
+AND
+Concatenate("MesmerCloneCounter_", _CasterUUID, _CounterName)
+AND
+DB_GlobalCounter(_CounterName, _TurnsInt)
+THEN
+ApplyDamage(_Target, _TurnsInt, "Psychic", _Caster);
+
+IF
+StatusApplied(_Target, "MESMER_SHATTER_DIVERSION", _Caster, _)
+AND
+HasPassive(_Caster, "Mesmer_Compounding_Power_Passive", 1)
+AND
+GetUUID(_Caster, _CasterUUID)
+AND
+Concatenate("MesmerCloneCounter_", _CasterUUID, _CounterName)
+AND
+DB_GlobalCounter(_CounterName, _TurnsInt)
+THEN
+ApplyDamage(_Target, _TurnsInt, "Psychic", _Caster);
+//END_REGION
+
+// Dune Cloak
+IF
+StatusApplied(_Target, "MESMER_DUNE_CLOAK", _Caster, _)
+AND
+GetUUID(_Caster, _CasterUUID)
+AND
+Concatenate("MesmerCloneCounter_", _CasterUUID, _CounterName)
+AND
+DB_GlobalCounter(_CounterName, _TurnsInt)
+AND
+_TurnsInt >= 2
+THEN
+ApplyStatus(_Caster, "MESMER_MIRAGE_CLOAK", 6.0, 0, _Caster);
+
+//REGION Virtuoso
+// Psychic Blades
+PROC
+PROC_MESMER_ADD_Psychic_Blade((CHARACTER)_Caster)
+AND
+HasPassive(_Caster, "Mesmer_Illusionary_Reversion_Passive", 1)
+AND
+HasActiveStatus(_Caster, "MESMER_ILLUSIONARY_REVERSION", _Bool)
+AND
+_Bool == 1
+THEN
+ApplyStatus(_Caster, "MESMER_CLONE_SPAWN", 1.0, 0, _Caster);
+RemoveStatus(_Caster,"MESMER_ILLUSIONARY_REVERSION",_Caster);
+
+// Deadly Blades
+IF
+StatusApplied(_Target, "MESMER_DEADLY_BLADES_HIT", _Caster, _)
+AND
+HasPassive(_Caster, "Mesmer_Deadly_Blades_Passive", 1)
+AND
+HasActiveStatus(_Target, "MESMER_DEADLY_BLADES_ALREADY_HIT", 0)
+THEN
+ApplyStatus(_Target, "GW_VULNERABILITY", 6.0, 0, _Caster);
+ApplyStatus(_Target, "MESMER_DEADLY_BLADES_ALREADY_HIT", 6.0, 0, _Caster);
+//END_REGION
+
+
+
+/*
+PROC
+PROC_MESMER_ADD_HIT_Bladesong_Harmony((CHARACTER)_Caster)
+AND
+HasPassive(_Caster, "Mesmer_Illusionary_Reversion_Passive", 1)
+AND
+HasActiveStatus(_Caster, "MESMER_ILLUSIONARY_REVERSION", _Bool)
+AND
+_Bool == 1
+THEN
+ApplyStatus(_Caster, "MESMER_CLONE_SPAWN", 1.0, 0, _Caster);
+RemoveStatus(_Caster,"MESMER_ILLUSIONARY_REVERSION",_Caster);
+*/
+EXITSECTION
+
+ENDEXITSECTION
+ParentTargetEdge "__Start"

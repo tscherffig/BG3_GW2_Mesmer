@@ -27,6 +27,8 @@ PROC_CCO_CreatedMesmerClone(_Clone, _Player);
 IF
 StatusApplied(_Char,"MESMER_CLONE_SPAWN",_Caster,_)
 AND
+HasPassive(_Caster, "Mesmer_Psychic_Blades_Passive", 0)
+AND
 IsInCombat(_Char ,1)
 AND
 GetPosition(_Char,_CharX,_CharY,_CharZ)
@@ -39,8 +41,36 @@ IsTagged(_Caster, (TAG)MESMER_CLONE_LIMIT_3_5f546d59-2381-4061-a81a-05be70879cd2
 AND
 CreateAt(5b2d100d-2080-41a0-ab7f-66d6e73f706f,_CharX,_CharY,_CharZ,1,1,"",_MesmerClone)
 THEN
+PROC_GW_COMPOUNDING_POWER_ADD(_Caster); 
 ApplyStatus(_MesmerClone, "MESMER_CLONE_ALIVE", -1.0, 0, _Caster);
 RemoveStatus(_Char,"MESMER_CLONE_SPAWN",_MesmerClone);
+
+// Make sure Deathtype is Lifetime when killing a clone
+IF
+StatusApplied(_Target, "MESMER_CLONE_DEATH", _Caster, _)
+AND
+DB_GLO_MESMER_CLONES((CHARACTER)_Target, (CHARACTER)_Caster)
+THEN
+DebugText((CHARACTER)_Target, "Time to die and not leave a corpse");
+Die(_Target, DEATHTYPE.Lifetime, _Target, 0, 1, 0.0);
+
+// Mesmer_Illusionary_Membrane
+IF
+CastSpell(_Caster, "Shout_Mesmer_Shatter_CryOfFrustration", _, _, _)
+AND
+HasPassive(_Caster, "Mesmer_Illusionary_Membrane", 1)
+AND
+GetUUID(_Caster, _CasterUUID)
+AND
+Concatenate("MesmerCloneCounter_", _CasterUUID, _CounterName)
+AND
+DB_GlobalCounter(_CounterName, _TurnsInt)
+AND
+IntegerToReal(_TurnsInt, _TurnsReal)
+AND
+RealProduct(_TurnsReal, 6.0, _DurationReal)
+THEN
+ApplyStatus(_Caster, "GW_CHAOS_AURA", _DurationReal, 0, _Caster);
 
 // Mirror Images
 IF
@@ -492,7 +522,6 @@ CombatEnded(_CombatID)
 AND
 DB_GLO_MESMER_CLONES(_Clones, _Creator)
 THEN
-DebugText((CHARACTER)_clones, "Combat ended for clone");
 Die(_Clones, DEATHTYPE.Lifetime, _Clones, 0, 1, 0.0);
 
 PROC
@@ -550,6 +579,7 @@ AND
 THEN
     PROC_DecreaseCounter(_CounterName, 1);
     PROC_CCO_DisplayCounter(_Caster);
+	NOT DB_GLO_MESMER_CLONES(_MesmerClone, _Caster);
 
 
 // Check when the limit is reached and TAG the owner.
@@ -577,6 +607,16 @@ AND
 THEN
     DebugText(_Caster, "Owner can have summons again");
     ClearTag(_Caster, (TAG)MESMER_CLONE_LIMIT_3_5f546d59-2381-4061-a81a-05be70879cd2);
+
+// Create clone for Illusionary Reversion
+IF
+    DB_CCO_CasterCounter(_CounterName, _Caster)
+AND
+    DB_GlobalCounter(_CounterName, _Count)
+AND
+    _Count == 0
+THEN
+	PROC_MESMER_Illusionary_Reversion(_Caster);
 
 
 // Procedure to display current counter for debug reasons.
