@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <save>
-    <version major="4" minor="7" revision="1" build="3"/>
+    <version major="4" minor="8" revision="0" build="10"/>
     <region id="MetaData">
         <node id="root">
             <attribute id="GameProject" type="LSString" value=""/>
             <attribute id="Module" type="LSString" value="398934ef-f552-9629-8982-df96c6f94057"/>
             <attribute id="Name" type="LSString" value="Virtuoso"/>
             <attribute id="UUID" type="LSString" value="4c2e9931-1dc2-c276-24f8-1a64994b4184"/>
+            <attribute id="UpdatedDependencies" type="bool" value="true"/>
             <children>
                 <node id="Categories"/>
             </children>

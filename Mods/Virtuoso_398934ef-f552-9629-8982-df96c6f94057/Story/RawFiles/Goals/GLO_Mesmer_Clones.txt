@@ -243,18 +243,24 @@ NOT DB_MESMER_GRAVITYWELL(_Target, _Caster);
 // Rain of Swords
 IF
 CastSpell(_Caster, "Target_Mesmer_RainOfSwords", _, _, _)
+AND
+HasPassive(_Caster, "Mesmer_Psychic_Blades_Passive", 1)
 THEN
 ApplyStatus(_Caster, "MESMER_CLONE_SPAWN", 1.0, 0, _Caster);
 
 // Psychic Force
 IF
 CastSpell(_Caster, "Shout_Mesmer_PsychicForce", _, _, _)
+AND
+HasPassive(_Caster, "Mesmer_Psychic_Blades_Passive", 1)
 THEN
 ApplyStatus(_Caster, "MESMER_CLONE_SPAWN", 1.0, 0, _Caster);
 
 // Bladecall
 IF
 CastSpell(_Caster, "Projectile_Mesmer_Bladecall", _, _, _)
+AND
+HasPassive(_Caster, "Mesmer_Psychic_Blades_Passive", 1)
 THEN
 ApplyStatus(_Caster, "MESMER_CLONE_SPAWN", 1.0, 0, _Caster);
 

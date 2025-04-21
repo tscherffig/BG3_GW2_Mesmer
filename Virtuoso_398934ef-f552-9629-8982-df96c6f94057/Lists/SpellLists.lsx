@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <save>
-    <version major="4" minor="7" revision="1" build="3"/>
+    <version major="4" minor="8" revision="0" build="10"/>
     <region id="SpellLists">
         <node id="root">
             <children>
@@ -46,11 +46,12 @@
                 </node>
                 <node id="SpellList">
                     <attribute id="Name" type="FixedString" value="Mesmer spells level 2"/>
-                    <attribute id="Spells" type="LSString" value="Shout_Mesmer_Decoy;Target_Mesmer_MirrorImages;Shout_Mesmer_Mantra_Of_Pain;Shout_Mesmer_Mantra_Of_Distraction;Shout_Mesmer_Mantra_Of_Concentration;Target_Mesmer_IllusionaryLeap;Target_Mesmer_IllusionaryRiposte;Projectile_Mesmer_MirrorBlade;Target_Mesmer_MindStab;Target_Mesmer_PhaseRetreat;Zone_Mesmer_ConfusingImages;Projectile_Mesmer_WindsOfChaos;Shout_Mesmer_ChaosArmor;Shout_Mesmer_ThePrestige"/>
+                    <attribute id="Spells" type="LSString" value="Shout_Mesmer_Decoy;Shout_Mesmer_MirrorImages;Shout_Mesmer_Mantra_Of_Pain;Shout_Mesmer_Mantra_Of_Distraction;Shout_Mesmer_Mantra_Of_Concentration;Target_Mesmer_IllusionaryLeap;Target_Mesmer_IllusionaryRiposte;Projectile_Mesmer_MirrorBlade;Target_Mesmer_MindStab;Target_Mesmer_PhaseRetreat;Zone_Mesmer_ConfusingImages;Projectile_Mesmer_WindsOfChaos;Shout_Mesmer_ChaosArmor;Shout_Mesmer_ThePrestige"/>
                     <attribute id="UUID" type="guid" value="7374f315-3032-4c39-ac02-7102fe6d02ce"/>
                 </node>
                 <node id="SpellList">
                     <attribute id="Name" type="FixedString" value="Mesmer spells level 3"/>
+                    <attribute id="Spells" type="LSString" value="Target_Mesmer_Feedback"/>
                     <attribute id="UUID" type="guid" value="e419fd62-6d9f-49a9-8f5c-1000c0d31982"/>
                 </node>
                 <node id="SpellList">

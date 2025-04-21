@@ -250,7 +250,7 @@
   <content contentuid="hafc09be1ga1e9g39deg52f9gfc9493869a08" version="1">Hit by Flying Cutter</content>
   <content contentuid="h52ef5b67g0237gd80cgbfcegb0d2316cc45c" version="1">MESMER_MAGIC_BULLET_STUN</content>
   <content contentuid="h40e54bfbgf433g66b6g7dc5gccd1042318a8" version="1">Hit by Flying Cutter</content>
-  <content contentuid="h0268c5aegca35g291cg87b8g1e4bac97037b" version="1">Mirror Blade</content>
+  <content contentuid="h0268c5aegca35g291cg87b8g1e4bac97037b" version="2">Magic Bullet</content>
   <content contentuid="h1ac3e7c2g1e90g0170g1ee2g725cebada7bc" version="1">Mirror Blade</content>
   <content contentuid="hefa07de9g39b1ga543gfc91gbcf769522427" version="1">Mass Invisibility</content>
   <content contentuid="h87461f18g059dg1b24g4a75g5a11e5d0db94" version="1">MassInvisibility</content>
@@ -572,4 +572,11 @@
   <content contentuid="h4172ed11g7e82gbef7g7e9eg7f4cf26bce27" version="1">Automatically stock blades while in combat. At the beginning of every turn gain 2 blades. When you use bladesong while holding 5 blades, refund 2 blades.</content>
   <content contentuid="hd032e699g241fgb647g8be3g8da2ac37e6a6" version="1">%%% EMPTY</content>
   <content contentuid="h77a2cac7g9efeg2b18ge12ag6a9fd60f2ce1" version="1">%%% EMPTY</content>
+  <content contentuid="he3f4d4b3g8265g8bc1gb03ag00eee2939446" version="1">Bladeturn Reqiuem</content>
+  <content contentuid="hf06098e6g9f5fg457fg4734gf381896a2e50" version="1">Spirits assail the affected entity.&lt;br&gt;&lt;br&gt;Takes [1] per turn, and &lt;LSTag Tooltip="MovementSpeed"&gt;movement speed&lt;/LSTag&gt; is halved.&lt;br&gt;&lt;br&gt;Still takes half damage on successful Saving Throw.&lt;br&gt;&lt;br&gt;Removed upon leaving the area.</content>
+  <content contentuid="he9788c7ag8b26gc287gc6d8g3efde116171f" version="1">Bladeturn Reqiuem Aura</content>
+  <content contentuid="hf4bc6b8eg1929g678agf2f8g339ecd4c9b5f" version="1">Spirits protect the affected entity.&lt;br&gt;&lt;br&gt;Nearby enemies take [1] per turn, and their &lt;LSTag Tooltip="MovementSpeed"&gt;movement speed&lt;/LSTag&gt; is halved.&lt;br&gt;&lt;br&gt;The caster can't become &lt;LSTag Type="Status" Tooltip="INVISIBLE"&gt;Invisible&lt;/LSTag&gt; while concentrating on this spell.&lt;br&gt;&lt;br&gt;On a successful save, targets still take half damage.</content>
+  <content contentuid="h80e555a2g06d1gd6ebg2410gb99b5767b3df" version="1">%%% EMPTY</content>
+  <content contentuid="h4cee4549ge731g52c8gc0dag6464d253c931" version="1">%%% EMPTY</content>
+  <content contentuid="h519cd4c8ge177ge6e5gdbbfg09c37bc3635a" version="1">Deja Vu</content>
 </contentList>
