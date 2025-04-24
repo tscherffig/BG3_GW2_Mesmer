@@ -66,7 +66,7 @@
                 </node>
                 <node id="SpellList">
                     <attribute id="Name" type="FixedString" value="Mesmer Weapon Attacks"/>
-                    <attribute id="Spells" type="LSString" value="Target_Mesmer_PhantasmalSwordsman"/>
+                    <attribute id="Spells" type="LSString" value="Target_Mesmer_PhantasmalSwordsman;Target_Mesmer_MindSlash;Target_Mesmer_LaceratingChop;Target_Mesmer_Psycut;Rush_Mesmer_LingeringThoughts;Shout_Mesmer_MindTheGap"/>
                     <attribute id="UUID" type="guid" value="13e08df9-426b-49b5-b8cf-5b8990e22e4e"/>
                 </node>
             </children>
