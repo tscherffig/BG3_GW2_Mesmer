@@ -9,3 +9,14 @@ data "StatusPropertyFlags" "UnavailableInActiveRoll;ExcludeFromPortraitRendering
 data "OnRemoveFunctors" "CreateExplosion(Projectile_Mesmer_ThePrestige_Removed)"
 data "StatusEffect" "bcb8586f-b17d-42f6-8ea9-210952604780"
 
+new entry "MESMER_CLONE_ALIVE_TECHNICAL"
+type "StatusData"
+data "StatusType" "INVISIBLE"
+using "INVISIBLE"
+data "Boosts" ""
+data "StatusPropertyFlags" "UnavailableInActiveRoll;ExcludeFromPortraitRendering;DisableCombatlog;DisableOverhead;DisablePortraitIndicator"
+data "RemoveEvents" ""
+data "RemoveConditions" ""
+data "OnRemoveFunctors" "ApplyStatus(MESMER_CLONE_ALIVE,100,-1)"
+data "StatusGroups" ""
+

@@ -7,7 +7,7 @@ NOT DB_GLO_MESMER_CLONES((CHARACTER)00000000-0000-0000-0000-000000000000, (CHARA
 KBSECTION
 //REGION Mesmer Clone Equipment Duplication
 IF
-StatusApplied(_Clone, "MESMER_CLONE_ALIVE", _Player, _)
+StatusApplied(_Clone, "MESMER_CLONE_ALIVE_TECHNICAL", _Player, _)
 THEN
 CopyCharacterEquipment((CHARACTER)_Clone, (CHARACTER)_Player);
 DB_GLO_MESMER_CLONES((CHARACTER)_Clone, (CHARACTER)_Player);
@@ -20,7 +20,7 @@ DB_GLO_MESMER_CLONES((CHARACTER)_Clone, (CHARACTER)_Player)
 THEN
 Transform(_Clone, _Player, MESMERCLONE_cf3f0d40-fa12-483a-bf7d-438a8711498b);
 PROC_CCO_CreatedMesmerClone(_Clone, _Player);
-//RemoveStatus(_Duplicity, "MESMER_CLONE_ALIVE", _Player);
+RemoveStatus(_Clone, "MESMER_CLONE_ALIVE_TECHNICAL", _Player);
 //END_REGION
 
 //Create Clone when "MESMER_CLONE_SPAWN" gets applied
@@ -41,8 +41,8 @@ IsTagged(_Caster, (TAG)MESMER_CLONE_LIMIT_3_5f546d59-2381-4061-a81a-05be70879cd2
 AND
 CreateAt(5b2d100d-2080-41a0-ab7f-66d6e73f706f,_CharX,_CharY,_CharZ,1,1,"",_MesmerClone)
 THEN
-PROC_GW_COMPOUNDING_POWER_ADD(_Caster); 
-ApplyStatus(_MesmerClone, "MESMER_CLONE_ALIVE", -1.0, 0, _Caster);
+PROC_GW_COMPOUNDING_POWER_ADD(_Caster);
+ApplyStatus(_MesmerClone, "MESMER_CLONE_ALIVE_TECHNICAL", -1.0, 0, _Caster);
 RemoveStatus(_Char,"MESMER_CLONE_SPAWN",_MesmerClone);
 
 // Make sure Deathtype is Lifetime when killing a clone

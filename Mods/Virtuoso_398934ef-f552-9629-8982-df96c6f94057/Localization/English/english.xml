@@ -164,7 +164,7 @@
   <content contentuid="hb9aa14d5gf8c4g600dg316dgcc33650d6716" version="1">Possibly knock your enemy &lt;LSTag Type="Status" Tooltip="PRONE"&gt;Prone&lt;/LSTag&gt;.</content>
   <content contentuid="h28797815g3a68gec41g6473gf6585b1d4b7a" version="2">Clone Leap</content>
   <content contentuid="h58f3d103g5277gea4cg2115g971d20d11d9c" version="1">Charge forward and attack the first enemy in your way, possibly pushing them &lt;LSTag Type="Status" Tooltip="OFF_BALANCED"&gt;Off Balance&lt;/LSTag&gt;.</content>
-  <content contentuid="hef83b313g9683g6cfag4b02gf0b021f063f1" version="25">Clone</content>
+  <content contentuid="hef83b313g9683g6cfag4b02gf0b021f063f1" version="27">Clone</content>
   <content contentuid="hca38f6b0g23b3gd7acg7b45g680c2f75fda6" version="1">%%% EMPTY</content>
   <content contentuid="h09c7fd23gec91g5fbfg523agbd37e143edab" version="1">Mind the Gap</content>
   <content contentuid="h1c6860e6gdd93gfc27gb91eg21f324fd1b2c" version="1">Strike out at all nearby foes, making separate &lt;LSTag Tooltip="AttackRoll"&gt;attack rolls&lt;/LSTag&gt; against each target. </content>
@@ -424,7 +424,7 @@
   <content contentuid="h7ae95f54g276bg1d81g59a8g9d80618707e8" version="1">Bladecall</content>
   <content contentuid="h5f4a1ab4g6c3ag9b46g28d0gcbf7b3ad5f09" version="1">Reduces the target's &lt;LSTag Tooltip="MovementSpeed"&gt;movement speed&lt;/LSTag&gt; by [1].</content>
   <content contentuid="hd7f1c3dbg512age36bgca6dgffe046da8c81" version="1">Bladecall</content>
-  <content contentuid="h48efbc76g6cc1g1ca9g0835g088894097bb7" version="1">%%% EMPTY</content>
+  <content contentuid="h48efbc76g6cc1g1ca9g0835g088894097bb7" version="2">Blade Renewal</content>
   <content contentuid="hf0358bb0ga281g42f0g4db8ga093ec51820c" version="1">Blade Renewal</content>
   <content contentuid="h9c8d4b1dg72b0g39d0gad1eg9be0f060203d" version="1">Decoy</content>
   <content contentuid="hb893791ag29d3ga91fg8262gc886f19f8666" version="1">Friendly Fire</content>
@@ -579,4 +579,6 @@
   <content contentuid="h80e555a2g06d1gd6ebg2410gb99b5767b3df" version="1">%%% EMPTY</content>
   <content contentuid="h4cee4549ge731g52c8gc0dag6464d253c931" version="1">%%% EMPTY</content>
   <content contentuid="h519cd4c8ge177ge6e5gdbbfg09c37bc3635a" version="1">Deja Vu</content>
+  <content contentuid="h9d7cd0c2g0bcbg6ac7gd15dgd68c431f04fb" version="2">MESMER_BLADE_RENEWAL_COUNTER</content>
+  <content contentuid="haa165dcbg7710g8a70g927ag94d487ce9db7" version="2">MESMER_BLADE_RENEWAL_SUCCESS</content>
 </contentList>
