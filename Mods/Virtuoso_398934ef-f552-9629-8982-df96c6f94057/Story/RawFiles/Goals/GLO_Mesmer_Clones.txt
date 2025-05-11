@@ -9,6 +9,7 @@ KBSECTION
 IF
 StatusApplied(_Clone, "MESMER_CLONE_ALIVE_TECHNICAL", _Player, _)
 THEN
+PROC_GW_COMPOUNDING_POWER_ADD(_Player);
 CopyCharacterEquipment((CHARACTER)_Clone, (CHARACTER)_Player);
 DB_GLO_MESMER_CLONES((CHARACTER)_Clone, (CHARACTER)_Player);
 RealtimeObjectTimerLaunch(_Clone, "MesmerCloneEQDup", 100);
@@ -18,11 +19,13 @@ ObjectTimerFinished(_Clone, "MesmerCloneEQDup")
 AND
 DB_GLO_MESMER_CLONES((CHARACTER)_Clone, (CHARACTER)_Player)
 THEN
+//PROC_GLO_DeleteAllWeapons(_Clone);
 Transform(_Clone, _Player, MESMERCLONE_cf3f0d40-fa12-483a-bf7d-438a8711498b);
 PROC_CCO_CreatedMesmerClone(_Clone, _Player);
 RemoveStatus(_Clone, "MESMER_CLONE_ALIVE_TECHNICAL", _Player);
 //END_REGION
 
+/*
 //Create Clone when "MESMER_CLONE_SPAWN" gets applied
 IF
 StatusApplied(_Char,"MESMER_CLONE_SPAWN",_Caster,_)
@@ -43,7 +46,11 @@ CreateAt(5b2d100d-2080-41a0-ab7f-66d6e73f706f,_CharX,_CharY,_CharZ,1,1,"",_Mesme
 THEN
 PROC_GW_COMPOUNDING_POWER_ADD(_Caster);
 ApplyStatus(_MesmerClone, "MESMER_CLONE_ALIVE_TECHNICAL", -1.0, 0, _Caster);
-RemoveStatus(_Char,"MESMER_CLONE_SPAWN",_MesmerClone);
+RemoveStatus(_Char,"MESMER_CLONE_SPAWN",_Caster);
+//UseSpell(_Char, "Shout_Mesmer_TestSpell", _Caster);
+//UseSpell(_Char, "Target_Mesmer_SummonClone", _Caster);
+//ApplyStatus(_MesmerClone, "MESMER_CLONE_ALIVE_TECHNICAL", -1.0, 0, _Caster);
+*/
 
 // Make sure Deathtype is Lifetime when killing a clone
 IF
@@ -523,12 +530,14 @@ DebugText(_MesmerClone, "Deactivated");
 //END_REGION
 */
 
+
 IF
 CombatEnded(_CombatID)
 AND
 DB_GLO_MESMER_CLONES(_Clones, _Creator)
 THEN
-Die(_Clones, DEATHTYPE.Lifetime, _Clones, 0, 1, 0.0);
+Die(_Clones, DEATHTYPE.Lifetime, _Creator, 0, 1, 0.0);
+
 
 PROC
 PROC_TestMesmer((CHARACTER)_MesmerClone, (CHARACTER)_Caster)
@@ -571,7 +580,7 @@ THEN
 
 // Decrease counter when a servant dies
 IF
-    Died(_MesmerClone)
+    Dying(_MesmerClone)
 AND
     DB_GLO_MESMER_CLONES(_MesmerClone, _Caster)
 AND
@@ -587,7 +596,6 @@ THEN
     PROC_CCO_DisplayCounter(_Caster);
 	NOT DB_GLO_MESMER_CLONES(_MesmerClone, _Caster);
 
-
 // Check when the limit is reached and TAG the owner.
 IF
     DB_GlobalCounter(_CounterName, _Count)
@@ -601,6 +609,32 @@ THEN
     DebugText(_Caster, "Upper limit was reached - owner has 3 summons.");
     SetTag(_Caster, (TAG)MESMER_CLONE_LIMIT_3_5f546d59-2381-4061-a81a-05be70879cd2);
 
+// Check when the limit is reached and TAG the owner.
+IF
+    DB_GlobalCounter(_CounterName, _Count)
+AND
+    _Count == 2
+AND
+    DB_CCO_CasterCounter(_CounterName, _Caster)
+AND
+    IsTagged(_Caster, (TAG)MESMER_CLONE_LIMIT_2_21a2b518-cb8d-406c-8e97-1f02f08e7ab5, 0)
+THEN
+    //DebugText(_Caster, "Adding Tag: Clone Limit 2");
+    SetTag(_Caster, (TAG)MESMER_CLONE_LIMIT_2_21a2b518-cb8d-406c-8e97-1f02f08e7ab5);
+
+// Check when the limit is reached and TAG the owner.
+IF
+    DB_GlobalCounter(_CounterName, _Count)
+AND
+    _Count == 1
+AND
+    DB_CCO_CasterCounter(_CounterName, _Caster)
+AND
+    IsTagged(_Caster, (TAG)MESMER_CLONE_LIMIT_1_e67b02a3-f913-4917-98b4-e5e05ac8cce6, 0)
+THEN
+    //DebugText(_Caster, "Adding Tag: Clone Limit 1");
+    SetTag(_Caster, (TAG)MESMER_CLONE_LIMIT_1_e67b02a3-f913-4917-98b4-e5e05ac8cce6);
+
 // Reset the flag when the counter drops below 3
 IF
     DB_CCO_CasterCounter(_CounterName, _Caster)
@@ -613,6 +647,32 @@ AND
 THEN
     DebugText(_Caster, "Owner can have summons again");
     ClearTag(_Caster, (TAG)MESMER_CLONE_LIMIT_3_5f546d59-2381-4061-a81a-05be70879cd2);
+
+// Reset the flag when the counter drops below 2
+IF
+    DB_CCO_CasterCounter(_CounterName, _Caster)
+AND
+    DB_GlobalCounter(_CounterName, _Count)
+AND
+    _Count < 2
+AND
+    IsTagged(_Caster, (TAG)MESMER_CLONE_LIMIT_2_21a2b518-cb8d-406c-8e97-1f02f08e7ab5, 1)
+THEN
+    //DebugText(_Caster, "Removing Tag: Clone Limit 2");
+    ClearTag(_Caster, (TAG)MESMER_CLONE_LIMIT_2_21a2b518-cb8d-406c-8e97-1f02f08e7ab5);
+
+// Reset the flag when the counter drops below 1
+IF
+    DB_CCO_CasterCounter(_CounterName, _Caster)
+AND
+    DB_GlobalCounter(_CounterName, _Count)
+AND
+    _Count < 1
+AND
+    IsTagged(_Caster, (TAG)MESMER_CLONE_LIMIT_1_e67b02a3-f913-4917-98b4-e5e05ac8cce6, 1)
+THEN
+    //DebugText(_Caster, "Removing Tag: Clone Limit 2");
+    ClearTag(_Caster, (TAG)MESMER_CLONE_LIMIT_1_e67b02a3-f913-4917-98b4-e5e05ac8cce6);
 
 // Create clone for Illusionary Reversion
 IF

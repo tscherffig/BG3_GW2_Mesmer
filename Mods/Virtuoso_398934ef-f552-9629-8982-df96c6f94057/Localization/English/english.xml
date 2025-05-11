@@ -11,7 +11,7 @@
   <content contentuid="h10357ff0g5ac9g1418gb36cg566dfde03fa1" version="1">Mesmer: Clone</content>
   <content contentuid="he47bebedga116g48c2gfc87gbd5838e9c4e9" version="1">Summon a Clone</content>
   <content contentuid="hd6566baag20d5g0273g1b68gc875caa5c039" version="1">Ghost Dog</content>
-  <content contentuid="h9f99333dgf4bdgdf33g2e9dg51d28f320d03" version="7">Illusory Clone</content>
+  <content contentuid="h9f99333dgf4bdgdf33g2e9dg51d28f320d03" version="8">Illusory Clone</content>
   <content contentuid="h76a5c33ag6042g5f86g85feg00aa7c20ce1f" version="1">%%%Clone FX</content>
   <content contentuid="h73294be9g1edeg0e95ge83cgd0e167108603" version="1">%%%Technical status to apply the clone shader.</content>
   <content contentuid="h25153699gd65cg12efgc338gf66c8e2d3cfd" version="1">Illusory Clones</content>
@@ -164,7 +164,7 @@
   <content contentuid="hb9aa14d5gf8c4g600dg316dgcc33650d6716" version="1">Possibly knock your enemy &lt;LSTag Type="Status" Tooltip="PRONE"&gt;Prone&lt;/LSTag&gt;.</content>
   <content contentuid="h28797815g3a68gec41g6473gf6585b1d4b7a" version="2">Clone Leap</content>
   <content contentuid="h58f3d103g5277gea4cg2115g971d20d11d9c" version="1">Charge forward and attack the first enemy in your way, possibly pushing them &lt;LSTag Type="Status" Tooltip="OFF_BALANCED"&gt;Off Balance&lt;/LSTag&gt;.</content>
-  <content contentuid="hef83b313g9683g6cfag4b02gf0b021f063f1" version="27">Clone</content>
+  <content contentuid="hef83b313g9683g6cfag4b02gf0b021f063f1" version="45">Clone</content>
   <content contentuid="hca38f6b0g23b3gd7acg7b45g680c2f75fda6" version="1">%%% EMPTY</content>
   <content contentuid="h09c7fd23gec91g5fbfg523agbd37e143edab" version="1">Mind the Gap</content>
   <content contentuid="h1c6860e6gdd93gfc27gb91eg21f324fd1b2c" version="1">Strike out at all nearby foes, making separate &lt;LSTag Tooltip="AttackRoll"&gt;attack rolls&lt;/LSTag&gt; against each target. </content>
@@ -345,18 +345,18 @@
   <content contentuid="h4d11f357g4f84gc11fg99b6g02187fcbf7d0" version="1">&lt;LSTag Tooltip="MovementSpeed"&gt;Movement speed&lt;/LSTag&gt; halved. &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt; on Perception &lt;LSTag Tooltip="AbilityCheck"&gt;Checks&lt;/LSTag&gt;.</content>
   <content contentuid="hf532ff7egce63g6113g56fcge7eb52b6fc4f" version="2">Well of Action: Enemies</content>
   <content contentuid="h0da082afg9258gb656g8bfegcf88c9448909" version="1">&lt;LSTag Tooltip="MovementSpeed"&gt;Movement speed&lt;/LSTag&gt; halved. &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt; on Perception &lt;LSTag Tooltip="AbilityCheck"&gt;Checks&lt;/LSTag&gt;.</content>
-  <content contentuid="hc5561c10g1f82g3fa8ge1e3g50e91e2b6d61" version="1">%%% EMPTY</content>
+  <content contentuid="hc5561c10g1f82g3fa8ge1e3g50e91e2b6d61" version="2">MESMER_WELL_OF_ACTION_TECHNICAL</content>
   <content contentuid="hbaf69169g71bbg8a1age706gc60dde244b52" version="2">WTC</content>
   <content contentuid="hfcad9391g6022gb5f0g3ef5g6c5ee9d22261" version="1">Well of Action</content>
   <content contentuid="ha2d1e3e3g3f7fgebc4gda6ag449346f32755" version="1">Locusts attack everyone within range, make the area &lt;LSTag Type="Status" Tooltip="DIFFICULT_TERRAIN"&gt;Difficult Terrain&lt;/LSTag&gt;, and impose &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt; on Perception &lt;LSTag Tooltip="AbilityCheck"&gt;Checks&lt;/LSTag&gt;.</content>
   <content contentuid="hb8b7dd97g0700gb933ga545g1abee9bb9e15" version="1">Superspeed</content>
   <content contentuid="hc7b3b2f6g1312g6bbeg6820g89e6cb867fa1" version="1">Creature can take one additional action per turn.</content>
   <content contentuid="h27c416d4ga556gd7eag9ab4g108bd0553f41" version="2">Well of Action ended</content>
-  <content contentuid="h953f8a6eg1e16gee34g3705gdec1f1e986fe" version="1">%%% EMPTY</content>
-  <content contentuid="h68b2ce5bge926ge141g2956ga584b3f894d8" version="1">%%% EMPTY</content>
+  <content contentuid="h953f8a6eg1e16gee34g3705gdec1f1e986fe" version="2">MESMER_WELL_OF_ACTION_FINAL_EFFECT</content>
+  <content contentuid="h68b2ce5bge926ge141g2956ga584b3f894d8" version="2">MESMER_WELL_OF_ACTION_TURN_COUNTER_MAX</content>
   <content contentuid="h3f89c8b5g3389g1220g44e8gdb36b8e03545" version="2">Well of Calamity</content>
   <content contentuid="he121edcbg14bfgdd71gf1d8g14a4d7529e18" version="1">Locusts attack everyone within range, make the area &lt;LSTag Type="Status" Tooltip="DIFFICULT_TERRAIN"&gt;Difficult Terrain&lt;/LSTag&gt;, and impose &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt; on Perception &lt;LSTag Tooltip="AbilityCheck"&gt;Checks&lt;/LSTag&gt;.</content>
-  <content contentuid="h46146c27ga091g0d3dgaae4g4c58780f8169" version="1">%%% EMPTY</content>
+  <content contentuid="h46146c27ga091g0d3dgaae4g4c58780f8169" version="2">MESMER_WELL_OF_ACTION_TURN_COUNTER</content>
   <content contentuid="h6f76a64fga952g5467gc0cfg9f037fc6275b" version="1">Well of Calamity</content>
   <content contentuid="hb5b42a65ge1a1g9927gd38bg298c8fc28804" version="1">Swarming, biting locusts fill the air. They deal [1] per turn, make the area &lt;LSTag Type="Status" Tooltip="DIFFICULT_TERRAIN"&gt;Difficult Terrain&lt;/LSTag&gt;, and impose &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt; on Perception &lt;LSTag Tooltip="AbilityCheck"&gt;Checks&lt;/LSTag&gt;.</content>
   <content contentuid="h11ae8d29gc8e2g35fdgb017g6fae8b465962" version="1">Well of Calamity: Allies</content>
@@ -429,8 +429,8 @@
   <content contentuid="h9c8d4b1dg72b0g39d0gad1eg9be0f060203d" version="1">Decoy</content>
   <content contentuid="hb893791ag29d3ga91fg8262gc886f19f8666" version="1">Friendly Fire</content>
   <content contentuid="h00264ae2gfa0fge98fgf9a5gada462fe4622" version="1">Reduces the target's &lt;LSTag Tooltip="MovementSpeed"&gt;movement speed&lt;/LSTag&gt; by [1].</content>
-  <content contentuid="h9ff950bcgbf83ga58dgaca8gfb8d6c36d7f3" version="1">Journey</content>
-  <content contentuid="hc44e21ceg8737g4318g6544g369ae7e2d0cc" version="1">Journey</content>
+  <content contentuid="h9ff950bcgbf83ga58dgaca8gfb8d6c36d7f3" version="2">MESMER_JOURNEY_ALLIES</content>
+  <content contentuid="hc44e21ceg8737g4318g6544g369ae7e2d0cc" version="2">MESMER_JOURNEY_ENEMIES</content>
   <content contentuid="h1228276fg74a9g8d3cge11fgebbbfcc935d4" version="1">Journey</content>
   <content contentuid="h73dc6cc1g47d8g77b0ga23fgea9a1bce07e7" version="1">Make a pillar of divine fire roar down from the heavens like the wrath of affronted angels.</content>
   <content contentuid="h753ecf68g2413g8701g85c2g74185cd8d350" version="1">Rending Shatter</content>
@@ -452,8 +452,8 @@
   <content contentuid="h777e4199gaf6fg13cbg75f8g7061c3c4e8fb" version="1">&lt;LSTag Type="Spell" Tooltip="Shout_Mesmer_Shatter_CryOfFrustration"&gt;Shatter: Cry of Frustration&lt;/LSTag&gt; inflicts 1 turn of &lt;LSTag Type="Status" Tooltip="BLINDED"&gt;Blinded&lt;/LSTag&gt;.</content>
   <content contentuid="h644a41aagd75fg8f02g23efg38f776faaaa2" version="1">The number you need to &lt;LSTag Tooltip="AttackRoll"&gt;roll&lt;/LSTag&gt; a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt; while attacking is reduced by 1. This effect can stack.</content>
   <content contentuid="ha7866344g0fe7ge0c4g89cfg4b6ad2defb6b" version="1">Quiet Intensity</content>
-  <content contentuid="ha6480761g218ag17f8g230aga22c9b3c0448" version="1">Quiet Intensity</content>
-  <content contentuid="hc294954fg727ag3ca9g0641g28534a89ccbf" version="1">While under the effect of &lt;LSTag Type="Status" Tooltip="GW_FURY"&gt;Fury&lt;/LSTag&gt;: The number you need to &lt;LSTag Tooltip="AttackRoll"&gt;roll&lt;/LSTag&gt; a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt; while attacking is reduced by 1. This effect can stack.</content>
+  <content contentuid="ha6480761g218ag17f8g230aga22c9b3c0448" version="2">Master Fencer</content>
+  <content contentuid="hc294954fg727ag3ca9g0641g28534a89ccbf" version="2">When you land a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt; against a creature, grant 2 turns of &lt;LSTag Type="Status" Tooltip="GW_FURY"&gt;Fury&lt;/LSTag&gt; to yourself and 1 turn of &lt;LSTag Type="Status" Tooltip="GW_FURY"&gt;Fury&lt;/LSTag&gt; to allies within [1] of you.</content>
   <content contentuid="h630d72d8g601eg281agb611gc71150292a81" version="1">Superiority Complex</content>
   <content contentuid="h30484442g6b58g9ee1g3bfagfe0f97c9b24a" version="1">Your &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hits&lt;/LSTag&gt; deal more damage. Critical Hit damage against &lt;LSTag Type="Status" Tooltip="GW_DISABLE"&gt;Disabled&lt;/LSTag&gt; enemies, is further increased. Add an extra dice of weapon damage to any critical you land. Add an additional dice of weapon damage if the target is Disabled.</content>
   <content contentuid="hab52c6d5g0ef4g54begeae8g4d3082d82f59" version="1">Superiority Complex</content>
@@ -467,7 +467,7 @@
   <content contentuid="hd4badf73gcc73g2740gcc36gef7b9e368c12" version="1">Lesser Chaos Storm</content>
   <content contentuid="h68895671g4506g6548g1394g06303b55b189" version="1">Locusts attack everyone within range, make the area &lt;LSTag Type="Status" Tooltip="DIFFICULT_TERRAIN"&gt;Difficult Terrain&lt;/LSTag&gt;, and impose &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt; on Perception &lt;LSTag Tooltip="AbilityCheck"&gt;Checks&lt;/LSTag&gt;.</content>
   <content contentuid="h186b37c5ga788gdcfegddfegb1d6d9ce6d3d" version="1">Chaotic Transference</content>
-  <content contentuid="h91f927b7g8f86g2ab4gec9dg122cf4bed06f" version="1">Gaining &lt;LSTag Type="Status" Tooltip="GW_CHAOS_AURA"&gt;Chaos Aura&lt;/LSTag&gt; grants 1 turn of &lt;LSTag Type="Status" Tooltip="GW_REGENERATION"&gt;Regeneration&lt;/LSTag&gt; to nearby(10m) allies.</content>
+  <content contentuid="h91f927b7g8f86g2ab4gec9dg122cf4bed06f" version="2">Once per turn, gaining &lt;LSTag Type="Status" Tooltip="GW_CHAOS_AURA"&gt;Chaos Aura&lt;/LSTag&gt; grants 1 turn of &lt;LSTag Type="Status" Tooltip="GW_REGENERATION"&gt;Regeneration&lt;/LSTag&gt; to allies within [1] of you.</content>
   <content contentuid="h7ee40a0dga069g557eg3b68g2c761f4e6fca" version="1">Chaotic Transference</content>
   <content contentuid="h41e16f6dgf0a0g1e7egbb8fg27270e380923" version="1">Chaotic Transference</content>
   <content contentuid="h05afc4c2g98e4g6450gd036g6a50534b6ad3" version="1">Bountiful Disillusionment</content>
@@ -479,7 +479,7 @@
   <content contentuid="h79413f7cg4880g6f0egab29g8e3586040e11" version="1">Bountiful Disillusionment</content>
   <content contentuid="h773de1a6g9a8cgd38ag6c6dg8ef782e0dd33" version="1">Mental Defense</content>
   <content contentuid="h4dab5e5ag204ag850ag1f0egfd35d8ddff6f" version="1">Mental Defense</content>
-  <content contentuid="h43d4e3eag6e82g7276g1e69gfd836da81bf5" version="1">&lt;LSTag Type="Spell" Tooltip="Mesmer_Shatter_Distortion"&gt;Shatter: Distortion&lt;/LSTag&gt; grants 1 turn of &lt;LSTag Type="Status" Tooltip="GW_PROTECTION"&gt;Protection&lt;/LSTag&gt; and breaks allies who are within 10m of a shattered clone out of stun.</content>
+  <content contentuid="h43d4e3eag6e82g7276g1e69gfd836da81bf5" version="2">&lt;LSTag Type="Spell" Tooltip="Mesmer_Shatter_Distortion"&gt;Shatter: Distortion&lt;/LSTag&gt; grants 1 turn of &lt;LSTag Type="Status" Tooltip="GW_PROTECTION"&gt;Protection&lt;/LSTag&gt; to allies who are within [1] of a shattered clone out of stun and breaks them out of stun.</content>
   <content contentuid="h86095769g2aeag8bf8g27e4gbcc3c6e713e1" version="1">Desc</content>
   <content contentuid="h45aca359g1a10gdb1dgda34gd8d0b2e4edce" version="1">Ego Restoration</content>
   <content contentuid="h3eba7271g76f5g8574gab83g4dc0a6a3be12" version="1">Once per turn, create a clone when you heal an ally.</content>
@@ -500,15 +500,15 @@
   <content contentuid="h47b359dcgd067g0534g88a4g4adfa8dd35fa" version="1">Delayed Reactions</content>
   <content contentuid="hea01a956ge7b4g0a2fg366ag224b45773c8b" version="1">&lt;LSTag Type="Status" Tooltip="GW_DISABLE"&gt;Disabling&lt;/LSTag&gt; an enemy &lt;LSTag Type="Status" Tooltip="SLOW"&gt;slows&lt;/LSTag&gt; them for 1 turn.</content>
   <content contentuid="h34166a27gc499g2f28g1137g153892cef4e9" version="1">Time Splitter</content>
-  <content contentuid="h35ae2667g2b97g3adcgc9ebg4325af0527ef" version="1">Gain access to &lt;LSTag Type="Spell" Tooltip="Mesmer_Shatter_Chronomancer_Container"&gt;Chronomancer Shatters&lt;/LSTag&gt; and Wells.</content>
+  <content contentuid="h35ae2667g2b97g3adcgc9ebg4325af0527ef" version="2">Gain access to &lt;LSTag Type="Spell" Tooltip="Mesmer_Shatter_Chronomancer_Container"&gt;Chronomancer Shatters&lt;/LSTag&gt;.</content>
   <content contentuid="hee13f570gb668g3871g1d9eg1040624d9229" version="1">Danger Time</content>
-  <content contentuid="h2593bfdfgda91gdd00g7289g804a2d5ac7c4" version="1">The number you need to &lt;LSTag Tooltip="AttackRoll"&gt;roll&lt;/LSTag&gt; a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt; while attacking is reduced by 1. This effect can stack.</content>
+  <content contentuid="h2593bfdfgda91gdd00g7289g804a2d5ac7c4" version="2">When you attack an Enemy that is &lt;LSTag Type="Status" Tooltip="SLOW"&gt;Slowed&lt;/LSTag, the number you need to &lt;LSTag Tooltip="AttackRoll"&gt;roll&lt;/LSTag&gt; a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt; while attacking is reduced by 1. This effect can stack.</content>
   <content contentuid="h6cf584b7gb92cg2473g1619g3f31d3d4dcfe" version="1">Compounding Power</content>
   <content contentuid="h6181ed79gf391gbfc6g98ebge0d8ddefdeb1" version="1">%%% EMPTY</content>
   <content contentuid="h00176c5eg8f38g7003g0821g25fa18adf304" version="1">%%% EMPTY</content>
   <content contentuid="hb870d388gbdf2gacb5g93f4g4b86f1f3e365" version="1">Seize the Moment</content>
   <content contentuid="h4ddeee86g3821g4b72ga1a5g4fe766ffe94c" version="1">Seize the Moment</content>
-  <content contentuid="ha3b7ac29g4356gca9fgccecge45461817c10" version="1">&lt;LSTag Type="Spell" Tooltip="Shout_Mesmer_Shatter_Container"&gt;Shatter&lt;/LSTag&gt; skills generate a clone if you have enough (3) clones present.</content>
+  <content contentuid="ha3b7ac29g4356gca9fgccecge45461817c10" version="2">When using a &lt;LSTag Type="Spell" Tooltip="Mesmer_Shatter_Chronomancer_Container"&gt;Chronomancer Shatter&lt;/LSTag&gt; with 3 clones active, you and allies within [1] gain 1 turn of [[Conditions#Quickness|Quickness]].</content>
   <content contentuid="hb60ec35bge87eg6417g262dg8ea077664877" version="1">Mirage Cloak</content>
   <content contentuid="h6c9d1b9cg8e42g2656g206egdb6ab5dd1429" version="1">Mirage Cloak</content>
   <content contentuid="h8864e223ge03eg84e2g7c3fgab39f2403a1a" version="1">Mirage Cloak</content>
@@ -522,7 +522,7 @@
   <content contentuid="hc53982eegbdf2gafd4gd5c5gb947db9ddeb2" version="1">&lt;LSTag Type="Spell" Tooltip="Shout_Mesmer_Shatter_Container"&gt;Shatter&lt;/LSTag&gt; skills grant &lt;LSTag Type="Status" Tooltip="MESMER_MIRAGE_CLOAK"&gt;Mirage Cloak&lt;/LSTag&gt; when 2 or more clones are present.</content>
   <content contentuid="h571defd5g5eadg0dd6gca43g27a6ecc3dd3b" version="1">Psychic Blades</content>
   <content contentuid="h58739302g0467gd592g6580g58d9855a8636" version="1">Psychic Blades</content>
-  <content contentuid="h7a7c726cg1603gcf40g0705g4fc1133a7f1c" version="1">Whenever a clone would be summoned, you instead stock a blade. Blades persist indefinitely until used. Your shatters are replaced with Bladesongs that consume your stocked blades, but still count as shatters.</content>
+  <content contentuid="h7a7c726cg1603gcf40g0705g4fc1133a7f1c" version="2">Whenever a clone would be summoned, you instead stock a blade. Blades persist indefinitely until used. Instead of shatters you gain Bladesongs that consume your stocked blades, but still count as shatters.</content>
   <content contentuid="h7add43feg49f9gbeadgb1b7g2d9510c1753c" version="1">2 Psychic Blades</content>
   <content contentuid="h9d962db3gf4c2ge52ege9a0gb8c32a56b99c" version="1">3 Psychic Blades</content>
   <content contentuid="hfa2faad6gbb24g2728gc734gd8eefd3f4ff3" version="1">4 Psychic Blades</content>
@@ -581,4 +581,35 @@
   <content contentuid="h519cd4c8ge177ge6e5gdbbfg09c37bc3635a" version="1">Deja Vu</content>
   <content contentuid="h9d7cd0c2g0bcbg6ac7gd15dgd68c431f04fb" version="2">MESMER_BLADE_RENEWAL_COUNTER</content>
   <content contentuid="haa165dcbg7710g8a70g927ag94d487ce9db7" version="2">MESMER_BLADE_RENEWAL_SUCCESS</content>
+  <content contentuid="h5341cc5fge21fge244gc1a4g0672a51049c2" version="2">Illusionary Warrior</content>
+  <content contentuid="h70fa10d9g67d1g837fgd935g0894f87b39f6" version="1">&lt;LSTag Type="Status" Tooltip="GW_DAZE"&gt;Dizzy&lt;/LSTag&gt; of stunning an enemy also inflicts 1 turn of &lt;LSTag Type="Status" Tooltip="GW_VULNERABILITY"&gt;Vulnerability&lt;/LSTag&gt;.</content>
+  <content contentuid="hc79a13a6gfe11gfca1gb9e2gb9bc2bd1f5ef" version="1">%%% EMPTY</content>
+  <content contentuid="h39f86da2g60b3g73e8g2735g49add999c033" version="1">Time Warp</content>
+  <content contentuid="h2b40746dgf62bg1dc0g6981g384bf5d4e33a" version="1">Swarming, biting locusts fill the air. They deal [1] per turn, make the area &lt;LSTag Type="Status" Tooltip="DIFFICULT_TERRAIN"&gt;Difficult Terrain&lt;/LSTag&gt;, and impose &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt; on Perception &lt;LSTag Tooltip="AbilityCheck"&gt;Checks&lt;/LSTag&gt;.</content>
+  <content contentuid="ha2f30434g5135gd4ffg0cdcgf8d3e29a8369" version="1">Time Warp</content>
+  <content contentuid="hef78ad95ge088g79f0g1211g36476ea470cf" version="1">&lt;LSTag Tooltip="MovementSpeed"&gt;Movement speed&lt;/LSTag&gt; halved. &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt; on Perception &lt;LSTag Tooltip="AbilityCheck"&gt;Checks&lt;/LSTag&gt;.</content>
+  <content contentuid="hd9d178deg05a4g45fagcc1bge09e7e603528" version="1">Time Warp</content>
+  <content contentuid="h0e05ff61gbe94g163bg4521g4733c5986f7c" version="1">&lt;LSTag Tooltip="MovementSpeed"&gt;Movement speed&lt;/LSTag&gt; halved. &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt; on Perception &lt;LSTag Tooltip="AbilityCheck"&gt;Checks&lt;/LSTag&gt;.</content>
+  <content contentuid="hd247746eg8d6bgc347gc761g49ccbf4f1883" version="1">%%% EMPTY</content>
+  <content contentuid="ha2761a0egcfd3ga294ge835g8c0217f8b688" version="2">Time Warp</content>
+  <content contentuid="had75ed27g07abg1792g27bbg17e82c58b82f" version="1">Locusts attack everyone within range, make the area &lt;LSTag Type="Status" Tooltip="DIFFICULT_TERRAIN"&gt;Difficult Terrain&lt;/LSTag&gt;, and impose &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt; on Perception &lt;LSTag Tooltip="AbilityCheck"&gt;Checks&lt;/LSTag&gt;.</content>
+  <content contentuid="h1dd8c08cg601dg7b68gcf76g628068b936b2" version="1">Chaos Storm</content>
+  <content contentuid="hc675a053gc1a8g88d7g0e56gbd61dedba6d5" version="1">A sphere of utter blackness and bitter cold. It emits a cacophony of soft whispers and slurping noises.</content>
+  <content contentuid="h01ac7fc1gedcbg16b1g2b0ag6a0f3027eaea" version="2">Arcane Thievery</content>
+  <content contentuid="h908a5bc8g9aa2g4724gdc3dgc91989038a06" version="1">Creature suffers an additional [1] from the spellcaster. It also has &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt; on Strength &lt;LSTag Tooltip="AbilityCheck"&gt;Checks&lt;/LSTag&gt;.</content>
+  <content contentuid="ha24230abg4807g62beg4242ga653b58473f9" version="2">Arcane Thievery</content>
+  <content contentuid="hc255fa64g0cdbg4a7agbc2agba7c7ceaa361" version="1">When this creature attacks the target of its Hex spell, it deals an additional [1].</content>
+  <content contentuid="hf9c0c231g1b30gd4e1gcde0g5c6808f86f58" version="1">Arcane Thievery</content>
+  <content contentuid="hf0af81ebgd330g6d4ag81e7g8513b80ab4bf" version="1">Attacking the target of your Hex spell deals an extra [1].</content>
+  <content contentuid="h8f0a5d1eg1ac4ge900gad67gaaa722c17e63" version="2">Arcane Thievery</content>
+  <content contentuid="ha1eb4eeag464bg23d2ga7cfg83ad1bcbf74e" version="1">Deal an additonal [1] when you attack the target and impart &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt; on Strength &lt;LSTag Tooltip="AbilityCheck"&gt;Checks&lt;/LSTag&gt;.</content>
+  <content contentuid="h45908932g4bf0ga3d5g89a2gb3d69b690b65" version="2">Mesmer_SummonCloneSelfPassive</content>
+  <content contentuid="h6ed86695gd29agef07ged84g9e11bd16b625" version="1">Attacking the target of your Hex spell deals an extra [1].</content>
+  <content contentuid="h9c964440gb4b5gd3f8g962eg89a474bf49b6" version="2">Mesmer_SummonCloneSelfPassive</content>
+  <content contentuid="h02cec01bg648dga5d3ga2e7gf1361992ae70" version="1">Attacking the target of your Hex spell deals an extra [1].</content>
+  <content contentuid="hb62b6085g1ef4ga3b2g5cadg3c2f67649b19" version="1">Clone</content>
+  <content contentuid="h18abe7e8gcee6gea9dgae6fg6798892c7347" version="1">This is a clone</content>
+  <content contentuid="h16a8396bg51e7g5ec8gccedgd3ec5cf6c91e" version="1">Clone Death</content>
+  <content contentuid="h920fb950g1a26g1235g2caeg72d4b7e8a2b7" version="1">Explode in a burst of fire.</content>
+  <content contentuid="h90713e27gc94bgc4degb2cegaad4492d4b48" version="1">Master Fencer</content>
 </contentList>
