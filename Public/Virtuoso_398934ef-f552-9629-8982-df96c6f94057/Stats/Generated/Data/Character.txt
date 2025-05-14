@@ -41,5 +41,5 @@ data "DarkvisionRange" "9"
 data "FallingHitEffect" "VFX_Combat_Bludgeoning_Damage_Blood_01"
 data "FallingLandEffect" "VFX_Combat_Force_Land_01"
 data "ArmorType" "None"
-data "Proficiency Group" "None"
+data "Proficiency Group" "Battleaxes;Clubs;Daggers;Darts;Flails;Glaives;Greataxes;Greatclubs;Halberds;HandCrossbows;Greatswords;Handaxes;HeavyArmor;HeavyCrossbows;Javelins;LightArmor;LightCrossbows;LightHammers;Longbows;Longswords;Maces;MartialWeapons;Mauls;MediumArmor;Morningstars;Pikes;Quarterstaffs;Rapiers;Scimitars;Shortbows;Shields;Sickles;Shortswords;SimpleWeapons;Slings;Spears;Tridents;Warhammers;Warpicks;MusicalInstrument"
 

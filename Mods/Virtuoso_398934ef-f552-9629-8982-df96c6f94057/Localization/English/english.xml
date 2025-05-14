@@ -363,20 +363,20 @@
   <content contentuid="h1d0b1b3cgc57cg1c1cg44d4gadc7caf26d0b" version="1">&lt;LSTag Tooltip="MovementSpeed"&gt;Movement speed&lt;/LSTag&gt; halved. &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt; on Perception &lt;LSTag Tooltip="AbilityCheck"&gt;Checks&lt;/LSTag&gt;.</content>
   <content contentuid="hb77c1fc7ge5b9gfadcgeda1gff4c64be1d3d" version="1">Well of Calamity: Enemies</content>
   <content contentuid="hd1b79000gc5ceg48e3g3248g4685f2084fce" version="1">&lt;LSTag Tooltip="MovementSpeed"&gt;Movement speed&lt;/LSTag&gt; halved. &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt; on Perception &lt;LSTag Tooltip="AbilityCheck"&gt;Checks&lt;/LSTag&gt;.</content>
-  <content contentuid="h82c8c05eg7b1fg9497g0b5fg028226afdd34" version="1">%%% EMPTY</content>
-  <content contentuid="hfd0a1f76g94eag73e7gf7dcga98e0087a33b" version="1">%%% EMPTY</content>
-  <content contentuid="h3848b6f5g7583g1537g833dg9c4051af2722" version="1">%%% EMPTY</content>
-  <content contentuid="ha9d08463gf479g631fgad33g8451cd224510" version="1">%%% EMPTY</content>
+  <content contentuid="h82c8c05eg7b1fg9497g0b5fg028226afdd34" version="2">MESMER_WELL_OF_CALAMITY_TECHNICAL</content>
+  <content contentuid="hfd0a1f76g94eag73e7gf7dcga98e0087a33b" version="2">MESMER_WELL_OF_CALAMITY_FINAL_EFFECT</content>
+  <content contentuid="h3848b6f5g7583g1537g833dg9c4051af2722" version="2">MESMER_WELL_OF_CALAMITY_TURN_COUNTER</content>
+  <content contentuid="ha9d08463gf479g631fgad33g8451cd224510" version="2">MESMER_WELL_OF_CALAMITY_TURN_COUNTER_MAX</content>
   <content contentuid="hbfc6176fg6a5fg7446gc160g08de80c126f3" version="1">Well of Calamity ended</content>
   <content contentuid="hb8812a28g4af0g6e97gf4aag9c119b3283b9" version="1">Well of Senility ended</content>
   <content contentuid="he75b7072gd31fgc566g160eg7d85f46e8303" version="1">Well of Senility</content>
   <content contentuid="h0966e289g88bcg11c1gb09cgad062334446f" version="1">Swarming, biting locusts fill the air. They deal [1] per turn, make the area &lt;LSTag Type="Status" Tooltip="DIFFICULT_TERRAIN"&gt;Difficult Terrain&lt;/LSTag&gt;, and impose &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt; on Perception &lt;LSTag Tooltip="AbilityCheck"&gt;Checks&lt;/LSTag&gt;.</content>
   <content contentuid="h4773e51bgdd37g6382gafc1g19a9aa945649" version="1">Well of Senility: Enemies</content>
   <content contentuid="hc95581d2g37a3g0e78g74ebge107e5525f6f" version="1">&lt;LSTag Tooltip="MovementSpeed"&gt;Movement speed&lt;/LSTag&gt; halved. &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt; on Perception &lt;LSTag Tooltip="AbilityCheck"&gt;Checks&lt;/LSTag&gt;.</content>
-  <content contentuid="h48bc0e9eg9af6g8aebg1691gccc690f59fa3" version="1">%%% EMPTY</content>
-  <content contentuid="h5583f573g0eceg4495g52bag347a3ccc11aa" version="1">%%% EMPTY</content>
-  <content contentuid="h40f6202cg9761g39fcg0468g07affab1c162" version="1">%%% EMPTY</content>
-  <content contentuid="h2073fbe7g7d19gd1b2gb716g5a1dbd7ed994" version="1">%%% EMPTY</content>
+  <content contentuid="h48bc0e9eg9af6g8aebg1691gccc690f59fa3" version="2">MESMER_WELL_OF_SENILITY_TECHNICAL</content>
+  <content contentuid="h5583f573g0eceg4495g52bag347a3ccc11aa" version="2">MESMER_WELL_OF_SENILITY_FINAL_EFFECT</content>
+  <content contentuid="h40f6202cg9761g39fcg0468g07affab1c162" version="2">MESMER_WELL_OF_SENILITY_TURN_COUNTER</content>
+  <content contentuid="h2073fbe7g7d19gd1b2gb716g5a1dbd7ed994" version="2">MESMER_WELL_OF_SENILITY_TURN_COUNTER_MAX</content>
   <content contentuid="h45bdad39gba81gaa18gee59gaa7b052b4e23" version="1">Well of Senility</content>
   <content contentuid="hcbf87457g88eagf364g9b4bge4a1af39c6d6" version="1">Locusts attack everyone within range, make the area &lt;LSTag Type="Status" Tooltip="DIFFICULT_TERRAIN"&gt;Difficult Terrain&lt;/LSTag&gt;, and impose &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt; on Perception &lt;LSTag Tooltip="AbilityCheck"&gt;Checks&lt;/LSTag&gt;.</content>
   <content contentuid="h448c6358gbb24g4d3fga9ebg4cc15aca0b87" version="1">Gravity Well</content>
@@ -385,10 +385,10 @@
   <content contentuid="h88d41360g84b9g9f91g3f61g2ea9fbacbcf0" version="1">Locusts attack everyone within range, make the area &lt;LSTag Type="Status" Tooltip="DIFFICULT_TERRAIN"&gt;Difficult Terrain&lt;/LSTag&gt;, and impose &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt; on Perception &lt;LSTag Tooltip="AbilityCheck"&gt;Checks&lt;/LSTag&gt;.</content>
   <content contentuid="h4f9c20a0g3eabgb772g4ebfg60649367aea4" version="1">Gravity Well</content>
   <content contentuid="h9d0510edg24a6g9f65g2deeg1d080875e816" version="1">Swarming, biting locusts fill the air. They deal [1] per turn, make the area &lt;LSTag Type="Status" Tooltip="DIFFICULT_TERRAIN"&gt;Difficult Terrain&lt;/LSTag&gt;, and impose &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt; on Perception &lt;LSTag Tooltip="AbilityCheck"&gt;Checks&lt;/LSTag&gt;.</content>
-  <content contentuid="h914934fcg70b7gece8g5597gdfb34810bc56" version="1">%%% EMPTY</content>
-  <content contentuid="hbceb4f50g2374g4fabgcc2fg9dab01e5cd50" version="1">%%% EMPTY</content>
-  <content contentuid="hb2486fb9g7b88g4119gea0bg9a957b1938d6" version="1">%%% EMPTY</content>
-  <content contentuid="hcb522031g360fge0b4g55b0ge18132338136" version="1">%%% EMPTY</content>
+  <content contentuid="h914934fcg70b7gece8g5597gdfb34810bc56" version="2">MESMER_GRAVITY_WELL_FINAL_EFFECT</content>
+  <content contentuid="hbceb4f50g2374g4fabgcc2fg9dab01e5cd50" version="2">MESMER_GRAVITY_WELL_TURN_EFFECT</content>
+  <content contentuid="hb2486fb9g7b88g4119gea0bg9a957b1938d6" version="2">MESMER_GRAVITY_WELL_TURN_COUNTER</content>
+  <content contentuid="hcb522031g360fge0b4g55b0ge18132338136" version="2">MESMER_GRAVITY_WELL_TURN_COUNTER_MAX</content>
   <content contentuid="h7fd662c2gc5e0g6ec0g3120g25805d35147b" version="1">Rain of Swords</content>
   <content contentuid="hce066a63gfefag386cgabf7g1a07ad9bdf54" version="1">Swarming, biting locusts fill the air. They deal [1] per turn, make the area &lt;LSTag Type="Status" Tooltip="DIFFICULT_TERRAIN"&gt;Difficult Terrain&lt;/LSTag&gt;, and impose &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt; on Perception &lt;LSTag Tooltip="AbilityCheck"&gt;Checks&lt;/LSTag&gt;.</content>
   <content contentuid="hdb4d40a1g138dg917cgd4fcg861f124c255e" version="1">Rain of Swords</content>
@@ -612,4 +612,20 @@
   <content contentuid="h16a8396bg51e7g5ec8gccedgd3ec5cf6c91e" version="1">Clone Death</content>
   <content contentuid="h920fb950g1a26g1235g2caeg72d4b7e8a2b7" version="1">Explode in a burst of fire.</content>
   <content contentuid="h90713e27gc94bgc4degb2cegaad4492d4b48" version="1">Master Fencer</content>
+  <content contentuid="h8cf1c2a5gdd1dg2591g0866gb73f3ac5e51a" version="1">MESMER_GRAVITY_WELL_TURN_EFFECT_TRIGGER</content>
+  <content contentuid="h80084d93g2ca6gf31cgcefcgacd5d574606b" version="1">MESMER_BLADESONG_HARMONY_1</content>
+  <content contentuid="h0e7f4756g7ffdge561g7a95g3a5fb53b4634" version="1">Chaotic Transference</content>
+  <content contentuid="hcbef911eg4716g7458g32a3g78a340f69ce8" version="1">Once per turn, gaining &lt;LSTag Type="Status" Tooltip="GW_CHAOS_AURA"&gt;Chaos Aura&lt;/LSTag&gt; grants 1 turn of &lt;LSTag Type="Status" Tooltip="GW_REGENERATION"&gt;Regeneration&lt;/LSTag&gt; to allies within [1] of you.</content>
+  <content contentuid="hd71ece60g2878gfc7eg1334gd701214621a5" version="2">MESMER_BLADESONG_HARMONY_1</content>
+  <content contentuid="h3e29c58egb276g8331g315eg21328aeb8f5d" version="1">MESMER_BLADESONG_HARMONY_2</content>
+  <content contentuid="hdbed7febg5768g7965g40e8g2c24ce3afe4f" version="1">MESMER_BLADESONG_HARMONY_3</content>
+  <content contentuid="h9781521cg1da0g9528g01b4g246bcee4e986" version="1">MESMER_BLADESONG_HARMONY_4</content>
+  <content contentuid="hf4b8ea98g693eg6d26g0d22ge9227f620bbb" version="1">MESMER_BLADESONG_HARMONY_5</content>
+  <content contentuid="hbc4745eeg4057g3967gbee9g30cdacc2f1cd" version="2">Mesmer_TestSpell2</content>
+  <content contentuid="h68e7af6cg7f5fgccd3g7b30gea357e950f21" version="2">Mesmer_TestSpell2</content>
+  <content contentuid="h64d890e4g25b7gd275g0646gd77790bee8f9" version="1">MESMER_BLADESONG_SORROW_1</content>
+  <content contentuid="hde4a9b2fgf93cgc6dag3de9g64976da6718a" version="1">MESMER_BLADESONG_SORROW_2</content>
+  <content contentuid="h79799c17gae4cg9fd0gc7e4g57c37a1ba938" version="1">MESMER_BLADESONG_SORROW_3</content>
+  <content contentuid="h4ec1b95fg2e84gd07ag155dg17974368ebee" version="1">MESMER_BLADESONG_SORROW_4</content>
+  <content contentuid="h29386421gc1d0g0df4gfe90g89b7e0b7b22e" version="1">MESMER_BLADESONG_SORROW_5</content>
 </contentList>

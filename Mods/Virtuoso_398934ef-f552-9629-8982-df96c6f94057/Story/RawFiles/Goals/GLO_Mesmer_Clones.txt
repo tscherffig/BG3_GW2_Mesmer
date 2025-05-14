@@ -25,6 +25,137 @@ PROC_CCO_CreatedMesmerClone(_Clone, _Player);
 RemoveStatus(_Clone, "MESMER_CLONE_ALIVE_TECHNICAL", _Player);
 //END_REGION
 
+//REGION Bladesong Harmony
+IF
+UsingSpell(_Caster, "MESMER_BLADESONG_HARMONY_1", _, _, _)
+THEN
+RemoveStatus(_Caster, "MESMER_PSYCHIC_BLADES_1", _Caster);
+
+IF
+StatusApplied(_Target, "MESMER_BLADESONG_HARMONY_1", _Caster, _)
+AND
+HasActiveStatus(_Caster, "MESMER_PSYCHIC_BLADES_2", 1)
+THEN
+RemoveStatus(_Caster, "MESMER_PSYCHIC_BLADES_2", _Caster);
+
+IF
+StatusApplied(_Target, "MESMER_BLADESONG_HARMONY_2", _Caster, _)
+AND
+HasActiveStatus(_Caster, "MESMER_PSYCHIC_BLADES_3", 1)
+THEN
+RemoveStatus(_Caster, "MESMER_PSYCHIC_BLADES_3", _Caster);
+
+IF
+StatusApplied(_Target, "MESMER_BLADESONG_HARMONY_3", _Caster, _)
+AND
+HasActiveStatus(_Caster, "MESMER_PSYCHIC_BLADES_4", 1)
+THEN
+RemoveStatus(_Caster, "MESMER_PSYCHIC_BLADES_4", _Caster);
+
+IF
+StatusApplied(_Target, "MESMER_BLADESONG_HARMONY_4", _Caster, _)
+AND
+HasActiveStatus(_Caster, "MESMER_PSYCHIC_BLADES_5", 1)
+THEN
+RemoveStatus(_Caster, "MESMER_PSYCHIC_BLADES_5", _Caster);
+
+IF
+CastSpellFailed(_Caster, "Projectile_Mesmer_Bladesong_Harmony_Two", _, _, _)
+THEN
+RemoveStatus(_Caster, "MESMER_PSYCHIC_BLADES_3", _Caster);
+RemoveStatus(_Caster, "MESMER_PSYCHIC_BLADES_4", _Caster);
+RemoveStatus(_Caster, "MESMER_PSYCHIC_BLADES_5", _Caster);
+
+IF
+CastSpellFailed(_Caster, "Projectile_Mesmer_Bladesong_Harmony_Three", _, _, _)
+THEN
+RemoveStatus(_Caster, "MESMER_PSYCHIC_BLADES_4", _Caster);
+RemoveStatus(_Caster, "MESMER_PSYCHIC_BLADES_5", _Caster);
+
+IF
+CastSpellFailed(_Caster, "Projectile_Mesmer_Bladesong_Harmony_Four", _, _, _)
+THEN
+RemoveStatus(_Caster, "MESMER_PSYCHIC_BLADES_5", _Caster);
+//END_REGION
+
+//REGION Bladesong Sorrow
+IF
+UsingSpell(_Caster, "MESMER_BLADESONG_SORROW_1", _, _, _)
+THEN
+RemoveStatus(_Caster, "MESMER_PSYCHIC_BLADES_1", _Caster);
+
+IF
+StatusApplied(_Target, "MESMER_BLADESONG_SORROW_1", _Caster, _)
+AND
+HasActiveStatus(_Caster, "MESMER_PSYCHIC_BLADES_2", 1)
+THEN
+RemoveStatus(_Caster, "MESMER_PSYCHIC_BLADES_2", _Caster);
+
+IF
+StatusApplied(_Target, "MESMER_BLADESONG_SORROW_2", _Caster, _)
+AND
+HasActiveStatus(_Caster, "MESMER_PSYCHIC_BLADES_3", 1)
+THEN
+RemoveStatus(_Caster, "MESMER_PSYCHIC_BLADES_3", _Caster);
+
+IF
+StatusApplied(_Target, "MESMER_BLADESONG_SORROW_3", _Caster, _)
+AND
+HasActiveStatus(_Caster, "MESMER_PSYCHIC_BLADES_4", 1)
+THEN
+RemoveStatus(_Caster, "MESMER_PSYCHIC_BLADES_4", _Caster);
+
+IF
+StatusApplied(_Target, "MESMER_BLADESONG_SORROW_4", _Caster, _)
+AND
+HasActiveStatus(_Caster, "MESMER_PSYCHIC_BLADES_5", 1)
+THEN
+RemoveStatus(_Caster, "MESMER_PSYCHIC_BLADES_5", _Caster);
+
+IF
+CastSpellFailed(_Caster, "Projectile_Mesmer_Bladesong_Sorrow_Two", _, _, _)
+THEN
+RemoveStatus(_Caster, "MESMER_PSYCHIC_BLADES_3", _Caster);
+RemoveStatus(_Caster, "MESMER_PSYCHIC_BLADES_4", _Caster);
+RemoveStatus(_Caster, "MESMER_PSYCHIC_BLADES_5", _Caster);
+
+IF
+CastSpellFailed(_Caster, "Projectile_Mesmer_Bladesong_Sorrow_Three", _, _, _)
+THEN
+RemoveStatus(_Caster, "MESMER_PSYCHIC_BLADES_4", _Caster);
+RemoveStatus(_Caster, "MESMER_PSYCHIC_BLADES_5", _Caster);
+
+IF
+CastSpellFailed(_Caster, "Projectile_Mesmer_Bladesong_Sorrow_Four", _, _, _)
+THEN
+RemoveStatus(_Caster, "MESMER_PSYCHIC_BLADES_5", _Caster);
+//END_REGION
+
+/*
+IF
+UsingSpellOnTarget(_Caster, _Target, "MESMER_BLADESONG_HARMONY_1", _, _, _)
+THEN
+DB_MESMER_BLADESONG_HARMONY(_Target, _Caster);
+
+IF
+CastedSpell(_Caster, "MESMER_BLADESONG_HARMONY_1", _, _, _)
+AND
+DB_MESMER_BLADESONG_HARMONY(_Target, _Caster)
+THEN
+UseSpell(_Caster, "Projectile_Mesmer_Bladesong_Harmony_Two", _Target);
+NOT DB_MESMER_BLADESONG_HARMONY(_Target, _Caster);
+*/
+
+// Mirror Images
+IF
+UsingSpell(_Caster, "Projectile_Mesmer_Bladesong_Harmony_Five", _, _, _)
+THEN
+RemoveStatus(_Caster, "MESMER_PSYCHIC_BLADES_1", _Caster);
+RemoveStatus(_Caster, "MESMER_PSYCHIC_BLADES_2", _Caster);
+RemoveStatus(_Caster, "MESMER_PSYCHIC_BLADES_3", _Caster);
+RemoveStatus(_Caster, "MESMER_PSYCHIC_BLADES_4", _Caster);
+RemoveStatus(_Caster, "MESMER_PSYCHIC_BLADES_5", _Caster);
+
 /*
 //Create Clone when "MESMER_CLONE_SPAWN" gets applied
 IF
@@ -161,6 +292,7 @@ DB_MESMER_WELLOFACTION(_Target, _Caster)
 THEN
 ApplyStatus(_Target, "MESMER_WELL_OF_ACTION_FINAL_EFFECT", 1.0, 0, _Caster);
 RemoveStatus(_Caster,"MESMER_WELL_OF_ACTION_TURN_COUNTER",_Caster);
+PROC_GLO_BreakConcentration(_Caster);
 NOT DB_MESMER_WELLOFACTION(_Target, _Caster);
 //END_REGION
 
@@ -186,6 +318,7 @@ DB_MESMER_WELLOFCALAMITY(_Target, _Caster)
 THEN
 ApplyStatus(_Target, "MESMER_WELL_OF_CALAMITY_FINAL_EFFECT", 1.0, 0, _Caster);
 RemoveStatus(_Caster,"MESMER_WELL_OF_CALAMITY_TURN_COUNTER",_Caster);
+PROC_GLO_BreakConcentration(_Caster);
 NOT DB_MESMER_WELLOFCALAMITY(_Target, _Caster);
 //END_REGION
 
@@ -211,6 +344,7 @@ DB_MESMER_WELLOFSENILITY(_Target, _Caster)
 THEN
 ApplyStatus(_Target, "MESMER_WELL_OF_SENILITY_FINAL_EFFECT", 1.0, 0, _Caster);
 RemoveStatus(_Caster,"MESMER_WELL_OF_SENILITY_TURN_COUNTER",_Caster);
+PROC_GLO_BreakConcentration(_Caster);
 NOT DB_MESMER_WELLOFSENILITY(_Target, _Caster);
 //END_REGION
 
@@ -243,6 +377,7 @@ DB_MESMER_GRAVITYWELL(_Target, _Caster)
 THEN
 ApplyStatus(_Target, "MESMER_GRAVITY_WELL_FINAL_EFFECT", 1.0, 0, _Caster);
 RemoveStatus(_Caster,"MESMER_GRAVITY_WELL_TURN_COUNTER",_Caster);
+PROC_GLO_BreakConcentration(_Caster);
 NOT DB_MESMER_GRAVITYWELL(_Target, _Caster);
 //END_REGION
 
@@ -275,11 +410,14 @@ ApplyStatus(_Caster, "MESMER_CLONE_SPAWN", 1.0, 0, _Caster);
 
 //REGION Mirage
 // Sand through Glass
+/*
 IF
 CastSpell(_Caster, "Rush_Mesmer_SandThroughGlass", _, _, _)
+AND
+HasPassive(_Caster, "Mesmer_Mirage_Cloak_Passive", 1)
 THEN
 ApplyStatus(_Caster, "MESMER_MIRAGE_CLOAK", 6.0, 0, _Caster);
-
+*/
 // Jaunt
 IF
 CastedSpell(_Caster, "Target_Mesmer_Jaunt", _, _, _)
